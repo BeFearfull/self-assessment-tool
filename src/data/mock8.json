@@ -1,0 +1,548 @@
+{
+  "id": "mock8",
+  "title": "Mock Test 8",
+  "section": "Technical MCQ — Mixed Topics",
+  "durationMinutes": 45,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Pseudocode's 'INPUT' keyword typically represents:",
+      "options": [
+        "Displaying output to the screen",
+        "Reading a value from the user/external source into a variable",
+        "A loop structure",
+        "A comment"
+      ],
+      "correctAnswer": "B",
+      "explanation": "INPUT (paired with OUTPUT/PRINT for the reverse direction) is pseudocode's generic way to say 'get a value from outside the program' — regardless of whether the real implementation reads keyboard inpu"
+    },
+    {
+      "id": 2,
+      "question": "=SUMPRODUCT({1,2,3}, {4,5,6}) evaluates to:",
+      "options": [
+        "21",
+        "32",
+        "90",
+        "720"
+      ],
+      "correctAnswer": "B",
+      "explanation": "SUMPRODUCT multiplies the arrays position-by-position and sums the results: (1×4)+(2×5)+(3×6) = 4+10+18 = 32. Option A (21) is the sum of all six numbers and 720 is the product of all — both engineere"
+    },
+    {
+      "id": 3,
+      "question": "A firewall's primary function is to:",
+      "options": [
+        "Speed up the network",
+        "Filter incoming/outgoing traffic based on defined security rules",
+        "Store passwords",
+        "Assign IP addresses"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A firewall inspects traffic against rules (source/destination IP, port, protocol) and allows or blocks it — the network's gatekeeper. It doesn't store credentials or hand out addresses (that's DHCP)."
+    },
+    {
+      "id": 4,
+      "question": "SQL stands for:",
+      "options": [
+        "Simple Query Logic",
+        "Structured Query Language",
+        "System Query List",
+        "Sequential Query Loop"
+      ],
+      "correctAnswer": "B",
+      "explanation": "SQL (Structured Query Language) is the standardised language for interacting with relational databases across virtually every major vendor (MySQL, PostgreSQL, Oracle, SQL Server) — while each has mino"
+    },
+    {
+      "id": 5,
+      "question": "The 'this' keyword refers to:",
+      "options": [
+        "The parent class",
+        "The current object whose method is executing",
+        "A static context",
+        "The main thread"
+      ],
+      "correctAnswer": "B",
+      "explanation": "'this' is a self-reference: this.name = name distinguishes the field from a same-named parameter; this() chains to another constructor of the SAME class. It doesn't exist in static contexts (no curren"
+    },
+    {
+      "id": 6,
+      "question": "What does Ctrl + K do in Word?",
+      "options": [
+        "Inserts a comment",
+        "Inserts a hyperlink",
+        "Opens keyboard settings",
+        "Applies strikethrough"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Ctrl+K opens the Insert Hyperlink dialog for the selected text — think K for 'linK'. Comments are Ctrl+Alt+M. This shortcut works identically in Outlook, PowerPoint and even browsers' rich editors, ma"
+    },
+    {
+      "id": 7,
+      "question": "What does the code output?\nres = 0\nFOR i = 1 TO 13\nIF i MOD 3 == 0 THEN CONTINUE\nres = res + i\nEND FOR\nPRINT res",
+      "options": [
+        "58",
+        "91",
+        "61",
+        "64"
+      ],
+      "correctAnswer": "C",
+      "explanation": "CONTINUE skips every multiple of 3, so the added values are 1, 2, 4, 5, 7, 8, 10, 11, 13, totalling <b>61</b>. MOD 3 == 0 identifies multiples — flip the comparison to != and the kept/skipped sets swa"
+    },
+    {
+      "id": 8,
+      "question": "Comparing Bubble Sort and Merge Sort on a LARGE dataset (say, 100,000 elements), which will complete FASTER?",
+      "options": [
+        "Bubble Sort, since it's simpler",
+        "Merge Sort — O(n log n) vastly outperforms O(n²) at this scale",
+        "They finish in exactly the same time",
+        "Neither can handle 100,000 elements"
+      ],
+      "correctAnswer": "B",
+      "explanation": "At n=100,000: Bubble Sort's O(n²) means roughly 10 billion operations, while Merge Sort's O(n log n) means roughly 1.7 million — a difference of THOUSANDS of times, translating to Bubble Sort potentia"
+    },
+    {
+      "id": 9,
+      "question": "Polymorphism literally means:",
+      "options": [
+        "One class only",
+        "Many forms — the same interface behaving differently for different types",
+        "Hidden data",
+        "Fast execution"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Poly (many) + morph (form): one method call, many behaviours. animal.speak() barks for a Dog and meows for a Cat even through an Animal reference — the runtime picks the right version. Compile-time (o"
+    },
+    {
+      "id": 10,
+      "question": "Predict the printed element:\nvals = [87, 28, 86, 82, 33]\nROTATE LEFT by 1 position(s)\nPRINT vals[2]",
+      "options": [
+        "82",
+        "78",
+        "86",
+        "84"
+      ],
+      "correctAnswer": "A",
+      "explanation": "A left rotation by 1 moves the first 1 element(s) to the back: [28, 86, 82, 33, 87]. Index 2 then holds <b>82</b>. Mapping rule: new index k takes the old element at (k + 1) mod 5 — modular thinking b"
+    },
+    {
+      "id": 11,
+      "question": "Upcasting vs downcasting:",
+      "options": [
+        "Both need explicit casts",
+        "Upcasting (child→parent) is implicit and safe; downcasting (parent→child) is explicit and can fail at runtime",
+        "Downcasting is always safe",
+        "Neither compiles"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Every Dog IS an Animal, so Animal a = dog needs no cast. The reverse claims MORE specific knowledge — Dog d = (Dog) a — compiles with the explicit cast but explodes at runtime if a actually holds a Ca"
+    },
+    {
+      "id": 12,
+      "question": "NAT (Network Address Translation) allows:",
+      "options": [
+        "Faster Wi-Fi",
+        "Many private-IP devices to share one public IP for internet access",
+        "Free DNS",
+        "Longer cables"
+      ],
+      "correctAnswer": "B",
+      "explanation": "NAT rewrites private source addresses to the router's public IP (tracking sessions by port), letting a whole home or office ride one public address — the workaround that stretched IPv4 for decades. It"
+    },
+    {
+      "id": 13,
+      "question": "Why is public Wi-Fi considered risky for sensitive transactions?",
+      "options": [
+        "It is always slower",
+        "Traffic can potentially be intercepted (MITM) by others on the same unsecured network",
+        "It costs money",
+        "It uses different IP versions"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Open Wi-Fi (no WPA password, or shared passwords known to everyone in a cafe) lets other users on the same network potentially snoop or MITM unencrypted traffic — always favouring HTTPS sites and, ide"
+    },
+    {
+      "id": 14,
+      "question": "What does 'new' do in object creation?",
+      "options": [
+        "Declares a variable",
+        "Allocates memory for the object and triggers its constructor",
+        "Deletes old objects",
+        "Imports a class"
+      ],
+      "correctAnswer": "B",
+      "explanation": "new = allocate on the heap + run the constructor + hand back a reference. Declaration alone (Car c;) creates only a reference holding nothing — using it uninitialised is the null-pointer scenario. The"
+    },
+    {
+      "id": 15,
+      "question": "What does it mean for a Stack to 'overflow'?",
+      "options": [
+        "Too many elements are removed",
+        "An attempt is made to PUSH onto a stack that has reached its maximum allocated capacity",
+        "The stack becomes empty",
+        "A syntax error occurs"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A fixed-capacity (array-based) stack implementation can run out of room — trying to push one more element beyond that limit triggers a stack-overflow condition. (This is the array-based meaning; the U"
+    },
+    {
+      "id": 16,
+      "question": "A Database Management System (DBMS) is best described as:",
+      "options": [
+        "A single spreadsheet file",
+        "Software that enables creating, storing, retrieving, updating and managing data efficiently and securely",
+        "A type of programming language",
+        "A network cable"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A DBMS (MySQL, Oracle, PostgreSQL, SQL Server) sits between applications and raw stored data, handling the heavy lifting — concurrent access by many users, data integrity rules, security, and efficien"
+    },
+    {
+      "id": 17,
+      "question": "In the TCP/IP model, the OSI Session, Presentation and Application layers are merged into:",
+      "options": [
+        "Transport",
+        "Application",
+        "Internet",
+        "Network Access"
+      ],
+      "correctAnswer": "B",
+      "explanation": "TCP/IP's four layers: Network Access (OSI 1–2), Internet (3), Transport (4), and APPLICATION swallowing OSI 5–7. Cross-model mapping is a guaranteed question; the top-three-into-one merge is its most"
+    },
+    {
+      "id": 18,
+      "question": "Encapsulation in OOP means:",
+      "options": [
+        "Creating multiple classes",
+        "Bundling data and the methods operating on it, restricting direct access",
+        "Deleting unused objects",
+        "Copying one object into another"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Encapsulation wraps an object's state (fields) together with its behaviour (methods) and hides internals behind access modifiers — outsiders interact only through the public interface. A bank-account"
+    },
+    {
+      "id": 19,
+      "question": "What substring is printed?\ns = \"PLACEMENT\"\nPRINT SUBSTRING(s, 3, 5)   // start 3, end 5 EXCLUSIVE",
+      "options": [
+        "EM",
+        "CE",
+        "CEM",
+        "ACE"
+      ],
+      "correctAnswer": "B",
+      "explanation": "With an exclusive end, characters at indices 3..4 are taken: <b>\"CE\"</b> (2 characters). The inclusive-end reading gives \"CEM\" — sitting among the options, as always. Inclusive vs exclusive end is the"
+    },
+    {
+      "id": 20,
+      "question": "Which SQL aggregate function returns the TOTAL COUNT of rows matching a condition?",
+      "options": [
+        "SUM()",
+        "COUNT()",
+        "AVG()",
+        "MAX()"
+      ],
+      "correctAnswer": "B",
+      "explanation": "COUNT(*) tallies how many rows match — 'how many students scored above 80?' SUM() totals a numeric column's values, AVG() computes the mean, and MAX()/MIN() find extremes — this five-function aggregat"
+    },
+    {
+      "id": 21,
+      "question": "Which SQL command adds a NEW row to a table?",
+      "options": [
+        "SELECT",
+        "INSERT INTO",
+        "UPDATE",
+        "DROP"
+      ],
+      "correctAnswer": "B",
+      "explanation": "INSERT INTO Students (Name, Marks) VALUES ('Riya', 85) adds a brand-new record. Confusing INSERT (add new) with UPDATE (modify existing) is a common beginner slip this pairing is designed to test — IN"
+    },
+    {
+      "id": 22,
+      "question": "Setting a specific bit with OR — what prints?\nx = 12\nx = x OR 2   // 2 = 00000010\nPRINT x",
+      "options": [
+        "12",
+        "18",
+        "16",
+        "14"
+      ],
+      "correctAnswer": "D",
+      "explanation": "OR with 2 forces bit-1 (value 2) ON while leaving other bits untouched: 00001100 OR 00000010 = 00001110 = <b>14</b>. OR-to-set, AND-to-clear, XOR-to-toggle: the three bit-manipulation verbs in one lin"
+    },
+    {
+      "id": 23,
+      "question": "The primary purpose of ICMP 'TTL exceeded' messages is exploited by:",
+      "options": [
+        "ping",
+        "traceroute — it maps the path by expiring packets one hop at a time",
+        "DNS",
+        "DHCP"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Traceroute sends packets with TTL=1, 2, 3...; each router that zeroes a TTL returns 'TTL exceeded', revealing itself — the elegant hack behind the hop list. This mechanism question upgrades the earlie"
+    },
+    {
+      "id": 24,
+      "question": "Why might Insertion Sort sometimes be preferred over Merge Sort for VERY SMALL arrays (e.g., fewer than 10 elements), despite Merge Sort's better asymptotic complexity?",
+      "options": [
+        "Insertion Sort is always faster for any size",
+        "For small n, the CONSTANT overhead of Merge Sort's recursive splitting/merging can outweigh its theoretical advantage — Insertion Sort's simplicity wins in practice at small scale",
+        "Merge Sort cannot handle small arrays at all",
+        "This never actually happens in real systems"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Big-O describes behaviour as n grows LARGE — it deliberately ignores constant factors that can dominate at small scale. Many real-world sorting library implementations (like Timsort, used in Python an"
+    },
+    {
+      "id": 25,
+      "question": "Which of these best exemplifies 'defence in depth'?",
+      "options": [
+        "Relying on a single strong firewall alone",
+        "Layering multiple independent security controls (firewall + antivirus + MFA + encryption + training) so no single failure is catastrophic",
+        "Using one very long password",
+        "Disabling all logging to reduce clutter"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Defence in depth assumes any ONE control can fail or be bypassed, so several independent layers back each other up — a breached password doesn't grant access if MFA also blocks it; malware slipping pa"
+    },
+    {
+      "id": 26,
+      "question": "A multi-way IF-ELSE IF chain evaluates conditions:",
+      "options": [
+        "All simultaneously",
+        "In ORDER, top to bottom, stopping at the FIRST condition that evaluates to TRUE (subsequent conditions are skipped)",
+        "In random order",
+        "Only the last condition matters"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Once one branch's condition is TRUE and its block executes, the ENTIRE chain is exited — even if a LATER condition would also have been true. This ordering matters: placing a broader/more general cond"
+    },
+    {
+      "id": 27,
+      "question": "A broadcast domain is bounded by:",
+      "options": [
+        "A hub",
+        "A switch",
+        "A router",
+        "A repeater"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Broadcasts flood through hubs AND switches, but routers refuse to forward them — so a router marks the broadcast domain's edge (VLANs achieve the same split inside a switch). Contrast with collision d"
+    },
+    {
+      "id": 28,
+      "question": "A 'hop' in networking means:",
+      "options": [
+        "A wireless signal jump",
+        "One router-to-router leg a packet crosses on its path",
+        "A cable connector",
+        "A retry"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Each router a packet passes counts as one hop; traceroute numbers them, and TTL (time-to-live) decrements per hop, discarding packets at zero — the loop-prevention mechanism. TTL's per-hop decrement i"
+    },
+    {
+      "id": 29,
+      "question": "Which of these is an input device?",
+      "options": [
+        "Printer",
+        "Scanner",
+        "Projector",
+        "Speaker"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A SCANNER feeds data INTO the computer (paper → digital image). Printers, projectors and speakers all OUTPUT information to the human. Input vs output classification is judged by data direction — into"
+    },
+    {
+      "id": 30,
+      "question": "What is the purpose of the OSI Presentation layer?",
+      "options": [
+        "Routing",
+        "Data format translation, encryption and compression",
+        "Physical signalling",
+        "Session checkpoints"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Layer 6 makes data mutually intelligible: character encoding, serialisation, encryption/decryption, compression. Session (L5) manages dialogues; the separation of 5/6/7 duties is fine-grained and thus"
+    },
+    {
+      "id": 31,
+      "question": "The DISTINCT keyword in a SELECT statement is used to:",
+      "options": [
+        "Sort results alphabetically",
+        "Remove DUPLICATE rows from the query results, returning only unique combinations",
+        "Delete rows from the table",
+        "Speed up the database server"
+      ],
+      "correctAnswer": "B",
+      "explanation": "SELECT DISTINCT Department FROM Employees returns each department name ONCE, even if hundreds of employees share that department — filtering the RESULT SET for uniqueness, without altering the actual"
+    },
+    {
+      "id": 32,
+      "question": "A Doubly Linked List's key advantage over a Singly Linked List is:",
+      "options": [
+        "It uses less memory",
+        "It can be traversed in BOTH directions (forward and backward) since each node also points to its previous node",
+        "It cannot be modified",
+        "It has no head node"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The extra 'previous' pointer per node lets you walk backward from any point without restarting from the head — useful for operations like 'undo' history or browser back/forward navigation. The trade-o"
+    },
+    {
+      "id": 33,
+      "question": "Which statement about HTTP is TRUE?",
+      "options": [
+        "It is stateful by design",
+        "It is stateless — each request is independent; cookies/sessions add continuity on top",
+        "It encrypts by default",
+        "It runs on UDP"
+      ],
+      "correctAnswer": "B",
+      "explanation": "HTTP forgets each request immediately; shopping carts survive only because cookies, sessions or tokens re-identify you — mechanisms layered ABOVE the protocol. Statelessness and its cookie workaround"
+    },
+    {
+      "id": 34,
+      "question": "Which of these is a valid absolute reference to cell D10?",
+      "options": [
+        "D$10$",
+        "$D$10",
+        "#D#10",
+        "D:10"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Absolute references put a $ before BOTH the column letter and row number: $D$10. Option A misplaces the second $, and the others are invalid syntax. Partial locks $D10 (column fixed) and D$10 (row fix"
+    },
+    {
+      "id": 35,
+      "question": "Which file extension indicates a compressed archive?",
+      "options": [
+        ".zip",
+        ".exe",
+        ".docx",
+        ".bmp"
+      ],
+      "correctAnswer": "A",
+      "explanation": ".zip bundles files with compression for smaller size and single-file transfer (.rar and .7z are cousins). .exe is an executable program — treat unknown ones as dangerous — while .docx and .bmp are doc"
+    },
+    {
+      "id": 36,
+      "question": "Which is TRUE about global variables?",
+      "options": [
+        "They are only visible inside one function",
+        "They are accessible from anywhere in the program, which can make debugging harder due to unexpected modifications",
+        "They cannot store numbers",
+        "They are always constants"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Global scope means ANY function can read or modify the variable — convenient for shared state, but risky: a bug in one distant function can silently corrupt data another function relies on, making lar"
+    },
+    {
+      "id": 37,
+      "question": "'Security through obscurity' as a strategy is considered weak because:",
+      "options": [
+        "It's illegal",
+        "Hiding HOW a system works is not a substitute for actual robust security controls — once discovered, protection collapses",
+        "It's too expensive",
+        "It requires no software"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Relying solely on secrecy of design (an unlisted admin URL, a non-standard port) offers minimal real protection — a determined attacker eventually finds it, and then there's nothing else standing guar"
+    },
+    {
+      "id": 38,
+      "question": "Patch management refers to:",
+      "options": [
+        "Repairing torn network cables",
+        "Regularly applying software updates that fix known security vulnerabilities",
+        "Changing passwords weekly",
+        "Installing antivirus once"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Vendors release patches when vulnerabilities are discovered; delaying updates leaves KNOWN, publicly documented holes open — WannaCry spread specifically through systems that had skipped an already-av"
+    },
+    {
+      "id": 39,
+      "question": "Nested loops (a loop inside another loop) are commonly used for:",
+      "options": [
+        "Declaring variables",
+        "Processing two-dimensional data, like rows and columns of a grid or matrix",
+        "Only printing text",
+        "Avoiding all loops"
+      ],
+      "correctAnswer": "B",
+      "explanation": "An outer loop for rows and an inner loop for columns together visit every cell of a 2D structure — the standard pattern for matrix operations, multiplication tables, and grid-based puzzles (echoing QB"
+    },
+    {
+      "id": 40,
+      "question": "When a fixed-size array runs out of space and more elements need to be added, a common solution in dynamic-array implementations (like Python lists, Java ArrayList) is to:",
+      "options": [
+        "Simply crash",
+        "Allocate a NEW, larger array (often double the size) and copy all existing elements over",
+        "Delete random elements to make room",
+        "Convert automatically to a linked list"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Dynamic arrays hide this resizing behind a friendly append() interface — but under the hood, when capacity is exceeded, a bigger block is allocated (commonly DOUBLING the size to keep this expensive o"
+    },
+    {
+      "id": 41,
+      "question": "Which of these is the biggest phishing red flag in an email?",
+      "options": [
+        "A known colleague's name",
+        "Urgent demand to click a link and 'verify' credentials",
+        "A meeting invite",
+        "A signature block"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Urgency + credential harvesting ('your account closes in 24 hours — log in here') is the classic phishing pattern; legitimate services don't ask for passwords via email links. Hover to inspect real UR"
+    },
+    {
+      "id": 42,
+      "question": "What is the final value printed?\nq = 0\nFOR i = 5 TO 14 STEP 2\nq = q + i\nEND FOR\nPRINT q",
+      "options": [
+        "38",
+        "45",
+        "59",
+        "43"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The loop visits i = 5, 7, 9, 11, 13 — 5 iteration(s). Adding them: 5 + 7 + 9 + 11 + 13 = <b>45</b>. With step 2, the count of terms is (last−first)/step + 1 = 5 — verify counts that way."
+    },
+    {
+      "id": 43,
+      "question": "Which formula rounds 45.678 to one decimal place?",
+      "options": [
+        "=ROUND(45.678, 1) → 45.7",
+        "=ROUND(45.678, -1) → 50",
+        "=TRUNC(45.678, 1) → 45.6",
+        "Both A and C give 45.7"
+      ],
+      "correctAnswer": "A",
+      "explanation": "ROUND(45.678, 1) looks at the second decimal (7 ≥ 5) and rounds up to 45.7. TRUNC simply cuts digits without rounding, giving 45.6 — so A and C differ. A negative digit count rounds to the LEFT of the"
+    },
+    {
+      "id": 44,
+      "question": "The maximum practical length of a standard UTP Ethernet segment is about:",
+      "options": [
+        "10 m",
+        "100 m",
+        "1 km",
+        "Unlimited"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Cat5e/Cat6 copper runs are specified to 100 metres end-to-end; beyond that, signal degrades and you need a switch/repeater or fibre. The 100 m figure is a bare-fact question that appears with surprisi"
+    },
+    {
+      "id": 45,
+      "question": "Bluetooth is designed for:",
+      "options": [
+        "City-wide links",
+        "Short-range personal area networking (PAN), ~10 metres",
+        "Undersea cables",
+        "Satellite uplink"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Bluetooth creates PANs — headphones, keyboards, file beaming — within roughly 10 m at modest bandwidth. It's the standard example whenever 'PAN' appears, just as Wi-Fi exemplifies WLAN. Scope-technolo 4A — Backend Coding Q131 Solution: PYTHON3 def solve(input1): result = [] def flatten(lst): for item in lst: if isinstance(item, list): flatten(item) # recurse else: result.append(item) flatten(input1) return result print(solve([1,[2,3],[4,[5,6]]])) # -&gt; [1,2,3,4,5,6] print(solve([[[[[7]]]]])) # -&gt; [7] 4B — SQL Q132 SQL Answer: SQL SELECT name, class, marks FROM Students s1 WHERE marks &gt; (SELECT AVG(marks) FROM Students s2 WHERE s2. class = s1.class); Result: Result: name | class | marks Aarav | 10A | 92 Diya | 10A | 78 Sneha | 10B | 88 Meera | 10C | 95 4C — Frontend Q133 Solution:  CSS:  JS: function copyText() { document.getElementById(\"dest\").textContent = document.getElementById(\"src\").value; }"
+    }
+  ]
+}

@@ -1,0 +1,548 @@
+{
+  "id": "mock7",
+  "title": "Mock Test 7",
+  "section": "Technical MCQ — Mixed Topics",
+  "durationMinutes": 45,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which one is NOT a valid Word view?",
+      "options": [
+        "Read Mode",
+        "Print Layout",
+        "Formula View",
+        "Web Layout"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Word's views are Read Mode, Print Layout, Web Layout, Outline and Draft. FORMULA VIEW belongs to Excel (Ctrl+`), planted here as a cross-application decoy. Eliminating by 'which app owns this feature'"
+    },
+    {
+      "id": 2,
+      "question": "Inserting an element at the BEGINNING of a Linked List takes what time complexity?",
+      "options": [
+        "O(n) — must shift all elements",
+        "O(1) — just update a few pointers, regardless of list size",
+        "O(n²)",
+        "O(log n)"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Unlike an array (where inserting at the front requires shifting EVERY existing element forward, O(n)), a linked list simply creates a new node and points it to the old head — a constant number of poin"
+    },
+    {
+      "id": 3,
+      "question": "The classic two-branch recursion below returns what?\nFUNCTION FIB(n)\nIF n < 2 THEN RETURN n\nRETURN FIB(n-1) + FIB(n-2)\nEND FUNCTION\nPRINT FIB(8)",
+      "options": [
+        "20",
+        "21",
+        "24",
+        "19"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Build the Fibonacci ladder from the base: 0, 1, 1, 2, 3, 5, 8, 13, 21 — position 8 holds <b>21</b>. Never expand the recursion tree in an exam; grow the sequence upward from 0, 1 and read off the answ"
+    },
+    {
+      "id": 4,
+      "question": "What is the result?\nFUNCTION FUN(n)\nIF n == 0 THEN RETURN 2\nRETURN n * FUN(n - 1)\nEND FUNCTION\nPRINT FUN(4)",
+      "options": [
+        "48",
+        "24",
+        "52",
+        "72"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Unwind the calls: FUN(4) = 4×FUN(3) = ... down to FUN(0) = 2, then multiply back up: 4×3×2×1×2 = <b>48</b>. This is n! doubled by the base value 2. Always find the base case first; it anchors the whol"
+    },
+    {
+      "id": 5,
+      "question": "Which single practice would most directly reduce the risk of a successful phishing email leading to a full account compromise?",
+      "options": [
+        "A faster internet connection",
+        "Enforcing MFA, so a stolen password alone is not enough to log in",
+        "Buying more storage",
+        "Disabling the firewall"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Even a perfectly executed phishing email that captures a password hits a wall if MFA is enforced — the attacker still lacks the second factor. This directly ties the earlier phishing and MFA definitio"
+    },
+    {
+      "id": 6,
+      "question": "A hash table (hash map) achieves average-case search/insert/delete time of:",
+      "options": [
+        "O(n)",
+        "O(1) — using a hash function to compute a direct storage location",
+        "O(n²)",
+        "O(log n) always"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A hash function converts a key into an array index almost instantly — 'insert user Riya' computes hash(\"Riya\") and jumps DIRECTLY to that slot, no searching required, giving average O(1) for all three"
+    },
+    {
+      "id": 7,
+      "question": "In a Queue implemented with a Linked List (rather than an array), enqueue and dequeue operations can both achieve:",
+      "options": [
+        "O(n) always, no better than an array",
+        "O(1) — by maintaining BOTH a head (front) pointer for dequeue and a tail (rear) pointer for enqueue, no shifting is ever needed",
+        "O(n²)",
+        "O(log n)"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Unlike an array-based queue's O(n) dequeue-shifting problem (discussed earlier in this bank), a linked-list-based queue with tracked head AND tail pointers can add to the tail and remove from the head"
+    },
+    {
+      "id": 8,
+      "question": "Why might an organisation choose containers (Docker) over full virtual machines for deploying many small microservices?",
+      "options": [
+        "Containers are heavier and slower",
+        "Containers start faster and use fewer resources by sharing the host OS kernel, suiting many small, independently-scaled services",
+        "VMs cannot run on the cloud",
+        "Containers require no code at all"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Running dozens of microservices as full VMs (each with its own OS) would waste enormous resources; containers' lightweight, fast-starting nature is precisely why they became the default packaging choi"
+    },
+    {
+      "id": 9,
+      "question": "A local variable inside a method differs from an instance variable because it:",
+      "options": [
+        "Gets a default value automatically",
+        "Must be initialised before use and dies when the method ends",
+        "Is shared across objects",
+        "Is always public"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Locals live on the stack for the method's duration and the compiler REFUSES to read them uninitialised. Instance fields live with the object and DO receive defaults (0, false, null). Lifetime + defaul"
+    },
+    {
+      "id": 10,
+      "question": "Word's 'Compare' feature under the Review tab:",
+      "options": [
+        "Checks two fonts",
+        "Shows differences between two versions of a document as tracked changes",
+        "Compares file sizes",
+        "Merges printers"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Compare takes an original and a revised document and produces a third view where every difference appears as a tracked change — the legal-review workflow for contracts. 'Combine' (its sibling) merges"
+    },
+    {
+      "id": 11,
+      "question": "Which SQL command REMOVES rows from a table (while keeping the table structure itself)?",
+      "options": [
+        "DROP TABLE",
+        "DELETE FROM",
+        "TRUNCATE only",
+        "ALTER"
+      ],
+      "correctAnswer": "B",
+      "explanation": "DELETE FROM Students WHERE Marks < 35 removes specific matching rows but leaves the table (and its structure) intact for future use. Contrast with DROP TABLE, which destroys the ENTIRE table including"
+    },
+    {
+      "id": 12,
+      "question": "A certificate authority (CA) in HTTPS serves to:",
+      "options": [
+        "Host websites",
+        "Vouch for a server's identity by signing its certificate, which browsers trust",
+        "Assign IP addresses",
+        "Compress traffic"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Browsers ship with trusted CA roots; a certificate signed by a trusted CA proves you're talking to the real site, not an impostor — the authentication half of HTTPS. Self-signed certificates trigger w"
+    },
+    {
+      "id": 13,
+      "question": "Given the array below (index starts at 0), what is printed?\nmarks = [37, 28, 24, 8, 43]\ncnt = 0\nFOR i = 0 TO 4\nIF marks[i] > 28 THEN cnt = cnt + 1\nEND FOR\nPRINT cnt",
+      "options": [
+        "4",
+        "-1",
+        "3",
+        "2"
+      ],
+      "correctAnswer": "D",
+      "explanation": "The loop counts elements strictly greater than 28: elements > 28 are 37, 43 → <b>2</b>. Confirm the loop covers indices 0..4 (all 5 elements) — off-by-one bounds are the favourite trap in traversal qu"
+    },
+    {
+      "id": 14,
+      "question": "The BREAK statement inside a loop:",
+      "options": [
+        "Skips to the next iteration",
+        "Immediately exits the entire loop",
+        "Restarts the loop from zero",
+        "Pauses execution permanently"
+      ],
+      "correctAnswer": "B",
+      "explanation": "break terminates the loop COMPLETELY — control jumps to the first statement after the loop, regardless of the original condition. Its cousin CONTINUE only skips the REST of the current iteration and m"
+    },
+    {
+      "id": 15,
+      "question": "'ipconfig' (Windows) displays:",
+      "options": [
+        "Browser history",
+        "The machine's IP address, subnet mask and default gateway",
+        "Router passwords",
+        "Open applications"
+      ],
+      "correctAnswer": "B",
+      "explanation": "ipconfig prints local interface configuration; /all adds MAC and DNS details; /release and /renew cycle the DHCP lease; /flushdns clears the resolver cache — each switch is its own sub-question. Linux"
+    },
+    {
+      "id": 16,
+      "question": "What happens when you press Tab with the cursor inside the last cell of a Word table?",
+      "options": [
+        "Moves to the first cell",
+        "Creates a new row",
+        "Exits the table",
+        "Deletes the cell"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Tab in the LAST cell appends a fresh row and moves into it — the quickest way to grow a table while typing. Elsewhere, Tab just advances one cell (Shift+Tab goes back). To insert an actual tab charact"
+    },
+    {
+      "id": 17,
+      "question": "Abstraction focuses on:",
+      "options": [
+        "Showing essential features while hiding implementation details",
+        "Making all members public",
+        "Copying objects",
+        "Speeding up loops"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Abstraction answers WHAT an object does, not HOW. A driver uses brake() without knowing hydraulics; code uses List.sort() without reading the algorithm. Abstract classes and interfaces are the languag"
+    },
+    {
+      "id": 18,
+      "question": "An infinite loop occurs when:",
+      "options": [
+        "The loop runs exactly once",
+        "The loop's terminating condition is never met (or the counter isn't updated correctly)",
+        "A syntax error is present",
+        "The program is compiled"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Forgetting to increment a counter, or writing a condition that's always true, traps execution forever — a program that hangs rather than crashes. Debugging infinite loops means checking: does the loop"
+    },
+    {
+      "id": 19,
+      "question": "In a nested loop 'FOR i=1 TO 3, FOR j=1 TO 4', how many total times does the innermost body execute?",
+      "options": [
+        "3",
+        "4",
+        "7",
+        "12"
+      ],
+      "correctAnswer": "D",
+      "explanation": "The inner loop runs 4 times for EACH of the outer loop's 3 iterations: 3 × 4 = 12 total executions — multiplication, not addition, is the rule for independent nested loops (mirroring QB-3's nested-loo"
+    },
+    {
+      "id": 20,
+      "question": "What does =COUNTA(A1:A5) return if the cells contain: 10, \"abc\", (blank), 0, \"x\"?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "2"
+      ],
+      "correctAnswer": "B",
+      "explanation": "COUNTA counts every NON-EMPTY cell regardless of type: 10, \"abc\", 0, and \"x\" — four cells (the blank is skipped, but 0 counts because zero is a value, not emptiness). COUNT on the same range gives 2 ("
+    },
+    {
+      "id": 21,
+      "question": "A bank's mobile app must ensure a customer's session token isn't stolen if their phone connects to an open Wi-Fi hotspot. Which protocol is the FIRST line of defence?",
+      "options": [
+        "HTTP",
+        "HTTPS/TLS, encrypting the app's API traffic end-to-end",
+        "FTP",
+        "Telnet"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Without HTTPS, a token sent in a plain HTTP request could be sniffed instantly on shared open Wi-Fi (a MITM scenario) — TLS encryption on every API call is the non-negotiable baseline, before even con"
+    },
+    {
+      "id": 22,
+      "question": "Object state and behaviour correspond to:",
+      "options": [
+        "Methods and classes",
+        "Fields (variables) and methods respectively",
+        "Constructors and destructors",
+        "Packages and imports"
+      ],
+      "correctAnswer": "B",
+      "explanation": "State = the current values of an object's fields (speed=60, colour=red); behaviour = what it can do, its methods (accelerate(), brake()). Identity is the third classical property (each object is disti"
+    },
+    {
+      "id": 23,
+      "question": "The loopback address used to test the local TCP/IP stack is:",
+      "options": [
+        "192.168.0.1",
+        "127.0.0.1",
+        "255.255.255.255",
+        "0.0.0.0"
+      ],
+      "correctAnswer": "B",
+      "explanation": "127.0.0.1 (localhost) loops traffic back to your own machine — 'ping 127.0.0.1' verifies the stack without touching the network. 255.255.255.255 is limited broadcast and 0.0.0.0 means 'any/unspecified"
+    },
+    {
+      "id": 24,
+      "question": "An e-commerce site experiences huge sudden traffic during a flash sale. Which cloud concept ensures the site stays responsive without pre-buying maximum-capacity servers year-round?",
+      "options": [
+        "Elasticity/auto-scaling",
+        "A single dedicated physical server",
+        "Disabling HTTPS temporarily",
+        "Deleting old user accounts"
+      ],
+      "correctAnswer": "A",
+      "explanation": "This is the direct real-world payoff of elasticity: infrastructure grows automatically to absorb the flash-sale spike and shrinks back down once it passes — the site owner never had to guess and overp"
+    },
+    {
+      "id": 25,
+      "question": "The 'best case', 'average case', and 'worst case' complexities of an algorithm describe:",
+      "options": [
+        "Three different unrelated algorithms",
+        "How an algorithm performs under the MOST FAVOURABLE, TYPICAL, and LEAST FAVOURABLE input arrangements respectively",
+        "Three different programming languages",
+        "The algorithm's file size in three formats"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The SAME algorithm can behave differently depending on input: Insertion Sort is fast (O(n)) on already-sorted data (best case) but slow (O(n²)) on reverse-sorted data (worst case) — exam questions spe"
+    },
+    {
+      "id": 26,
+      "question": "Pressing Ctrl + Shift + > with text selected in PowerPoint:",
+      "options": [
+        "Moves the object forward",
+        "Increases font size to the next preset step",
+        "Rotates the shape",
+        "Adds an arrow bullet"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Ctrl+Shift+> jumps the font UP through preset sizes (Ctrl+Shift+< goes down) — the same pair as Word. Object stacking uses Arrange → Bring Forward instead. Shared-shortcut questions reward realising t"
+    },
+    {
+      "id": 27,
+      "question": "Given the array below (index starts at 0), what is printed?\nlist = [25, 58, 37, 44, 30, 21]\ntotal = 0\nFOR i = 0 TO 5\ntotal = total + list[i]\nEND FOR\nPRINT total",
+      "options": [
+        "217",
+        "216",
+        "213",
+        "215"
+      ],
+      "correctAnswer": "D",
+      "explanation": "The loop adds every element: 25+58+37+44+30+21 → <b>215</b>. Confirm the loop covers indices 0..5 (all 6 elements) — off-by-one bounds are the favourite trap in traversal questions."
+    },
+    {
+      "id": 28,
+      "question": "Evaluate:\nPRINT (2 + 9) * 6",
+      "options": [
+        "66",
+        "56",
+        "68",
+        "69"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Apply precedence — parentheses override precedence: 2+9 = 11, then ×6 — giving <b>66</b>. The left-to-right misreading produces 56, predictably present in the options. BODMAS/PEMDAS questions are pure"
+    },
+    {
+      "id": 29,
+      "question": "Merge Sort's overall strategy is best described as:",
+      "options": [
+        "Bubbling large elements to the end repeatedly",
+        "DIVIDE the array into halves recursively until single elements remain, then MERGE those pieces back together in sorted order",
+        "Selecting the minimum repeatedly",
+        "Only comparing adjacent elements"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Merge sort is the classic 'divide and conquer' algorithm: split the problem in half, recursively solve each half, then combine (merge) the two sorted halves efficiently — the merging step is where the"
+    },
+    {
+      "id": 30,
+      "question": "Given the array below (index starts at 0), what is printed?\nscores = [7, 21, 41, 23, 30, 33]\nbig = scores[0]\nFOR i = 0 TO 5\nIF scores[i] > big THEN big = scores[i]\nEND FOR\nPRINT big",
+      "options": [
+        "44",
+        "41",
+        "43",
+        "38"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The loop tracks the largest element seen so far: comparisons leave the maximum, 41 → <b>41</b>. Confirm the loop covers indices 0..5 (all 6 elements) — off-by-one bounds are the favourite trap in trav"
+    },
+    {
+      "id": 31,
+      "question": "A SQL JOIN operation is used to:",
+      "options": [
+        "Delete a table",
+        "Combine rows from TWO OR MORE tables based on a related column between them",
+        "Sort a single table",
+        "Create a backup"
+      ],
+      "correctAnswer": "B",
+      "explanation": "If Orders has a CustomerID and Customers has matching IDs, a JOIN lets you query 'show me each order's customer NAME' by combining data that lives in two SEPARATE tables — directly leveraging the fore"
+    },
+    {
+      "id": 32,
+      "question": "In =VLOOKUP(value, table, col, FALSE), what does FALSE control?",
+      "options": [
+        "Case-sensitive search",
+        "Exact match required",
+        "Search from bottom to top",
+        "Return error as blank"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The fourth argument is range_lookup: FALSE (or 0) forces an EXACT match, returning #N/A if the value isn't found. TRUE (or omitted) allows an approximate match and requires the first column to be sort"
+    },
+    {
+      "id": 33,
+      "question": "Comparing Bubble Sort and Merge Sort on a LARGE dataset (say, 100,000 elements), which will complete FASTER?",
+      "options": [
+        "Bubble Sort, since it's simpler",
+        "Merge Sort — O(n log n) vastly outperforms O(n²) at this scale",
+        "They finish in exactly the same time",
+        "Neither can handle 100,000 elements"
+      ],
+      "correctAnswer": "B",
+      "explanation": "At n=100,000: Bubble Sort's O(n²) means roughly 10 billion operations, while Merge Sort's O(n log n) means roughly 1.7 million — a difference of THOUSANDS of times, translating to Bubble Sort potentia"
+    },
+    {
+      "id": 34,
+      "question": "'Branching' in Git allows developers to:",
+      "options": [
+        "Delete all previous code",
+        "Work on a new feature or fix in isolation without affecting the main codebase until merged",
+        "Only work alone forever",
+        "Compress the repository"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A branch is an independent line of development — a developer can experiment or build a feature on their own branch, and only MERGE it into the main branch (often called main/master) once it's tested a"
+    },
+    {
+      "id": 35,
+      "question": "Full-duplex communication means:",
+      "options": [
+        "One direction only",
+        "Both directions simultaneously",
+        "Both directions but one at a time",
+        "No communication"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Full-duplex = talk and listen at once (phone call, modern switched Ethernet). HALF-duplex alternates directions (walkie-talkie) and SIMPLEX is one-way forever (broadcast radio). The three modes with t"
+    },
+    {
+      "id": 36,
+      "question": "An appropriate email sign-off for formal business communication is:",
+      "options": [
+        "'Later!'",
+        "'Best regards' followed by your name and designation",
+        "No sign-off",
+        "A row of emojis"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Formal mails close with a courteous sign-off ('Best regards', 'Sincerely') plus name, role and contact block — completing the professional frame the salutation opened. Slang and emoji undermine tone;"
+    },
+    {
+      "id": 37,
+      "question": "IaaS (Infrastructure as a Service) provides customers with:",
+      "options": [
+        "Only a finished application to use",
+        "Virtualised computing resources — servers, storage, networking — that the customer configures and manages",
+        "Just a code editor",
+        "A single database table"
+      ],
+      "correctAnswer": "B",
+      "explanation": "IaaS is the 'rent the hardware, virtually' layer (AWS EC2, Azure VMs) — the provider handles physical infrastructure while YOU install the OS, runtime and application. It offers the most control and t"
+    },
+    {
+      "id": 38,
+      "question": "Data 'at rest' vs data 'in transit' refers to:",
+      "options": [
+        "Fast vs slow data",
+        "Stored data (on disk/database) vs data actively moving across a network",
+        "Encrypted vs unencrypted always",
+        "Old vs new data"
+      ],
+      "correctAnswer": "B",
+      "explanation": "'At rest' means sitting on storage (disk encryption, database encryption protect it); 'in transit' means travelling across a network (TLS/VPN protect it). Comprehensive security addresses BOTH states"
+    },
+    {
+      "id": 39,
+      "question": "Which is an example of a public cloud provider?",
+      "options": [
+        "Microsoft Word",
+        "Amazon Web Services (AWS)",
+        "Windows Explorer",
+        "Adobe Photoshop"
+      ],
+      "correctAnswer": "B",
+      "explanation": "AWS, Microsoft Azure and Google Cloud Platform (GCP) are the three dominant public cloud providers — recognising their names (and that Word/Photoshop are simply desktop applications, not cloud platfor"
+    },
+    {
+      "id": 40,
+      "question": "What is printed?\nPRINT (95 DIV 8) + (95 MOD 8)",
+      "options": [
+        "17",
+        "19",
+        "21",
+        "18"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Quotient 11 plus remainder 7 = <b>18</b>. DIV and MOD are partners: quotient×divisor + remainder rebuilds the original number — use that identity to self-check."
+    },
+    {
+      "id": 41,
+      "question": "Which addressing sends one-to-NEAREST of a group (used by CDNs and DNS roots)?",
+      "options": [
+        "Unicast",
+        "Broadcast",
+        "Multicast",
+        "Anycast"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Anycast advertises one address from many locations; routing delivers each client to the closest instance — how global DNS roots and CDNs scale. Unicast is one-to-one, broadcast one-to-all (local), mul"
+    },
+    {
+      "id": 42,
+      "question": "What is the average/worst-case time complexity of Bubble Sort?",
+      "options": [
+        "O(n)",
+        "O(n log n)",
+        "O(n²)",
+        "O(log n)"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Bubble sort needs roughly n passes, each doing up to n comparisons — n × n = O(n²), making it impractical for large datasets (a million elements would need on the order of a trillion operations). It's"
+    },
+    {
+      "id": 43,
+      "question": "If a table 'Employees' has 500 rows and you run SELECT COUNT(*) FROM Employees WHERE Department\n= 'IT', and 45 employees work in IT, what does this query return?",
+      "options": [
+        "500",
+        "45",
+        "0",
+        "An error"
+      ],
+      "correctAnswer": "B",
+      "explanation": "COUNT(*) combined with the WHERE filter counts ONLY the rows matching the condition (Department = 'IT') — not the table's total size. This directly tests whether WHERE's row-filtering behaviour (discu"
+    },
+    {
+      "id": 44,
+      "question": "Which port does POP3 use (unencrypted)?",
+      "options": [
+        "110",
+        "143",
+        "995",
+        "993"
+      ],
+      "correctAnswer": "A",
+      "explanation": "POP3 plain = 110, POP3S = 995; IMAP plain = 143, IMAPS = 993. The four mail-retrieval ports form a tidy square: plain on the left, TLS on the right. Given any one, reconstruct the square — questions p"
+    },
+    {
+      "id": 45,
+      "question": "A Linked List differs from an Array primarily because a Linked List:",
+      "options": [
+        "Must be a fixed size decided in advance",
+        "Stores elements as NODES connected via pointers/references, NOT necessarily in contiguous memory, and can grow/shrink dynamically",
+        "Cannot store numbers",
+        "Is always faster for every operation"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Each linked-list NODE holds data plus a pointer to the NEXT node — nodes can live scattered anywhere in memory, connected only by these pointers, unlike an array's fixed contiguous block. This gives l 4A — Backend Coding Q131 Solution: PYTHON3 def solve(input1): n = input1 factors = [] d = 2 while d * d &lt;= n: while n % d == 0: factors.append(d) n //= d d += 1 if n &gt; 1: factors.append(n) return factors print(solve(12)) # -&gt; [2, 2, 3] print(solve(100)) # -&gt; [2, 2, 5, 5] print(solve(17)) # -&gt; [17] 4B — SQL Q132 SQL Answer: SQL SELECT DISTINCT manager_id FROM Employees WHERE manager_id IS NOT NULL; Result: Result: manager_id 1 3 7 8 4C — Frontend Q133 Solution:  CSS:  JS: function showTab(id) { document.querySelectorAll(\".panel\").forEach(function(p) { p.style.display = \"none\"; }); document.getElementById(id).style.display = \"block\"; }"
+    }
+  ]
+}

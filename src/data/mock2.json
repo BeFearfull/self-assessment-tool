@@ -1,0 +1,548 @@
+{
+  "id": "mock2",
+  "title": "Mock Test 2",
+  "section": "Technical MCQ — Mixed Topics",
+  "durationMinutes": 45,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which best explains why Binary Search is O(log n) rather than O(n)?",
+      "options": [
+        "It checks every element like linear search",
+        "Each comparison HALVES the remaining search space, so the number of comparisons needed grows logarithmically (very slowly) as n grows",
+        "It uses a linked list",
+        "Log n is unrelated to halving"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Starting with n elements: after 1 comparison, n/2 remain; after 2, n/4; after k comparisons, n/2^k remain — solving n/2^k = 1 gives k = log■(n). This mathematical relationship between 'repeated halvin"
+    },
+    {
+      "id": 2,
+      "question": "A 'hop' in networking means:",
+      "options": [
+        "A wireless signal jump",
+        "One router-to-router leg a packet crosses on its path",
+        "A cable connector",
+        "A retry"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Each router a packet passes counts as one hop; traceroute numbers them, and TTL (time-to-live) decrements per hop, discarding packets at zero — the loop-prevention mechanism. TTL's per-hop decrement i"
+    },
+    {
+      "id": 3,
+      "question": "The difference between a virus and a worm is:",
+      "options": [
+        "No difference",
+        "A virus needs a host file/user action to spread; a worm self-replicates across networks independently",
+        "Worms are always harmless",
+        "Viruses only affect Macs"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A virus attaches to a program or document and needs execution (opening a file) to activate and spread. A worm is standalone and crawls networks on its own, exploiting vulnerabilities without user acti"
+    },
+    {
+      "id": 4,
+      "question": "Which of these best exemplifies 'defence in depth'?",
+      "options": [
+        "Relying on a single strong firewall alone",
+        "Layering multiple independent security controls (firewall + antivirus + MFA + encryption + training) so no single failure is catastrophic",
+        "Using one very long password",
+        "Disabling all logging to reduce clutter"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Defence in depth assumes any ONE control can fail or be bypassed, so several independent layers back each other up — a breached password doesn't grant access if MFA also blocks it; malware slipping pa"
+    },
+    {
+      "id": 5,
+      "question": "A hypervisor is software that:",
+      "options": [
+        "Only runs on mobile phones",
+        "Creates and manages virtual machines by allocating physical hardware resources among them",
+        "Encrypts network traffic",
+        "Assigns domain names"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Type 1 hypervisors (VMware ESXi, Hyper-V) run directly on hardware ('bare metal') for maximum efficiency — the standard in data centres and cloud platforms. Type 2 (VirtualBox, VMware Workstation) run"
+    },
+    {
+      "id": 6,
+      "question": "The cloud storage service by Microsoft integrated with Office is:",
+      "options": [
+        "Google Drive",
+        "OneDrive",
+        "Dropbox",
+        "iCloud"
+      ],
+      "correctAnswer": "B",
+      "explanation": "OneDrive is Microsoft's cloud tier — enabling AutoSave, real-time co-authoring and file sharing across Word/Excel/PowerPoint. Google Drive, Dropbox and iCloud are competitors from other ecosystems. Ve"
+    },
+    {
+      "id": 7,
+      "question": "The DISTINCT keyword in a SELECT statement is used to:",
+      "options": [
+        "Sort results alphabetically",
+        "Remove DUPLICATE rows from the query results, returning only unique combinations",
+        "Delete rows from the table",
+        "Speed up the database server"
+      ],
+      "correctAnswer": "B",
+      "explanation": "SELECT DISTINCT Department FROM Employees returns each department name ONCE, even if hundreds of employees share that department — filtering the RESULT SET for uniqueness, without altering the actual"
+    },
+    {
+      "id": 8,
+      "question": "What FINAL value of q prints?\nq = 9\nd = 8\nq = q + d\nq = q + d\nPRINT q",
+      "options": [
+        "17",
+        "25",
+        "16",
+        "34"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Sequential updates: after line 3, q = 9+8 = 17; line 4 adds d (still 8) again → <b>25</b>. d never changed — re-reading which variable each line actually modifies is the whole skill in sequencing ques"
+    },
+    {
+      "id": 9,
+      "question": "Cloud data 'backup' and 'disaster recovery' primarily address:",
+      "options": [
+        "Making applications look nicer",
+        "Ensuring data/systems can be restored after loss, corruption, or a major outage",
+        "Speeding up normal daily operations",
+        "Reducing electricity bills"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Regular backups (with tested restore procedures) and disaster recovery plans (failover to a secondary region) ensure business continuity if a data centre fails, gets attacked (ransomware), or data is"
+    },
+    {
+      "id": 10,
+      "question": "The order of animation effects on a slide is indicated by:",
+      "options": [
+        "Colour of the objects",
+        "Small numbered tags next to each animated object",
+        "Slide number",
+        "Font size"
+      ],
+      "correctAnswer": "B",
+      "explanation": "When the Animations tab is open, each animated object wears a numbered badge showing its position in the play sequence; the Animation Pane lists the same order for editing. Renumbering happens by drag"
+    },
+    {
+      "id": 11,
+      "question": "The keyboard shortcut to insert the current date in a cell is:",
+      "options": [
+        "Ctrl + ;",
+        "Ctrl + Shift + ;",
+        "Ctrl + D",
+        "Alt + D"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Ctrl+; stamps the current DATE as a fixed value. Ctrl+Shift+; stamps the current TIME. Ctrl+D fills down from the cell above — a completely different operation. Unlike TODAY(), the stamped value never"
+    },
+    {
+      "id": 12,
+      "question": "Given the array below (index starts at 0), what is printed?\nnums = [23, 37, 22, 17, 8, 27]\nbig = nums[0]\nFOR i = 0 TO 5\nIF nums[i] > big THEN big = nums[i]\nEND FOR\nPRINT big",
+      "options": [
+        "37",
+        "39",
+        "35",
+        "36"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The loop tracks the largest element seen so far: comparisons leave the maximum, 37 → <b>37</b>. Confirm the loop covers indices 0..5 (all 6 elements) — off-by-one bounds are the favourite trap in trav"
+    },
+    {
+      "id": 13,
+      "question": "Implementing a Queue using a simple Array (non-circular), a key inefficiency is:",
+      "options": [
+        "Enqueue is always slow",
+        "Dequeue from the front requires shifting ALL remaining elements forward by one position, an O(n) operation",
+        "It cannot store more than one element",
+        "Nothing — it's perfectly efficient"
+      ],
+      "correctAnswer": "B",
+      "explanation": "If you simply remove index 0 and don't reorganise, every subsequent element must shift left to fill the gap and keep 'front' meaningful — O(n) per dequeue. This inefficiency is EXACTLY what motivates"
+    },
+    {
+      "id": 14,
+      "question": "The IN operator in SQL (WHERE Department IN ('Sales', 'HR', 'IT')) is a shorthand for:",
+      "options": [
+        "A single equality check only",
+        "Multiple OR conditions checking if a column matches ANY value in the given list",
+        "A JOIN operation",
+        "Deleting those departments"
+      ],
+      "correctAnswer": "B",
+      "explanation": "WHERE Department IN ('Sales', 'HR', 'IT') is equivalent to (but far more readable than) WHERE Department = 'Sales' OR Department = 'HR' OR Department = 'IT' — a clean shorthand for matching against a"
+    },
+    {
+      "id": 15,
+      "question": "A switch forwards frames based on:",
+      "options": [
+        "IP addresses",
+        "MAC addresses in its MAC/CAM table",
+        "Port numbers",
+        "Host names"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Switches learn which MAC lives on which physical port and forward frames only there — unlike hubs, which blindly repeat to all ports. IPs guide routers, port numbers guide transport-layer delivery. Th"
+    },
+    {
+      "id": 16,
+      "question": "Which tool is commonly used for configuration management/automation in DevOps (alongside Terraform for provisioning)?",
+      "options": [
+        "Photoshop",
+        "Ansible (or Puppet/Chef)",
+        "Excel",
+        "PowerPoint"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Where Terraform-style tools PROVISION infrastructure (create the servers), configuration-management tools like Ansible, Puppet or Chef then CONFIGURE what runs on them (install software, set up users,"
+    },
+    {
+      "id": 17,
+      "question": "Why is public Wi-Fi considered risky for sensitive transactions?",
+      "options": [
+        "It is always slower",
+        "Traffic can potentially be intercepted (MITM) by others on the same unsecured network",
+        "It costs money",
+        "It uses different IP versions"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Open Wi-Fi (no WPA password, or shared passwords known to everyone in a cafe) lets other users on the same network potentially snoop or MITM unencrypted traffic — always favouring HTTPS sites and, ide"
+    },
+    {
+      "id": 18,
+      "question": "What is printed?\nSET val = 46 AND 29 // bitwise AND\nPRINT val",
+      "options": [
+        "51",
+        "12",
+        "11",
+        "75"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Write both in binary: 46 = 00101110, 29 = 00011101. AND keeps a 1 only where BOTH bits are 1: 00001100 = <b>12</b>. Distractors include the OR (63) and XOR (51) results — computing the wrong operator"
+    },
+    {
+      "id": 19,
+      "question": "'Infrastructure monitoring' tools (e.g., Nagios, Datadog) primarily help teams:",
+      "options": [
+        "Write code faster",
+        "Track system health metrics (CPU, memory, uptime) and alert on anomalies before/as they cause outages",
+        "Design logos",
+        "Manage HR records"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Continuous monitoring dashboards and alerting let operations teams spot a memory leak or failing disk BEFORE it causes a full outage, and quickly diagnose root causes when incidents do occur — the obs"
+    },
+    {
+      "id": 20,
+      "question": "Which statement about constructors and inheritance is TRUE?",
+      "options": [
+        "Constructors are inherited by subclasses",
+        "Constructors are NOT inherited; subclasses call them via super()",
+        "Only default constructors are inherited",
+        "Static constructors are inherited"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A subclass never inherits parent constructors — it must define its own and may CHAIN to the parent through super(args). This is why adding only a parameterised constructor to a parent forces children"
+    },
+    {
+      "id": 21,
+      "question": "SmartArt in Word is best described as:",
+      "options": [
+        "A spelling engine",
+        "Ready-made diagram layouts (cycles, hierarchies, processes)",
+        "A drawing canvas",
+        "Clipart gallery"
+      ],
+      "correctAnswer": "B",
+      "explanation": "SmartArt turns a bulleted list of ideas into professional DIAGRAMS — org charts, process arrows, cycles — that restyle automatically as you edit text. It's structured graphics, distinct from freehand"
+    },
+    {
+      "id": 22,
+      "question": "A HAVING clause in SQL differs from a WHERE clause because HAVING:",
+      "options": [
+        "Is used identically to WHERE with no difference",
+        "Filters GROUPS (after GROUP BY and aggregate functions have been applied), whereas WHERE filters individual ROWS before grouping",
+        "Can only be used with DELETE",
+        "Sorts results"
+      ],
+      "correctAnswer": "B",
+      "explanation": "You CANNOT write WHERE COUNT(*) > 5 (WHERE runs before aggregation even happens) — HAVING COUNT(*) > 5 is the correct tool, applied AFTER GROUP BY has formed groups and computed their aggregate values"
+    },
+    {
+      "id": 23,
+      "question": "Which topology connects every node to a single central device?",
+      "options": [
+        "Ring",
+        "Bus",
+        "Star",
+        "Mesh"
+      ],
+      "correctAnswer": "C",
+      "explanation": "STAR wires each host to a central switch/hub — today's standard LAN layout; a node failure is isolated, but the centre is a single point of failure. Bus shares one backbone cable, ring passes a token"
+    },
+    {
+      "id": 24,
+      "question": "Which is a benefit of using cloud storage over local-only storage?",
+      "options": [
+        "Data is always faster to access",
+        "Accessibility from anywhere with internet, built-in redundancy, and easier collaboration/sharing",
+        "It never requires internet",
+        "It's always cheaper for every use case"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Cloud storage (OneDrive, Google Drive, S3) lets you reach your files from any device, benefits from the provider's redundant multi-copy storage architecture (protecting against single-disk failure), a"
+    },
+    {
+      "id": 25,
+      "question": "In Word, the default alignment for a new paragraph is:",
+      "options": [
+        "Justified",
+        "Centre",
+        "Left",
+        "Right"
+      ],
+      "correctAnswer": "C",
+      "explanation": "New documents align text LEFT by default in English editions. Justify (Ctrl+J) stretches lines to touch both margins, centre is Ctrl+E, right is Ctrl+R and left is Ctrl+L. Newspapers use justify; Word"
+    },
+    {
+      "id": 26,
+      "question": "One kilobyte (KB) conventionally equals:",
+      "options": [
+        "1000 bits",
+        "1024 bytes",
+        "1024 bits",
+        "100 bytes"
+      ],
+      "correctAnswer": "B",
+      "explanation": "In classic binary convention 1 KB = 1024 bytes (2^10); then 1 MB = 1024 KB and so on. Bits vs BYTES matters: a byte is 8 bits, so option C is off by that factor. Storage-unit ladders (KB→MB→GB→TB) app"
+    },
+    {
+      "id": 27,
+      "question": "The difference between = and == in most programming languages is:",
+      "options": [
+        "No difference",
+        "= is ASSIGNMENT (stores a value); == is COMPARISON (checks equality)",
+        "== is assignment; = is comparison",
+        "Both are used only in loops"
+      ],
+      "correctAnswer": "B",
+      "explanation": "x = 5 STORES 5 into x. x == 5 CHECKS whether x currently equals 5, returning true/false. Accidentally writing if (x = 5) instead of if (x == 5) is a legendarily common bug (in languages that allow it)"
+    },
+    {
+      "id": 28,
+      "question": "LDAP is primarily used for:",
+      "options": [
+        "Streaming music",
+        "Querying directory services — user accounts, groups (e.g., Active Directory)",
+        "Transferring web pages",
+        "Blocking spam"
+      ],
+      "correctAnswer": "B",
+      "explanation": "LDAP (389; LDAPS 636) reads and searches directory trees — the protocol behind 'login checked against Active Directory'. Whenever centralised user/group lookup appears, LDAP is the label. It pairs wit"
+    },
+    {
+      "id": 29,
+      "question": "An object is:",
+      "options": [
+        "A copy of the compiler",
+        "An instance of a class occupying memory with its own state",
+        "A function",
+        "A comment"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Instantiation (e.g., new Car()) allocates memory and produces an object whose field values form its state, manipulated via its methods. Two objects of one class are independent — changing one's speed"
+    },
+    {
+      "id": 30,
+      "question": "A developer pushes code; automated tests run instantly, and if they pass, the code deploys to production within minutes. Which practice does this describe?",
+      "options": [
+        "Manual quarterly releases",
+        "A CI/CD pipeline",
+        "A firewall rule",
+        "DNS propagation"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Instant automated testing followed by automated deployment is the CI/CD pipeline in action — replacing slow, error-prone manual release cycles with fast, consistent, repeatable ones, one of the cleare"
+    },
+    {
+      "id": 31,
+      "question": "Short-circuit evaluation in AND (&&) means:",
+      "options": [
+        "Both sides are always evaluated regardless",
+        "If the FIRST condition is false, the second is never even checked, since the overall AND result is already determined",
+        "The program crashes",
+        "It applies only to loops"
+      ],
+      "correctAnswer": "B",
+      "explanation": "If a && b and a is false, the whole expression MUST be false regardless of b — so the language skips evaluating b entirely, saving time and (crucially) avoiding errors if b would have caused one (like"
+    },
+    {
+      "id": 32,
+      "question": "A string is fundamentally:",
+      "options": [
+        "A single number",
+        "A sequence/array of characters treated as text",
+        "A boolean value",
+        "A type of loop"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Strings ARE, under the hood, arrays of char values — which is why string operations (indexing, length, iteration) mirror array operations so closely (as seen throughout QB-3's string section). Some la"
+    },
+    {
+      "id": 33,
+      "question": "Given the array below (index starts at 0), what is printed?\nitems = [21, 4, 13, 56, 59, 18]\ntotal = 0\nFOR i = 0 TO 5\ntotal = total + items[i]\nEND FOR\nPRINT total",
+      "options": [
+        "169",
+        "171",
+        "168",
+        "170"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The loop adds every element: 21+4+13+56+59+18 → <b>171</b>. Confirm the loop covers indices 0..5 (all 6 elements) — off-by-one bounds are the favourite trap in traversal questions."
+    },
+    {
+      "id": 34,
+      "question": "Kubernetes is best described as:",
+      "options": [
+        "A programming language",
+        "A container orchestration platform that automates deployment, scaling and management of containerised applications",
+        "A type of database",
+        "A web browser"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Where Docker packages and runs individual containers, Kubernetes manages FLEETS of them across many machines — automatically restarting failed containers, load-balancing traffic, and scaling replicas"
+    },
+    {
+      "id": 35,
+      "question": "A 'transaction' in database terminology is:",
+      "options": [
+        "Any single SELECT query",
+        "A sequence of one or more operations treated as a SINGLE logical unit of work, which either fully succeeds (COMMIT) or fully fails (ROLLBACK)",
+        "A type of table",
+        "A network cable"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A money transfer, an online order (deduct stock, charge payment, create order record) — these multi-step operations need to succeed or fail TOGETHER as one unit. COMMIT finalises all the changes perma"
+    },
+    {
+      "id": 36,
+      "question": "Abstraction focuses on:",
+      "options": [
+        "Showing essential features while hiding implementation details",
+        "Making all members public",
+        "Copying objects",
+        "Speeding up loops"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Abstraction answers WHAT an object does, not HOW. A driver uses brake() without knowing hydraulics; code uses List.sort() without reading the algorithm. Abstract classes and interfaces are the languag"
+    },
+    {
+      "id": 37,
+      "question": "Searching for a specific value in an UNSORTED Linked List requires:",
+      "options": [
+        "O(1) — instant, like a hash table",
+        "O(n) — traversing node by node from the head until found or the list ends",
+        "O(log n) via binary search",
+        "It's impossible"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Unlike a sorted ARRAY (which permits binary search), a linked list has no random-access shortcut, so even if the DATA were sorted, jumping to a 'middle' node still requires traversal — linear search,"
+    },
+    {
+      "id": 38,
+      "question": "Which PowerPoint feature checks the deck for accessibility issues like missing alt text?",
+      "options": [
+        "Design Ideas",
+        "Accessibility Checker (Review tab)",
+        "Slide Sorter",
+        "Animation Painter"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The Accessibility Checker scans for missing alt text, poor colour contrast, unlabelled tables and reading-order problems, listing fixes in a pane. Design Ideas suggests layouts; it doesn't audit acces"
+    },
+    {
+      "id": 39,
+      "question": "Inserting an element at the BEGINNING of a Linked List takes what time complexity?",
+      "options": [
+        "O(n) — must shift all elements",
+        "O(1) — just update a few pointers, regardless of list size",
+        "O(n²)",
+        "O(log n)"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Unlike an array (where inserting at the front requires shifting EVERY existing element forward, O(n)), a linked list simply creates a new node and points it to the old head — a constant number of poin"
+    },
+    {
+      "id": 40,
+      "question": "Given the array below (index starts at 0), what is printed?\nmarks = [37, 28, 24, 8, 43]\ncnt = 0\nFOR i = 0 TO 4\nIF marks[i] > 28 THEN cnt = cnt + 1\nEND FOR\nPRINT cnt",
+      "options": [
+        "4",
+        "-1",
+        "3",
+        "2"
+      ],
+      "correctAnswer": "D",
+      "explanation": "The loop counts elements strictly greater than 28: elements > 28 are 37, 43 → <b>2</b>. Confirm the loop covers indices 0..4 (all 5 elements) — off-by-one bounds are the favourite trap in traversal qu"
+    },
+    {
+      "id": 41,
+      "question": "What value is returned by the outermost call?\nFUNCTION ACC(n)\nIF n == 1 THEN RETURN 1\nRETURN n + ACC(n - 1)\nEND FUNCTION\nPRINT ACC(6)",
+      "options": [
+        "21",
+        "18",
+        "24",
+        "28"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Each level adds its n: 6+5+4+3+2+1 = <b>21</b> — the sum 1..6, which the closed form n(n+1)/2 = 6×7/2 confirms instantly. Knowing that formula turns a 60-second trace into a 5-second calculation."
+    },
+    {
+      "id": 42,
+      "question": "The Single Responsibility Principle (S of SOLID) states:",
+      "options": [
+        "A class should have only one reason to change — one job",
+        "Classes must have one method",
+        "Only one class per file",
+        "One object per class"
+      ],
+      "correctAnswer": "A",
+      "explanation": "SRP: each class owns exactly one responsibility; an Invoice class that also prints and saves itself has three reasons to change and should be split. It's about responsibilities, not method counts or f"
+    },
+    {
+      "id": 43,
+      "question": "Insertion Sort works by:",
+      "options": [
+        "Building the sorted array one element at a time, INSERTING each new element into its correct position among the already-sorted portion",
+        "Always comparing the first and last elements",
+        "Requiring a linked list",
+        "Using binary search exclusively"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Like sorting playing cards in your hand: take each new card and insert it into its correct spot among the cards you're already holding sorted — efficient particularly on data that's ALREADY mostly sor"
+    },
+    {
+      "id": 44,
+      "question": "Which real-world/software scenario best illustrates a Stack?",
+      "options": [
+        "A queue at a ticket counter",
+        "The 'Undo' feature in a text editor (last action performed is the first one undone)",
+        "A round-robin scheduler",
+        "A phone book lookup"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Undo history is a textbook stack: your MOST RECENT edit is the first one reversed when you press Ctrl+Z — Last In, First Out in action. Function call management (the 'call stack') is another canonical"
+    },
+    {
+      "id": 45,
+      "question": "A Circular Queue improves on a simple linear queue by:",
+      "options": [
+        "Making it LIFO instead",
+        "Reusing empty space at the front after dequeue operations, wrapping the rear pointer back to index 0 when it reaches the end",
+        "Removing the need for a front pointer",
+        "Doubling its capacity automatically"
+      ],
+      "correctAnswer": "B",
+      "explanation": "In a simple array-based queue, once the rear reaches the array's end, no more elements can be added even if space was freed at the front by earlier dequeues — wasted capacity. A CIRCULAR queue wraps t 4A — Backend Coding Q131 — Solution Code: PYTHON3 def solve(input1, input2, input3, input4): salaries = input1 ratings = input2 threshold = input3 raise_pct = input4 result = [] for salary, rating in zip(salaries, ratings): if rating > threshold: new_sal = round(salary * (1 + raise_pct / 100), 2) result.append(new_sal) else: result.append(salary) return result print(solve([50000.0,60000.0,45000.0],[4,2,5],3,10.0)) # -> [55000.0, 60000.0, 49500.0] print(solve([80000.0,75000.0],[3,3],3,15.0)) # -> [80000.0, 75000.0] Q132 — Solution Code: PYTHON3 from collections import Counter def solve(input1, input2): text = input1 k = input2 words = text.split() freq = Counter(words) # Sort by (-frequency, word) to get descending freq, alphabetical for ties sorted_words = sorted(freq.keys(), key=lambda w: (-freq[w], w)) return sorted_words[:k] print(solve(\"the cat sat on the mat the cat\", 2)) # -> ['the', 'cat'] print(solve(\"apple banana apple banana cherry\", 3)) # -> ['apple', 'banana', 'cherry'] 4B — SQL Q133 — SQL Answer: SQL SELECT name, hire_date FROM Employees WHERE julianday('2025-01-01') - julianday(hire_date) > 5 * 365.25; Verified Result: Verified output: name | hire_date Kabir Khan | 2019-08-05 Meera Iyer | 2018-04-12 Tanya Mehta | 2019-07-22 4C — Frontend Q134 — Solution:  CSS:  JS: function copyText() { document.getElementById(\"dest\").textContent = document.getElementById(\"src\").value; } Why This Works:  The input's LIVE current value (not its original HTML attribute) is read via .value — this correctly reflects anything the user has since typed.  That value is written into the destination div's textContent, a one-line 'read from one place, write to another' pattern."
+    }
+  ]
+}

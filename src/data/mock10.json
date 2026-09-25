@@ -1,0 +1,548 @@
+{
+  "id": "mock10",
+  "title": "Mock Test 10",
+  "section": "Technical MCQ — Mixed Topics",
+  "durationMinutes": 45,
+  "questions": [
+    {
+      "id": 1,
+      "question": "What does =UPPER(\"placement drive\") output?",
+      "options": [
+        "Placement Drive",
+        "PLACEMENT DRIVE",
+        "placement drive",
+        "pLACEMENT dRIVE"
+      ],
+      "correctAnswer": "B",
+      "explanation": "UPPER converts every letter to capitals: \"PLACEMENT DRIVE\". PROPER would capitalise only the first letter of each word (\"Placement Drive\") and LOWER does the reverse. The three case functions are test"
+    },
+    {
+      "id": 2,
+      "question": "A function's 'parameters' (or arguments) are:",
+      "options": [
+        "The function's return value",
+        "Input values passed into the function when it is called",
+        "Comments inside the function",
+        "The function's name"
+      ],
+      "correctAnswer": "B",
+      "explanation": "def greet(name): uses name as a PARAMETER — the placeholder that receives whatever value is supplied at call time: greet(\"Riya\") passes \"Riya\" as the ARGUMENT filling that parameter. (Parameter = the"
+    },
+    {
+      "id": 3,
+      "question": "Multi-Factor Authentication (MFA) is best described as:",
+      "options": [
+        "Two-factor authentication renamed",
+        "Any authentication using two OR MORE independent factor categories",
+        "A stronger single password",
+        "Biometrics only"
+      ],
+      "correctAnswer": "B",
+      "explanation": "MFA generalises 2FA to 'two or more' — some high-security systems add a third factor (e.g., password + OTP + fingerprint). Every 2FA setup IS technically MFA, but not every MFA setup is limited to exa"
+    },
+    {
+      "id": 4,
+      "question": "ASCII is a standard that:",
+      "options": [
+        "Compresses images",
+        "Assigns a unique NUMERIC code to each character (letters, digits, symbols) so computers can store text as numbers",
+        "Encrypts passwords",
+        "Defines network protocols"
+      ],
+      "correctAnswer": "B",
+      "explanation": "ASCII maps 'A' to 65, 'a' to 97, '0' to 48, and so on — computers ultimately store EVERYTHING as numbers, and ASCII (and its modern superset Unicode, which adds support for many more languages/emoji)"
+    },
+    {
+      "id": 5,
+      "question": "The term 'uptime' (e.g., '99.9% uptime SLA') measures:",
+      "options": [
+        "Internet download speed",
+        "The percentage of time a system/service is operational and available, as opposed to being down",
+        "The number of users",
+        "Storage capacity used"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A Service Level Agreement (SLA) promising 99.9% uptime allows roughly 8.7 hours of downtime per year — cloud providers publish these guarantees, and understanding what each 'nine' actually means in al"
+    },
+    {
+      "id": 6,
+      "question": "How many times does 'R' occur?\ns = \"PROGRAM\"\ncnt = 0\nFOR each ch IN s\nIF ch == 'R' THEN cnt = cnt + 1\nEND FOR\nPRINT cnt",
+      "options": [
+        "4",
+        "3",
+        "1",
+        "2"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Scan \"PROGRAM\" for 'R': it appears <b>2</b> time(s). Frequency loops compare each character to the target and increment a counter — mark the letters on the word as you count, because double-counting o"
+    },
+    {
+      "id": 7,
+      "question": "The classic two-branch recursion below returns what?\nFUNCTION FIB(n)\nIF n < 2 THEN RETURN n\nRETURN FIB(n-1) + FIB(n-2)\nEND FUNCTION\nPRINT FIB(8)",
+      "options": [
+        "20",
+        "21",
+        "24",
+        "19"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Build the Fibonacci ladder from the base: 0, 1, 1, 2, 3, 5, 8, 13, 21 — position 8 holds <b>21</b>. Never expand the recursion tree in an exam; grow the sequence upward from 0, 1 and read off the answ"
+    },
+    {
+      "id": 8,
+      "question": "Runtime polymorphism in Java is achieved by:",
+      "options": [
+        "Method overloading",
+        "Method overriding with upcasting (parent reference, child object)",
+        "Constructors",
+        "Static blocks"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The recipe: override a method in the child, hold the child object in a PARENT-type reference, call the method — dispatch resolves at runtime to the child. Overloading resolves at compile time, making"
+    },
+    {
+      "id": 9,
+      "question": "Merge Sort's overall strategy is best described as:",
+      "options": [
+        "Bubbling large elements to the end repeatedly",
+        "DIVIDE the array into halves recursively until single elements remain, then MERGE those pieces back together in sorted order",
+        "Selecting the minimum repeatedly",
+        "Only comparing adjacent elements"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Merge sort is the classic 'divide and conquer' algorithm: split the problem in half, recursively solve each half, then combine (merge) the two sorted halves efficiently — the merging step is where the"
+    },
+    {
+      "id": 10,
+      "question": "Predict the output of this snippet:\nSET a = 15 AND 11   // bitwise AND\nPRINT a",
+      "options": [
+        "26",
+        "11",
+        "4",
+        "14"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Write both in binary: 15 = 00001111, 11 = 00001011. AND keeps a 1 only where BOTH bits are 1: 00001011 = <b>11</b>. Distractors include the OR (15) and XOR (4) results — computing the wrong operator i"
+    },
+    {
+      "id": 11,
+      "question": "What is the purpose of the OSI Presentation layer?",
+      "options": [
+        "Routing",
+        "Data format translation, encryption and compression",
+        "Physical signalling",
+        "Session checkpoints"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Layer 6 makes data mutually intelligible: character encoding, serialisation, encryption/decryption, compression. Session (L5) manages dialogues; the separation of 5/6/7 duties is fine-grained and thus"
+    },
+    {
+      "id": 12,
+      "question": "SQL Injection attacks work by:",
+      "options": [
+        "Physically accessing the server",
+        "Inserting malicious SQL code through unsanitised input fields to manipulate a database",
+        "Jamming Wi-Fi signals",
+        "Overheating the CPU"
+      ],
+      "correctAnswer": "B",
+      "explanation": "If user input is concatenated directly into a query without sanitisation, an attacker can type input like ' OR '1'='1 to bypass logic or extract data. Parameterised queries/prepared statements are the"
+    },
+    {
+      "id": 13,
+      "question": "Predict the printed element:\narr = [30, 70, 42, 38, 13]\nREVERSE the array in place\nPRINT arr[2]",
+      "options": [
+        "40",
+        "44",
+        "46",
+        "42"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Reversed, the array becomes [13, 38, 42, 70, 30]; index 2 now holds <b>42</b>, which originally sat at index 2. Shortcut: after reversal, new index k maps to old index (length − 1 − k) — apply the for"
+    },
+    {
+      "id": 14,
+      "question": "A function declared with return type 'void' means it:",
+      "options": [
+        "Returns nothing to the caller",
+        "Always returns zero",
+        "Cannot take parameters",
+        "Runs forever"
+      ],
+      "correctAnswer": "A",
+      "explanation": "void explicitly signals 'this function performs an action (printing, modifying, saving) but hands nothing back' — attempting to use its result in an expression (x = voidFunction()) is a compile error."
+    },
+    {
+      "id": 15,
+      "question": "In most languages, primitive types (int, char) are passed to functions:",
+      "options": [
+        "Always by reference",
+        "By value (a copy is made)",
+        "Never passed at all",
+        "Only as global variables"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Primitives are typically copied when passed — the function's local parameter is independent of the caller's variable. Objects and arrays, in contrast, are often passed by REFERENCE (or a reference to"
+    },
+    {
+      "id": 16,
+      "question": "CPU task scheduling using a 'ready queue' is an application of:",
+      "options": [
+        "A Stack",
+        "A Queue (often specifically a Priority Queue for scheduling algorithms)",
+        "A single variable",
+        "A boolean flag"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Processes waiting for CPU time typically sit in a queue — served roughly in arrival order for simple round-robin scheduling, or by PRIORITY for more sophisticated schedulers (urgent system processes a"
+    },
+    {
+      "id": 17,
+      "question": "The maximum zoom... rather, what does the Zoom feature under Insert (Summary Zoom) create?",
+      "options": [
+        "A magnified slide",
+        "An interactive visual menu that jumps to sections during the show",
+        "A video zoom effect",
+        "Larger fonts"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Summary Zoom builds a launcher slide of clickable section thumbnails; during the show, clicking one dives into that section and returns — non-linear navigation without manual hyperlinks. It's unrelate"
+    },
+    {
+      "id": 18,
+      "question": "WPA2/WPA3 refer to:",
+      "options": [
+        "Video codecs",
+        "Wi-Fi security/encryption protocols protecting wireless network access",
+        "Database versions",
+        "Browser extensions"
+      ],
+      "correctAnswer": "B",
+      "explanation": "WPA2 (and its successor WPA3) encrypt Wi-Fi traffic and require a password to join — vastly stronger than the long-broken WEP. Using WEP or an open network today is a red-flag security question; recog"
+    },
+    {
+      "id": 19,
+      "question": "A Content Delivery Network (CDN) improves website performance by:",
+      "options": [
+        "Increasing server RAM",
+        "Caching content on geographically distributed servers close to end users, reducing latency",
+        "Encrypting all traffic",
+        "Blocking all bots"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A CDN (Cloudflare, Akamai, AWS CloudFront) stores copies of static content (images, videos, scripts) on edge servers worldwide — a user in Mumbai fetches from a nearby edge node rather than a distant"
+    },
+    {
+      "id": 20,
+      "question": "A 'flowchart' represents an algorithm using:",
+      "options": [
+        "Only text paragraphs",
+        "Standardised graphical symbols (ovals for start/end, diamonds for decisions, rectangles for processes) connected by arrows",
+        "Musical notation",
+        "Binary code only"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Flowcharts visualise logic flow: ovals mark start/end, rectangles are process/action steps, diamonds are decision points (branching Yes/No), and arrows show the sequence — a visual complement to pseud"
+    },
+    {
+      "id": 21,
+      "question": "In a Binary Search on the sorted array [3, 7, 12, 19, 25, 34, 41] searching for 19, what is the FIRST element compared?",
+      "options": [
+        "3 (the first element)",
+        "19 (the middle element, at index 3)",
+        "41 (the last element)",
+        "7 (the second element)"
+      ],
+      "correctAnswer": "B",
+      "explanation": "With 7 elements (indices 0–6), the middle index is (0+6)/2 = 3, which holds the value 19 — and since that IS the target, binary search would actually find it in just ONE comparison here. This traces t"
+    },
+    {
+      "id": 22,
+      "question": "What is the function of Ctrl + Home in a long document?",
+      "options": [
+        "Moves to the beginning of the current line",
+        "Moves to the very start of the document",
+        "Opens the Home tab",
+        "Scrolls one page up"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Ctrl+Home jumps the cursor to the absolute start of the document; Ctrl+End mirrors it to the very end. Plain Home/End work at LINE level. In a 100-page file this pair saves minutes — and in exams, the"
+    },
+    {
+      "id": 23,
+      "question": "Which of these is an example of DDL (Data Definition Language) in SQL, as opposed to DML (Data Manipulation Language)?",
+      "options": [
+        "SELECT",
+        "CREATE TABLE — defines/changes the STRUCTURE of database objects",
+        "INSERT",
+        "UPDATE"
+      ],
+      "correctAnswer": "B",
+      "explanation": "DDL commands (CREATE, ALTER, DROP) define or modify the database's STRUCTURE/schema itself; DML commands (SELECT, INSERT, UPDATE, DELETE) manipulate the actual DATA within that existing structure. Thi"
+    },
+    {
+      "id": 24,
+      "question": "What is the result?\nFUNCTION F(n)\nIF n == 0 THEN RETURN 1\nRETURN n * F(n - 1)\nEND FUNCTION\nPRINT F(5)",
+      "options": [
+        "120",
+        "60",
+        "115",
+        "180"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Unwind the calls: F(5) = 5×F(4) = ... down to F(0) = 1, then multiply back up: 5×4×3×2×1×1 = <b>120</b>. This is exactly n! (factorial). Always find the base case first; it anchors the whole unwinding"
+    },
+    {
+      "id": 25,
+      "question": "A 'head' pointer in a Linked List refers to:",
+      "options": [
+        "The last node",
+        "A reference to the FIRST node of the list, the starting point for any traversal",
+        "A random node",
+        "The node with the largest value"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Every traversal, search, or operation on a linked list begins from the HEAD — lose track of it (e.g., accidentally overwrite it without saving a reference first) and the entire rest of the list become"
+    },
+    {
+      "id": 26,
+      "question": "What does this print?\nSET a = 6 >> 3   // RIGHT shift by 3\nPRINT a",
+      "options": [
+        "6",
+        "0",
+        "2",
+        "1"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A right shift by 3 integer-divides by 2^3 = 8: 6 ÷ 8 = <b>0</b> (binary 00000110 → 00000000). Shifts-as-fast-multiplication/division is the single most tested bitwise idea in this exam."
+    },
+    {
+      "id": 27,
+      "question": "Which best describes 'vendor lock-in' as a cloud risk?",
+      "options": [
+        "A physical lock on the data centre door",
+        "Difficulty/cost of migrating away from a cloud provider due to proprietary services and data formats",
+        "A type of encryption",
+        "A network protocol"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Deeply integrating with one provider's proprietary services (specific databases, unique APIs) makes later switching expensive and technically painful — a real business risk that multi-cloud and open-s"
+    },
+    {
+      "id": 28,
+      "question": "An attack that intercepts communication between two parties without their knowledge is called:",
+      "options": [
+        "Phishing",
+        "Man-in-the-Middle (MITM)",
+        "Ransomware",
+        "Brute force"
+      ],
+      "correctAnswer": "B",
+      "explanation": "MITM secretly relays and possibly alters traffic between two parties who believe they're talking directly to each other — public Wi-Fi without HTTPS is a classic vulnerable scenario. HTTPS's certifica"
+    },
+    {
+      "id": 29,
+      "question": "A linear search runs below. What INDEX is printed?\nscores = [60, 45, 11, 42, 6, 7]\nFOR i = 0 TO 5\nIF scores[i] == 7 THEN\nPRINT i\nBREAK\nEND IF\nEND FOR",
+      "options": [
+        "6",
+        "3",
+        "7",
+        "5"
+      ],
+      "correctAnswer": "D",
+      "explanation": "7 first appears at position <b>5</b> (zero-based). Linear search prints the INDEX, not the value — questions swap those two constantly, and 'position counting from 1' supplies the other classic wrong"
+    },
+    {
+      "id": 30,
+      "question": "'Spear phishing' differs from generic phishing because it is:",
+      "options": [
+        "Sent to random millions of people",
+        "Highly targeted and personalised toward a specific individual or organisation",
+        "Always via SMS",
+        "Automatically blocked by antivirus"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Spear phishing researches the target — using real names, roles, or recent events — making the bait far more convincing than a mass-blast scam email. Its precision makes it more dangerous and harder fo"
+    },
+    {
+      "id": 31,
+      "question": "=CONCATENATE(\"Data\", \" \", \"Science\") produces:",
+      "options": [
+        "DataScience",
+        "Data Science",
+        "Data,Science",
+        "#NAME?"
+      ],
+      "correctAnswer": "B",
+      "explanation": "CONCATENATE joins all its arguments in order: \"Data\" + a space + \"Science\" = \"Data Science\". The middle argument is a quoted space — remove it and you'd get DataScience. Modern Excel also accepts the"
+    },
+    {
+      "id": 32,
+      "question": "Animation Painter (similar to Format Painter) is used to:",
+      "options": [
+        "Draw on slides during a show",
+        "Copy one object's animation settings onto another object",
+        "Colour animated text",
+        "Reset all animations"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Animation Painter copies the FULL animation recipe — effect, timing, triggers — from one object to another; double-click locks it for multiple targets, exactly like Format Painter's behaviour with for"
+    },
+    {
+      "id": 33,
+      "question": "Cross-Site Scripting (XSS) allows an attacker to:",
+      "options": [
+        "Crash a database server physically",
+        "Inject malicious scripts into web pages viewed by other users",
+        "Intercept phone calls",
+        "Format a hard disk remotely"
+      ],
+      "correctAnswer": "B",
+      "explanation": "XSS smuggles JavaScript into a page (via an unsanitised comment field, for instance) that then runs in OTHER visitors' browsers — stealing cookies/sessions or defacing content. It exploits trust a use"
+    },
+    {
+      "id": 34,
+      "question": "Kubernetes is best described as:",
+      "options": [
+        "A programming language",
+        "A container orchestration platform that automates deployment, scaling and management of containerised applications",
+        "A type of database",
+        "A web browser"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Where Docker packages and runs individual containers, Kubernetes manages FLEETS of them across many machines — automatically restarting failed containers, load-balancing traffic, and scaling replicas"
+    },
+    {
+      "id": 35,
+      "question": "Evaluate:\nPRINT 9 + 8 * 9",
+      "options": [
+        "83",
+        "79",
+        "84",
+        "81"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Apply precedence — multiplication binds first: 8×9 = 72, then + 9 — giving <b>81</b>. The left-to-right misreading produces 153, predictably present in the options. BODMAS/PEMDAS questions are pure di"
+    },
+    {
+      "id": 36,
+      "question": "Which print layout puts multiple slides plus writing lines on one page?",
+      "options": [
+        "Full Page Slides",
+        "Handouts (e.g., 3 slides per page)",
+        "Notes Pages",
+        "Outline"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The Handouts '3 slides' layout prints three thumbnails down the left with ruled lines beside each for audience note-taking — the interview-ready answer for 'distribute to attendees'. Notes Pages print"
+    },
+    {
+      "id": 37,
+      "question": "Which real-world/software scenario best illustrates a Stack?",
+      "options": [
+        "A queue at a ticket counter",
+        "The 'Undo' feature in a text editor (last action performed is the first one undone)",
+        "A round-robin scheduler",
+        "A phone book lookup"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Undo history is a textbook stack: your MOST RECENT edit is the first one reversed when you press Ctrl+Z — Last In, First Out in action. Function call management (the 'call stack') is another canonical"
+    },
+    {
+      "id": 38,
+      "question": "A botnet is:",
+      "options": [
+        "A single powerful server",
+        "A network of compromised devices controlled remotely, often for DDoS or spam",
+        "A type of firewall",
+        "A backup system"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Attackers infect thousands of devices (often IoT gadgets with weak defaults) and command them collectively — 'zombies' under one controller — to launch DDoS floods, send spam, or mine cryptocurrency."
+    },
+    {
+      "id": 39,
+      "question": "Object storage (like AWS S3) differs from traditional file storage because it:",
+      "options": [
+        "Cannot store images",
+        "Stores data as discrete objects with metadata, accessed via a flat namespace and simple APIs, rather than a hierarchical folder structure",
+        "Is always slower",
+        "Only works offline"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Object storage scales to virtually unlimited size by avoiding a traditional folder tree — each object (file + metadata + a unique key) sits in a flat 'bucket', retrieved via simple HTTP-based APIs. It"
+    },
+    {
+      "id": 40,
+      "question": "Symmetric encryption differs from asymmetric encryption because symmetric:",
+      "options": [
+        "Uses two different keys",
+        "Uses the SAME key for both encryption and decryption",
+        "Is always slower",
+        "Cannot be broken"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Symmetric (AES, DES) is fast and uses one shared secret key — the challenge is securely DISTRIBUTING that key. Asymmetric (RSA) uses a public/private key PAIR: encrypt with public, decrypt only with p"
+    },
+    {
+      "id": 41,
+      "question": "String CONCATENATION means:",
+      "options": [
+        "Deleting part of a string",
+        "Joining two or more strings together into one",
+        "Converting a string to a number",
+        "Reversing a string"
+      ],
+      "correctAnswer": "B",
+      "explanation": "\"Hello\" + \"World\" concatenates into \"HelloWorld\" — usually via the + operator or a dedicated function (CONCAT, join). It's the most basic string-building operation, appearing throughout QB-2's Word/Ex"
+    },
+    {
+      "id": 42,
+      "question": "Which function counts only the numeric entries in a range?",
+      "options": [
+        "COUNTA",
+        "COUNT",
+        "COUNTBLANK",
+        "SUMPRODUCT"
+      ],
+      "correctAnswer": "B",
+      "explanation": "COUNT counts cells containing numbers only. COUNTA counts anything non-empty (text, numbers, errors), and COUNTBLANK counts empty cells. If a range has 5 numbers and 3 words, COUNT gives 5 while COUNT"
+    },
+    {
+      "id": 43,
+      "question": "What is the primary risk of an UNBALANCED Binary Search Tree?",
+      "options": [
+        "It cannot store any data",
+        "It can degenerate toward a structure resembling a linked list (e.g., all nodes chained to the right), losing the O(log n) search advantage and approaching O(n)",
+        "It becomes a hash table automatically",
+        "It sorts data incorrectly"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Inserting already-sorted data into a naive BST, one element at a time, causes each new node to attach as a single right-child chain — no actual 'tree' branching occurs, and search degrades to the same"
+    },
+    {
+      "id": 44,
+      "question": "What iteration count is displayed?\nw = 1 ; total = 0\nWHILE w < 500\nw = w * 3\ntotal = total + 1\nEND WHILE\nPRINT total",
+      "options": [
+        "8",
+        "4",
+        "5",
+        "6"
+      ],
+      "correctAnswer": "D",
+      "explanation": "w takes the values 1 → 3 → 9 → 27 → 81 → 243 → 729; the body runs once per arrow, i.e. <b>6</b> times, stopping when 729 is no longer < 500. When the multiplier is 3, growth is even steeper — expect a"
+    },
+    {
+      "id": 45,
+      "question": "If a table 'Employees' has 500 rows and you run SELECT COUNT(*) FROM Employees WHERE Department\n= 'IT', and 45 employees work in IT, what does this query return?",
+      "options": [
+        "500",
+        "45",
+        "0",
+        "An error"
+      ],
+      "correctAnswer": "B",
+      "explanation": "COUNT(*) combined with the WHERE filter counts ONLY the rows matching the condition (Department = 'IT') — not the table's total size. This directly tests whether WHERE's row-filtering behaviour (discu 4A — Backend Coding Q131 Solution: PYTHON3 def solve(input1): from collections import defaultdict groups = defaultdict(list) vowels = set('aeiou') for word in input1: key = tuple(sorted(set(c for c in word.lower() if c in vowels))) groups[key].append(word) return sorted([sorted(g) for g in groups.values()]) print(solve(['hello','world','below','prowl','fold'])) print(solve(['cat','bat','hat'])) 4B — SQL Q132 SQL Answer: SQL SELECT DISTINCT salary FROM Employees ORDER BY salary; Result: Result: salary 51000 55000 58000 60000 62000 65000 69000 72000 77000 85000 88000 91000 4C — Frontend Q133 Solution:  CSS: #preview { width: 100px; height: 60px; }  JS: function applyColor(btn) { document.getElementById(\"preview\").style.backgroundColor = btn.getAttribute(\"data-color\"); }"
+    }
+  ]
+}

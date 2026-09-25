@@ -1,0 +1,548 @@
+{
+  "id": "mock9",
+  "title": "Mock Test 9",
+  "section": "Technical MCQ — Mixed Topics",
+  "durationMinutes": 45,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which record type in DNS maps a name to an IPv4 address?",
+      "options": [
+        "MX",
+        "A",
+        "CNAME",
+        "TXT"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A records hold IPv4 (AAAA holds IPv6). MX directs mail, CNAME aliases one name to another, TXT stores arbitrary text (SPF/verification). Record-type matching is the second-most-common DNS question aft"
+    },
+    {
+      "id": 2,
+      "question": "HTTPS uses port:",
+      "options": [
+        "8080",
+        "443",
+        "53",
+        "110"
+      ],
+      "correctAnswer": "B",
+      "explanation": "443 carries HTTP wrapped in TLS encryption. 8080 is a common ALTERNATE/proxy web port — the near-miss option — while 53 is DNS and 110 POP3. When a question shows a padlock or mentions encryption with"
+    },
+    {
+      "id": 3,
+      "question": "The Navigation Pane (Ctrl + F) lets you:",
+      "options": [
+        "Jump between headings and search results",
+        "Change page margins",
+        "Insert citations",
+        "Merge documents"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The pane lists the document's HEADINGS (click to jump, drag to reorder sections), thumbnail pages, and live search hits. It's the reading map of a long document — but it only works if Heading styles w"
+    },
+    {
+      "id": 4,
+      "question": "What does the code output?\nc = 0\nFOR i = 1 TO 8\nIF i MOD 2 == 0 THEN CONTINUE\nc = c + i\nEND FOR\nPRINT c",
+      "options": [
+        "16",
+        "14",
+        "36",
+        "19"
+      ],
+      "correctAnswer": "A",
+      "explanation": "CONTINUE skips every multiple of 2, so the added values are 1, 3, 5, 7, totalling <b>16</b>. The complementary sum (only multiples of 2) is 20 — sitting among the options."
+    },
+    {
+      "id": 5,
+      "question": "The 'Reuse Slides' feature lets you:",
+      "options": [
+        "Recycle deleted slides from the bin",
+        "Insert slides from another presentation, optionally keeping their source formatting",
+        "Duplicate the current slide",
+        "Restore an earlier version"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Reuse Slides (Insert tab) browses another deck and pulls chosen slides into the current one; a checkbox decides whether they adopt the destination theme or keep original formatting. It's cross-deck im"
+    },
+    {
+      "id": 6,
+      "question": "Which best describes the relationship between a Primary Key and an Index?",
+      "options": [
+        "They are completely unrelated concepts",
+        "A Primary Key AUTOMATICALLY creates an underlying index (for fast uniqueness enforcement and lookup) in most database systems, though you can also create additional indexes on other columns manually",
+        "Indexes replace the need for primary keys entirely",
+        "Primary keys slow down all queries"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Because the database must constantly VERIFY uniqueness for the primary key on every insert, and because primary-key lookups are extremely common, most database systems automatically build an index on"
+    },
+    {
+      "id": 7,
+      "question": "Which statement about type casting/conversion is TRUE?",
+      "options": [
+        "It never loses data",
+        "Converting a larger type to a smaller one (e.g., double to int) can lose precision/data (narrowing conversion)",
+        "It only works on strings",
+        "It is illegal in all languages"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Narrowing conversions (double→int, int→byte) can silently drop the fractional part or overflow — 9.8 cast to int becomes 8, not rounded. Widening conversions (int→double) are always safe. 'Narrowing r"
+    },
+    {
+      "id": 8,
+      "question": "Docker is primarily a tool for:",
+      "options": [
+        "Writing documentation",
+        "Building, packaging and running applications inside lightweight, portable containers",
+        "Managing email",
+        "Designing UI mockups"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Docker packages an application with everything it needs (libraries, config) into a container image that runs IDENTICALLY across dev, test and production — solving the classic 'works on my machine' pro"
+    },
+    {
+      "id": 9,
+      "question": "AutoSave in the Word title bar works only when:",
+      "options": [
+        "The document has a password",
+        "The file is stored on OneDrive/SharePoint",
+        "Track Changes is on",
+        "The file is .doc format"
+      ],
+      "correctAnswer": "B",
+      "explanation": "AutoSave streams every change to CLOUD storage — OneDrive or SharePoint — and stays greyed out for purely local files. Local safety comes from AutoRecover (periodic temp saves), a different mechanism."
+    },
+    {
+      "id": 10,
+      "question": "Which of these is generally considered the STRONGEST password practice?",
+      "options": [
+        "A common word with a number appended, e.g., 'password1'",
+        "A long, unique passphrase or randomly generated string, different per account, stored in a password manager",
+        "The same password everywhere for easy memory",
+        "Your pet's name and birth year"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Length and uniqueness beat complexity tricks alone — reusing even a 'strong-looking' password across sites means one breach compromises everything (credential stuffing). Password managers solve the me"
+    },
+    {
+      "id": 11,
+      "question": "Which best describes 'code reusability' as a programming principle?",
+      "options": [
+        "Writing the same logic repeatedly in multiple places",
+        "Writing a piece of logic ONCE (as a function/class) and using it in multiple places, rather than duplicating code",
+        "Deleting all functions",
+        "Avoiding comments entirely"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A well-designed function like calculateTax(amount) can be called from dozens of different places in a program instead of copy-pasting the tax formula everywhere — if the tax rule changes, you fix it i"
+    },
+    {
+      "id": 12,
+      "question": "Abstraction focuses on:",
+      "options": [
+        "Showing essential features while hiding implementation details",
+        "Making all members public",
+        "Copying objects",
+        "Speeding up loops"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Abstraction answers WHAT an object does, not HOW. A driver uses brake() without knowing hydraulics; code uses List.sort() without reading the algorithm. Abstract classes and interfaces are the languag"
+    },
+    {
+      "id": 13,
+      "question": "What is printed?\nPRINT (95 DIV 8) + (95 MOD 8)",
+      "options": [
+        "17",
+        "19",
+        "21",
+        "18"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Quotient 11 plus remainder 7 = <b>18</b>. DIV and MOD are partners: quotient×divisor + remainder rebuilds the original number — use that identity to self-check."
+    },
+    {
+      "id": 14,
+      "question": "Which of these correctly matches the abbreviation LIFO?",
+      "options": [
+        "Queue behaviour",
+        "Stack behaviour — Last In, First Out",
+        "A type of array",
+        "A sorting algorithm"
+      ],
+      "correctAnswer": "B",
+      "explanation": "LIFO = Last In, First Out = Stack. Its counterpart FIFO = First In, First Out = Queue. These two four-letter abbreviations are possibly the single most frequently and directly tested pieces of vocabul"
+    },
+    {
+      "id": 15,
+      "question": "What does pressing Ctrl + Z immediately after deleting a column do?",
+      "options": [
+        "Deletes another column",
+        "Restores the deleted column",
+        "Opens the zoom dialog",
+        "Nothing — deletion is permanent"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Ctrl+Z is Undo and reverses the last action, restoring the deleted column with its data and formatting. Excel keeps a multi-step undo stack, so repeated presses walk further back. Its partner Ctrl+Y ("
+    },
+    {
+      "id": 16,
+      "question": "A 'view' in SQL is best described as:",
+      "options": [
+        "A physical copy of a table stored separately",
+        "A VIRTUAL table based on the result of a stored SQL query, which can be queried like a real table without duplicating the underlying data",
+        "A type of index",
+        "A backup file"
+      ],
+      "correctAnswer": "B",
+      "explanation": "CREATE VIEW ActiveStudents AS SELECT * FROM Students WHERE Status = 'Active' lets you later just query SELECT * FROM ActiveStudents as a convenient shortcut — the view doesn't STORE its own copy of th"
+    },
+    {
+      "id": 17,
+      "question": "An embedded Excel chart in PowerPoint differs from a linked one because embedded charts:",
+      "options": [
+        "Update automatically when the Excel file changes",
+        "Store their own copy of the data inside the presentation",
+        "Cannot be edited",
+        "Are always black and white"
+      ],
+      "correctAnswer": "B",
+      "explanation": "EMBEDDING copies the workbook data INTO the .pptx — self-contained, but blind to later changes in the source file. LINKING references the external file and refreshes with it, breaking if the file move"
+    },
+    {
+      "id": 18,
+      "question": "An 'entity' in Entity-Relationship (ER) modelling, used during database DESIGN (before creating actual tables), represents:",
+      "options": [
+        "A single data value",
+        "A real-world object or concept about which data is stored (e.g., Student, Course, Order) — which typically becomes a TABLE in the final database",
+        "A type of SQL query",
+        "A network device"
+      ],
+      "correctAnswer": "B",
+      "explanation": "ER diagrams are a DESIGN-phase tool: Entities (Student, Course) become tables, their Attributes (Name, Marks) become columns, and Relationships (enrols-in) become the foreign-key connections between t"
+    },
+    {
+      "id": 19,
+      "question": "Operator precedence determines:",
+      "options": [
+        "Which operator's variable name comes first alphabetically",
+        "The ORDER in which operators are evaluated in an expression with multiple operators",
+        "The color of the output",
+        "Nothing important"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Without parentheses, 2 + 3 * 4 evaluates multiplication BEFORE addition (giving 14, not 20) because * has higher precedence than + — the same BODMAS/PEMDAS rules from QB-1's arithmetic questions apply"
+    },
+    {
+      "id": 20,
+      "question": "CI/CD in a DevOps context stands for:",
+      "options": [
+        "Computer Interface / Computer Design",
+        "Continuous Integration / Continuous Deployment (or Delivery)",
+        "Cloud Infrastructure / Cloud Database",
+        "Central Identity / Central Directory"
+      ],
+      "correctAnswer": "B",
+      "explanation": "CI automatically builds and tests code every time developers merge changes, catching integration bugs early; CD automatically (or with one click) deploys tested code to production, shrinking the time"
+    },
+    {
+      "id": 21,
+      "question": "Result of execution: y := 46 XOR 28 WRITE y",
+      "options": [
+        "12",
+        "48",
+        "50",
+        "62"
+      ],
+      "correctAnswer": "C",
+      "explanation": "46 = 00101110 and 28 = 00011100; XOR outputs 1 only where the bits DIFFER: 00110010 = <b>50</b>. Remember the special cases n XOR n = 0 and n XOR 0 = n — the exam builds several questions on them."
+    },
+    {
+      "id": 22,
+      "question": "The term 'uptime' (e.g., '99.9% uptime SLA') measures:",
+      "options": [
+        "Internet download speed",
+        "The percentage of time a system/service is operational and available, as opposed to being down",
+        "The number of users",
+        "Storage capacity used"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A Service Level Agreement (SLA) promising 99.9% uptime allows roughly 8.7 hours of downtime per year — cloud providers publish these guarantees, and understanding what each 'nine' actually means in al"
+    },
+    {
+      "id": 23,
+      "question": "An API (Application Programming Interface) allows:",
+      "options": [
+        "Only humans to interact with software",
+        "Different software systems/components to communicate and exchange data with each other",
+        "Faster internet speeds",
+        "Encryption of hard disks"
+      ],
+      "correctAnswer": "B",
+      "explanation": "An API defines a contract — specific requests and responses — letting a weather app fetch data from a weather service, or a mobile app talk to a backend server, without either side needing to know the"
+    },
+    {
+      "id": 24,
+      "question": "'Throughput' refers to:",
+      "options": [
+        "Theoretical maximum capacity",
+        "The ACTUAL data rate achieved over a link",
+        "Cable thickness",
+        "Number of routers"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Throughput is measured reality — after overhead, interference and congestion — always ≤ bandwidth (the theoretical ceiling). A '100 Mbps' plan delivering 60 Mbps has 100 bandwidth, 60 throughput. The"
+    },
+    {
+      "id": 25,
+      "question": "How many usable host addresses does a /24 network provide?",
+      "options": [
+        "256",
+        "255",
+        "254",
+        "253"
+      ],
+      "correctAnswer": "C",
+      "explanation": "A /24 leaves 8 host bits → 2^8 = 256 addresses, minus the network address (all-zeros) and broadcast (all-ones) = 254 usable. Subtracting exactly two is the entire trick; 256 and 255 trap those who for"
+    },
+    {
+      "id": 26,
+      "question": "What is printed?\nPRINT 19 DIV 3",
+      "options": [
+        "9",
+        "7",
+        "4",
+        "6"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Integer division discards the remainder: 19 ÷ 3 = 6.33, keep the whole part <b>6</b>. The rounded value 6 is the trap when the fraction exceeds .5."
+    },
+    {
+      "id": 27,
+      "question": "Predict the printed element:\narr = [30, 70, 42, 38, 13]\nREVERSE the array in place\nPRINT arr[2]",
+      "options": [
+        "40",
+        "44",
+        "46",
+        "42"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Reversed, the array becomes [13, 38, 42, 70, 30]; index 2 now holds <b>42</b>, which originally sat at index 2. Shortcut: after reversal, new index k maps to old index (length − 1 − k) — apply the for"
+    },
+    {
+      "id": 28,
+      "question": "What does it mean for a Stack/Queue to 'underflow'?",
+      "options": [
+        "Too many elements were added",
+        "An attempt is made to POP/DEQUEUE from a structure that is already EMPTY",
+        "The structure is too large",
+        "A compile-time error"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Trying to pop a stack (or dequeue a queue) with zero elements is meaningless — there's nothing to remove — and well-written code should check isEmpty() BEFORE attempting the operation, rather than let"
+    },
+    {
+      "id": 29,
+      "question": "ASCII is a standard that:",
+      "options": [
+        "Compresses images",
+        "Assigns a unique NUMERIC code to each character (letters, digits, symbols) so computers can store text as numbers",
+        "Encrypts passwords",
+        "Defines network protocols"
+      ],
+      "correctAnswer": "B",
+      "explanation": "ASCII maps 'A' to 65, 'a' to 97, '0' to 48, and so on — computers ultimately store EVERYTHING as numbers, and ASCII (and its modern superset Unicode, which adds support for many more languages/emoji)"
+    },
+    {
+      "id": 30,
+      "question": "Word's 'Compare' feature under the Review tab:",
+      "options": [
+        "Checks two fonts",
+        "Shows differences between two versions of a document as tracked changes",
+        "Compares file sizes",
+        "Merges printers"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Compare takes an original and a revised document and produces a third view where every difference appears as a tracked change — the legal-review workflow for contracts. 'Combine' (its sibling) merges"
+    },
+    {
+      "id": 31,
+      "question": "Selection Sort works by:",
+      "options": [
+        "Repeatedly finding the MINIMUM element from the unsorted portion and placing it at the beginning",
+        "Dividing the array into two halves recursively",
+        "Comparing only adjacent pairs",
+        "Using a stack"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Each pass scans the entire UNSORTED remainder to find its smallest value, then swaps it into its correct final position at the front of that remainder — after n passes, the array is fully sorted. It a"
+    },
+    {
+      "id": 32,
+      "question": "Which keyword prevents a METHOD from being overridden?",
+      "options": [
+        "static",
+        "final",
+        "private",
+        "Both final and private effectively"
+      ],
+      "correctAnswer": "D",
+      "explanation": "final explicitly forbids overriding. private methods aren't visible to subclasses, so they can't be overridden either (a same-signature child method is a NEW method, not an override). Exams accept 'fi"
+    },
+    {
+      "id": 33,
+      "question": "A Priority Queue differs from a standard queue because:",
+      "options": [
+        "It only stores numbers",
+        "Elements are dequeued based on PRIORITY value, not strictly the order they were inserted",
+        "It cannot be implemented",
+        "It has no front or rear"
+      ],
+      "correctAnswer": "B",
+      "explanation": "In a priority queue, a high-priority element inserted LAST can still be dequeued BEFORE a low-priority element inserted earlier — 'importance' overrides 'arrival order'. Hospital emergency triage (cri"
+    },
+    {
+      "id": 34,
+      "question": "Predict the printed element:\nscores = [22, 56, 33, 53, 48]\nROTATE LEFT by 2 position(s)\nPRINT scores[2]",
+      "options": [
+        "50",
+        "33",
+        "46",
+        "48"
+      ],
+      "correctAnswer": "D",
+      "explanation": "A left rotation by 2 moves the first 2 element(s) to the back: [33, 53, 48, 22, 56]. Index 2 then holds <b>48</b>. Mapping rule: new index k takes the old element at (k + 2) mod 5 — modular thinking b"
+    },
+    {
+      "id": 35,
+      "question": "DNS queries typically use:",
+      "options": [
+        "TCP port 80",
+        "UDP port 53 (TCP 53 for large transfers)",
+        "UDP port 21",
+        "TCP port 25"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Ordinary lookups ride UDP 53 for speed; zone transfers and oversized responses fall back to TCP 53. DNS is the standard example of a UDP-based application — pairing with 'why UDP? small, fast, retry-f"
+    },
+    {
+      "id": 36,
+      "question": "What does the condition evaluate to?\nPRINT (6 > 9) OR (14 < 10)",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "1",
+        "Error"
+      ],
+      "correctAnswer": "B",
+      "explanation": "First comparison: 6 > 9 is False; second: 14 < 10 is False. OR therefore yields <b>FALSE</b> — OR needs just one TRUE. Evaluate each side fully before applying the connective; mixing the two steps is"
+    },
+    {
+      "id": 37,
+      "question": "A public cloud is characterised by:",
+      "options": [
+        "Resources dedicated exclusively to one organisation on-site",
+        "Shared infrastructure owned by a third-party provider, accessible to multiple customers over the internet",
+        "No internet connection required",
+        "Only used by governments"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Public cloud (AWS, Azure, GCP) pools infrastructure across many tenants (multi-tenancy) for cost efficiency — logically isolated but physically shared hardware. Contrast with PRIVATE cloud (dedicated"
+    },
+    {
+      "id": 38,
+      "question": "A 'Dequeue' (Double-Ended Queue, distinct from the dequeue OPERATION) allows:",
+      "options": [
+        "Insertion and deletion only at the rear",
+        "Insertion AND deletion at BOTH the front and rear ends",
+        "No insertion at all",
+        "Only random access"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A double-ended queue (often abbreviated 'deque', pronounced 'deck') generalises the queue by permitting add/remove operations at EITHER end — making it flexible enough to simulate a stack, a queue, or"
+    },
+    {
+      "id": 39,
+      "question": "What does a URL's structure 'https://www.site.com:8443/path?x=1' include after the colon?",
+      "options": [
+        "A password",
+        "A non-default port number (8443)",
+        "The DNS server",
+        "A MAC address"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The :8443 overrides the scheme's default port (443 for https) — used by admin consoles and test servers. Reading URL anatomy (scheme, host, port, path, query) is a compact skill; the explicit-port ele"
+    },
+    {
+      "id": 40,
+      "question": "The loopback address used to test the local TCP/IP stack is:",
+      "options": [
+        "192.168.0.1",
+        "127.0.0.1",
+        "255.255.255.255",
+        "0.0.0.0"
+      ],
+      "correctAnswer": "B",
+      "explanation": "127.0.0.1 (localhost) loops traffic back to your own machine — 'ping 127.0.0.1' verifies the stack without touching the network. 255.255.255.255 is limited broadcast and 0.0.0.0 means 'any/unspecified"
+    },
+    {
+      "id": 41,
+      "question": "Peer-to-peer networking differs from client-server because in P2P:",
+      "options": [
+        "A central server controls everything",
+        "Every node can act as both client and server",
+        "Only two devices exist",
+        "No addressing is used"
+      ],
+      "correctAnswer": "B",
+      "explanation": "P2P distributes roles — each peer requests AND serves (torrents are the canonical example) — trading central control for resilience and scale. Client-server centralises resources and administration. A"
+    },
+    {
+      "id": 42,
+      "question": "Object state and behaviour correspond to:",
+      "options": [
+        "Methods and classes",
+        "Fields (variables) and methods respectively",
+        "Constructors and destructors",
+        "Packages and imports"
+      ],
+      "correctAnswer": "B",
+      "explanation": "State = the current values of an object's fields (speed=60, colour=red); behaviour = what it can do, its methods (accelerate(), brake()). Identity is the third classical property (each object is disti"
+    },
+    {
+      "id": 43,
+      "question": "Which file extension indicates a compressed archive?",
+      "options": [
+        ".zip",
+        ".exe",
+        ".docx",
+        ".bmp"
+      ],
+      "correctAnswer": "A",
+      "explanation": ".zip bundles files with compression for smaller size and single-file transfer (.rar and .7z are cousins). .exe is an executable program — treat unknown ones as dangerous — while .docx and .bmp are doc"
+    },
+    {
+      "id": 44,
+      "question": "Which of these is an example of DDL (Data Definition Language) in SQL, as opposed to DML (Data Manipulation Language)?",
+      "options": [
+        "SELECT",
+        "CREATE TABLE — defines/changes the STRUCTURE of database objects",
+        "INSERT",
+        "UPDATE"
+      ],
+      "correctAnswer": "B",
+      "explanation": "DDL commands (CREATE, ALTER, DROP) define or modify the database's STRUCTURE/schema itself; DML commands (SELECT, INSERT, UPDATE, DELETE) manipulate the actual DATA within that existing structure. Thi"
+    },
+    {
+      "id": 45,
+      "question": "A CONSTANT (declared with const/final) is a variable that:",
+      "options": [
+        "Can change anytime",
+        "Is assigned a value once and cannot be reassigned afterward",
+        "Must be an integer",
+        "Is always global"
+      ],
+      "correctAnswer": "B",
+      "explanation": "const PI = 3.14159 locks the value — any later attempt to reassign it is a compile-time error, protecting values that must never accidentally change (mathematical constants, configuration limits). It 4A — Backend Coding Q131 Solution: PYTHON3 def solve(input1): left, right = 0, len(input1) - 1 max_water = 0 while left &lt; right: h = min(input1[left], input1[right]) width = right - left max_water = max(max_water, h * width) if input1[left] &lt; input1[right]: left += 1 else: right -= 1 return max_water print(solve([1,8,6,2,5,4,8,3,7])) # -&gt; 49 print(solve([1,1])) # -&gt; 1 print(solve([4,3,2,1,4])) # -&gt; 16 4B — SQL Q132 SQL Answer: SQL SELECT product_name FROM Products WHERE product_name NOT GLOB '*[0-9]*'; Result: Result: product_name Laptop Wireless Mouse Office Chair Desk Lamp Notebook Pack Monitor 4C — Frontend Q133 Solution:  CSS:  JS: function rate(stars, index) { stars.forEach(function(s, i) { if (i <= index) s.classList.add(\"filled\"); else s.classList.remove(\"filled\"); }); }"
+    }
+  ]
+}

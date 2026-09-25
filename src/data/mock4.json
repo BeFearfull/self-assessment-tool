@@ -1,0 +1,548 @@
+{
+  "id": "mock4",
+  "title": "Mock Test 4",
+  "section": "Technical MCQ — Mixed Topics",
+  "durationMinutes": 45,
+  "questions": [
+    {
+      "id": 1,
+      "question": "A Composite Key is:",
+      "options": [
+        "A key made of exactly one column, always",
+        "A Primary Key formed by COMBINING two or more columns together, where the combination (not any single column alone) is unique",
+        "A type of foreign key only",
+        "A deleted key"
+      ],
+      "correctAnswer": "B",
+      "explanation": "If no SINGLE column is unique on its own (e.g., a table logging student-subject-marks where neither StudentID nor SubjectID alone is unique, but the PAIR together is), a composite key combines them: P"
+    },
+    {
+      "id": 2,
+      "question": "A honeypot in cybersecurity is:",
+      "options": [
+        "A sweet reward for good passwords",
+        "A decoy system designed to attract and study attackers",
+        "A type of firewall rule",
+        "An encrypted backup"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Security teams deploy deliberately vulnerable-looking systems to lure attackers away from real assets and study their techniques — intelligence gathering disguised as an easy target. It's a niche but"
+    },
+    {
+      "id": 3,
+      "question": "What does the formula =TODAY() return?",
+      "options": [
+        "Current date and time",
+        "Current date only",
+        "Current time only",
+        "The date the file was created"
+      ],
+      "correctAnswer": "B",
+      "explanation": "TODAY() returns only the current system date and updates each time the sheet recalculates. NOW() is its sibling that includes the time. Neither is fixed — to freeze today's date permanently, use the s"
+    },
+    {
+      "id": 4,
+      "question": "The difference between = and == in most programming languages is:",
+      "options": [
+        "No difference",
+        "= is ASSIGNMENT (stores a value); == is COMPARISON (checks equality)",
+        "== is assignment; = is comparison",
+        "Both are used only in loops"
+      ],
+      "correctAnswer": "B",
+      "explanation": "x = 5 STORES 5 into x. x == 5 CHECKS whether x currently equals 5, returning true/false. Accidentally writing if (x = 5) instead of if (x == 5) is a legendarily common bug (in languages that allow it)"
+    },
+    {
+      "id": 5,
+      "question": "Given the array below (index starts at 0), what is printed?\nlist = [25, 58, 37, 44, 30, 21]\ntotal = 0\nFOR i = 0 TO 5\ntotal = total + list[i]\nEND FOR\nPRINT total",
+      "options": [
+        "217",
+        "216",
+        "213",
+        "215"
+      ],
+      "correctAnswer": "D",
+      "explanation": "The loop adds every element: 25+58+37+44+30+21 → <b>215</b>. Confirm the loop covers indices 0..5 (all 6 elements) — off-by-one bounds are the favourite trap in traversal questions."
+    },
+    {
+      "id": 6,
+      "question": "What does the F5 key do in a web browser?",
+      "options": [
+        "Full screen",
+        "Refreshes/reloads the page",
+        "Find on page",
+        "Opens favourites"
+      ],
+      "correctAnswer": "B",
+      "explanation": "F5 RELOADS the current page; Ctrl+F5 forces a hard refresh ignoring cache — the fix for 'stale page' problems. Full screen is F11 and Find is Ctrl+F. Note the collision with PowerPoint, where F5 start"
+    },
+    {
+      "id": 7,
+      "question": "Method OVERRIDING requires:",
+      "options": [
+        "Different method names",
+        "A child class redefining a parent method with the same signature",
+        "Static methods",
+        "Private methods"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Overriding: subclass provides its own body for an inherited method — identical name and parameters — and the runtime dispatches to the child version through a parent reference (dynamic binding). Priva"
+    },
+    {
+      "id": 8,
+      "question": "ASCII is a standard that:",
+      "options": [
+        "Compresses images",
+        "Assigns a unique NUMERIC code to each character (letters, digits, symbols) so computers can store text as numbers",
+        "Encrypts passwords",
+        "Defines network protocols"
+      ],
+      "correctAnswer": "B",
+      "explanation": "ASCII maps 'A' to 65, 'a' to 97, '0' to 48, and so on — computers ultimately store EVERYTHING as numbers, and ASCII (and its modern superset Unicode, which adds support for many more languages/emoji)"
+    },
+    {
+      "id": 9,
+      "question": "The 'increment' operator (++) does what to a variable?",
+      "options": [
+        "Decreases it by 1",
+        "Increases its value by 1",
+        "Doubles it",
+        "Sets it to zero"
+      ],
+      "correctAnswer": "B",
+      "explanation": "x++ (or x = x + 1) adds exactly one to x — the ubiquitous loop-counter operation (FOR i = 0; i < n; i++). Its mirror is the DECREMENT operator (--), subtracting one. Pre-increment (++x) vs post-increm"
+    },
+    {
+      "id": 10,
+      "question": "A digital signature primarily provides:",
+      "options": [
+        "Faster downloads",
+        "Authentication and integrity — proof of who sent a message and that it wasn't altered",
+        "File compression",
+        "Free storage"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The sender encrypts a hash of the message with their PRIVATE key; anyone can verify using the sender's PUBLIC key, confirming both identity (only the sender could have created it) and integrity (any t"
+    },
+    {
+      "id": 11,
+      "question": "SNMP is used for:",
+      "options": [
+        "Sending email",
+        "Monitoring and managing network devices (routers, switches, servers)",
+        "Encrypting web pages",
+        "Assigning MAC addresses"
+      ],
+      "correctAnswer": "B",
+      "explanation": "SNMP (UDP 161/162) lets management stations poll device health — interface counters, CPU, uptime — and receive traps on events. It's the 'network monitoring protocol' answer whenever dashboards or dev"
+    },
+    {
+      "id": 12,
+      "question": "DHCP operates using which transport and ports?",
+      "options": [
+        "TCP 80",
+        "UDP 67 (server) and 68 (client)",
+        "TCP 22",
+        "UDP 443"
+      ],
+      "correctAnswer": "B",
+      "explanation": "DHCP's DORA exchange uses UDP — broadcast-friendly and connectionless — with servers on 67, clients on 68. It's the second standard 'runs on UDP' example after DNS. The 67/68 pair is niche but appears"
+    },
+    {
+      "id": 13,
+      "question": "Telnet is discouraged because it:",
+      "options": [
+        "Is too fast",
+        "Transmits everything, including passwords, in plaintext",
+        "Needs special hardware",
+        "Uses port 443"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Telnet (port 23) predates security thinking: every keystroke crosses the wire unencrypted, trivially sniffable. SSH is its drop-in secure replacement. Any 'legacy insecure protocol' question set inclu"
+    },
+    {
+      "id": 14,
+      "question": "The professional response time expectation for routine business email is generally:",
+      "options": [
+        "Within 5 minutes",
+        "Within one business day (24 hours)",
+        "Within a month",
+        "No expectation exists"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Business etiquette treats ONE BUSINESS DAY as the courteous ceiling for routine mail — with a brief holding reply if the full answer needs longer. Instant response isn't expected (that's chat), and we"
+    },
+    {
+      "id": 15,
+      "question": "The term 'CRUD' in application/database development stands for:",
+      "options": [
+        "A programming error",
+        "Create, Read, Update, Delete — the four basic operations performed on persistent data",
+        "A type of database server",
+        "A network protocol"
+      ],
+      "correctAnswer": "B",
+      "explanation": "CRUD maps directly onto the SQL commands covered earlier: Create=INSERT, Read=SELECT, Update=UPDATE, Delete=DELETE — virtually every data-driven application (a to-do list, an e-commerce site, a social"
+    },
+    {
+      "id": 16,
+      "question": "VoIP calls (e.g., corporate phones) primarily favour which transport?",
+      "options": [
+        "TCP for reliability",
+        "UDP (via RTP) — timeliness beats retransmission for live audio",
+        "ICMP",
+        "FTP"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A retransmitted voice packet arrives too late to matter; UDP's low-latency loss-tolerance suits live media, with RTP adding sequencing/timing on top. This is the reasoning twin of the DNS-on-UDP fact:"
+    },
+    {
+      "id": 17,
+      "question": "A 'collision' in a hash table occurs when:",
+      "options": [
+        "The table runs out of memory entirely",
+        "Two DIFFERENT keys produce the SAME hash value/index, requiring a resolution strategy (chaining or open addressing)",
+        "The program crashes immediately",
+        "Data is deleted accidentally"
+      ],
+      "correctAnswer": "B",
+      "explanation": "No hash function is perfectly collision-free for arbitrary input — two different keys occasionally land on the same slot. CHAINING (store a small list at that slot) and OPEN ADDRESSING (probe for the"
+    },
+    {
+      "id": 18,
+      "question": "Quick Sort's AVERAGE time complexity is O(n log n), but its WORST case is:",
+      "options": [
+        "Also O(n log n) always",
+        "O(n²) — occurs when the pivot choice is consistently poor (e.g., always picking the smallest/largest element)",
+        "O(1)",
+        "O(log n)"
+      ],
+      "correctAnswer": "B",
+      "explanation": "If the pivot is unluckily always the smallest or largest remaining element (worst case: an already-sorted array with a naive 'always pick the first element' pivot strategy), each partition only shrink"
+    },
+    {
+      "id": 19,
+      "question": "The no-temp arithmetic swap runs below. What does y print?\nx = 12 ; y = 8\nx = x + y\ny = x - y\nx = x - y\nPRINT y",
+      "options": [
+        "12",
+        "17",
+        "8",
+        "10"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Trace: x becomes 20; then y = 20−8 = 12; then x = 20−12 = 8. The values SWAP, so y prints <b>12</b>. Like the XOR version, learn this as a named pattern — 'add-subtract swap' — and skip the per-line g"
+    },
+    {
+      "id": 20,
+      "question": "An 'algorithm' is defined as:",
+      "options": [
+        "A programming language",
+        "A finite, well-defined sequence of steps to solve a problem or complete a task",
+        "A type of computer hardware",
+        "A software bug"
+      ],
+      "correctAnswer": "B",
+      "explanation": "An algorithm is the LOGIC — sorting a list, finding a route, calculating interest — independent of any specific coding language; the same algorithm can be implemented in Python, Java, or C identically"
+    },
+    {
+      "id": 21,
+      "question": "What does a VLAN do?",
+      "options": [
+        "Boosts internet speed",
+        "Logically segments one physical switch into separate broadcast domains",
+        "Replaces IP addressing",
+        "Encrypts LAN traffic"
+      ],
+      "correctAnswer": "B",
+      "explanation": "VLANs group ports into isolated virtual LANs — HR and Finance can share hardware yet be invisible to each other; inter-VLAN traffic must pass a router/L3 switch, where policy applies. Segmentation for"
+    },
+    {
+      "id": 22,
+      "question": "The BREAK statement inside a loop:",
+      "options": [
+        "Skips to the next iteration",
+        "Immediately exits the entire loop",
+        "Restarts the loop from zero",
+        "Pauses execution permanently"
+      ],
+      "correctAnswer": "B",
+      "explanation": "break terminates the loop COMPLETELY — control jumps to the first statement after the loop, regardless of the original condition. Its cousin CONTINUE only skips the REST of the current iteration and m"
+    },
+    {
+      "id": 23,
+      "question": "A global streaming service wants viewers everywhere to experience low buffering. Which technology addresses this most directly?",
+      "options": [
+        "A CDN caching video content on edge servers near each viewer",
+        "A single central server for the whole world",
+        "Disabling encryption",
+        "Reducing video resolution permanently"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Serving every viewer worldwide from one distant data centre would introduce heavy latency; a CDN's globally distributed edge caches deliver content from a nearby node instead — precisely why every maj"
+    },
+    {
+      "id": 24,
+      "question": "A 'clean desk policy' in a corporate security context addresses:",
+      "options": [
+        "Software licensing",
+        "Physical security — not leaving sensitive documents/devices unattended and visible",
+        "Network encryption",
+        "Password complexity"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Corporate policies extend beyond digital controls: locking screens when stepping away, not leaving printed client data on a desk, securing laptops — physical/procedural security complementing technica"
+    },
+    {
+      "id": 25,
+      "question": "Mail Merge is used to:",
+      "options": [
+        "Combine two documents into one",
+        "Send a document to a printer queue",
+        "Produce personalised copies of a letter for many recipients",
+        "Merge table cells"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Mail Merge weds a template (with placeholders like «FirstName») to a data source (Excel sheet, contact list) and generates an individualised copy per record — the classic offer-letter or invitation wo"
+    },
+    {
+      "id": 26,
+      "question": "Which of these is generally NOT a valid direct operation on a Stack (without first popping other elements)?",
+      "options": [
+        "Push a new element",
+        "Pop the top element",
+        "Directly access/remove an element from the MIDDLE of the stack",
+        "Peek at the top element without removing it"
+      ],
+      "correctAnswer": "C",
+      "explanation": "A stack's whole design philosophy restricts access to ONE end (the top) — push, pop, and peek (view without removing) are the standard operations; reaching into the middle would require popping everyt"
+    },
+    {
+      "id": 27,
+      "question": "Which best describes 'privilege escalation'?",
+      "options": [
+        "Legitimately requesting more access through proper channels",
+        "An attacker exploiting a flaw to gain HIGHER access rights than originally granted (user to admin)",
+        "Logging out and back in",
+        "Renaming a user account"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Privilege escalation is a post-compromise step: having gained low-level access, an attacker exploits a separate vulnerability to elevate to administrator/root — turning a minor foothold into full cont"
+    },
+    {
+      "id": 28,
+      "question": "Cell A1 holds 10 and A2 holds 3. What does =MOD(A1, A2) return?",
+      "options": [
+        "3",
+        "1",
+        "3.33",
+        "0"
+      ],
+      "correctAnswer": "B",
+      "explanation": "MOD returns the remainder after division: 10 ÷ 3 = 3 remainder 1, so the answer is 1. The quotient function is QUOTIENT(10,3)=3. MOD is the backbone of even/odd tests — =MOD(n,2)=0 flags even numbers"
+    },
+    {
+      "id": 29,
+      "question": "A private cloud is best suited for organisations that need:",
+      "options": [
+        "The cheapest possible option",
+        "Maximum control, customisation, and compliance for sensitive data, accepting higher cost",
+        "No IT staff at all",
+        "Public internet access only"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Private cloud dedicates infrastructure to ONE organisation — often on-premises or in a dedicated hosted environment — trading the public cloud's economies of scale for tighter control, useful for regu"
+    },
+    {
+      "id": 30,
+      "question": "The maximum practical length of a standard UTP Ethernet segment is about:",
+      "options": [
+        "10 m",
+        "100 m",
+        "1 km",
+        "Unlimited"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Cat5e/Cat6 copper runs are specified to 100 metres end-to-end; beyond that, signal degrades and you need a switch/repeater or fibre. The 100 m figure is a bare-fact question that appears with surprisi"
+    },
+    {
+      "id": 31,
+      "question": "A linear search runs below. What INDEX is printed?\nlist = [33, 25, 19, 23, 87, 81]\nFOR i = 0 TO 5\nIF list[i] == 33 THEN\nPRINT i\nBREAK\nEND IF\nEND FOR",
+      "options": [
+        "0",
+        "-1",
+        "1",
+        "-2"
+      ],
+      "correctAnswer": "A",
+      "explanation": "33 first appears at position <b>0</b> (zero-based). Linear search prints the INDEX, not the value — questions swap those two constantly, and 'position counting from 1' supplies the other classic wrong"
+    },
+    {
+      "id": 32,
+      "question": "Which structure is generally BETTER for frequent random/indexed access (e.g., 'give me element #500 instantly')?",
+      "options": [
+        "Linked List",
+        "Array — direct O(1) index arithmetic",
+        "Stack",
+        "Queue"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Arrays win decisively here: element #500 is found instantly via base_address + 500×element_size, no traversal needed — O(1). A linked list would need to walk 500 nodes deep, O(n). This exact array-vs-"
+    },
+    {
+      "id": 33,
+      "question": "What value appears on screen?\nSET z = 32 AND 15   // bitwise AND\nPRINT z",
+      "options": [
+        "47",
+        "2",
+        "-2",
+        "0"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Write both in binary: 32 = 00100000, 15 = 00001111. AND keeps a 1 only where BOTH bits are 1: 00000000 = <b>0</b>. Distractors include the OR (47) and XOR (47) results — computing the wrong operator i"
+    },
+    {
+      "id": 34,
+      "question": "Why is choosing an appropriate DATA STRUCTURE just as important as choosing an efficient ALGORITHM?",
+      "options": [
+        "Data structures have no effect on performance",
+        "The wrong data structure can force even a well-designed algorithm into poor performance — e.g., needing frequent middle-insertions on an array instead of a linked list, or frequent lookups on a linked list instead of a hash table",
+        "Only algorithms matter, never structures",
+        "They are the same concept"
+      ],
+      "correctAnswer": "B",
+      "explanation": "This bank's own comparisons illustrate the point directly: identical LOGICAL operations (search, insert, delete) have wildly different actual speeds depending on whether you chose an array, linked lis"
+    },
+    {
+      "id": 35,
+      "question": "Encapsulation in OOP means:",
+      "options": [
+        "Creating multiple classes",
+        "Bundling data and the methods operating on it, restricting direct access",
+        "Deleting unused objects",
+        "Copying one object into another"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Encapsulation wraps an object's state (fields) together with its behaviour (methods) and hides internals behind access modifiers — outsiders interact only through the public interface. A bank-account"
+    },
+    {
+      "id": 36,
+      "question": "Object storage (like AWS S3) differs from traditional file storage because it:",
+      "options": [
+        "Cannot store images",
+        "Stores data as discrete objects with metadata, accessed via a flat namespace and simple APIs, rather than a hierarchical folder structure",
+        "Is always slower",
+        "Only works offline"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Object storage scales to virtually unlimited size by avoiding a traditional folder tree — each object (file + metadata + a unique key) sits in a flat 'bucket', retrieved via simple HTTP-based APIs. It"
+    },
+    {
+      "id": 37,
+      "question": "The loop skips alternate positions. Output?\narr = [39, 30, 25, 65, 59, 54]\nt = 0\nFOR i = 0 TO 5 STEP 2\nt = t + arr[i]\nEND FOR\nPRINT t",
+      "options": [
+        "118",
+        "128",
+        "120",
+        "123"
+      ],
+      "correctAnswer": "D",
+      "explanation": "STEP 2 from 0 touches indices 0, 2, 4 — values 39, 25, 59 — totalling <b>123</b>. Starting the same loop at 1 would instead pick 30, 65, 54 (sum 149), the mirrored distractor."
+    },
+    {
+      "id": 38,
+      "question": "A class implementing an interface must:",
+      "options": [
+        "Extend it",
+        "Provide bodies for all its abstract methods (or itself be declared abstract)",
+        "Be final",
+        "Have a main method"
+      ],
+      "correctAnswer": "B",
+      "explanation": "implements is a promise: every abstract method of the interface gets an implementation, otherwise the class must be marked abstract and pass the duty down. Default methods (Java 8+) come pre-implement"
+    },
+    {
+      "id": 39,
+      "question": "The Rehearse Timings feature:",
+      "options": [
+        "Limits the show to 10 minutes",
+        "Records how long you spend per slide for pacing/auto-advance",
+        "Adds a countdown to slides",
+        "Speeds up animations"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Rehearse Timings (Slide Show tab) runs the deck while recording your per-slide durations; you can save them so the show AUTO-ADVANCES on that schedule — the engine behind self-running demos. It measur"
+    },
+    {
+      "id": 40,
+      "question": "How many times does 'R' occur?\ns = \"PROGRAM\"\ncnt = 0\nFOR each ch IN s\nIF ch == 'R' THEN cnt = cnt + 1\nEND FOR\nPRINT cnt",
+      "options": [
+        "4",
+        "3",
+        "1",
+        "2"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Scan \"PROGRAM\" for 'R': it appears <b>2</b> time(s). Frequency loops compare each character to the target and increment a counter — mark the letters on the word as you count, because double-counting o"
+    },
+    {
+      "id": 41,
+      "question": "A pivot table is primarily used to:",
+      "options": [
+        "Draw charts automatically",
+        "Summarise and cross-tabulate large data sets",
+        "Protect data with a password",
+        "Merge two workbooks"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Pivot tables aggregate raw rows into summaries — totals, counts, averages — arranged by any combination of category fields, without writing formulas. Dragging fields between Rows, Columns, Values and"
+    },
+    {
+      "id": 42,
+      "question": "An interface (Java) traditionally contains:",
+      "options": [
+        "Method signatures (contracts) that implementing classes must fulfil",
+        "Only private fields",
+        "Executable main methods only",
+        "Database queries"
+      ],
+      "correctAnswer": "A",
+      "explanation": "An interface declares WHAT a class can do — a pure contract; classes 'implement' it and supply bodies. Fields are implicitly public static final, and since Java 8 default/static methods with bodies ar"
+    },
+    {
+      "id": 43,
+      "question": "A Priority Queue differs from a standard queue because:",
+      "options": [
+        "It only stores numbers",
+        "Elements are dequeued based on PRIORITY value, not strictly the order they were inserted",
+        "It cannot be implemented",
+        "It has no front or rear"
+      ],
+      "correctAnswer": "B",
+      "explanation": "In a priority queue, a high-priority element inserted LAST can still be dequeued BEFORE a low-priority element inserted earlier — 'importance' overrides 'arrival order'. Hospital emergency triage (cri"
+    },
+    {
+      "id": 44,
+      "question": "Which is TRUE about global variables?",
+      "options": [
+        "They are only visible inside one function",
+        "They are accessible from anywhere in the program, which can make debugging harder due to unexpected modifications",
+        "They cannot store numbers",
+        "They are always constants"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Global scope means ANY function can read or modify the variable — convenient for shared state, but risky: a bug in one distant function can silently corrupt data another function relies on, making lar"
+    },
+    {
+      "id": 45,
+      "question": "Common HTTP methods include:",
+      "options": [
+        "GET, POST, PUT, DELETE",
+        "SEND, TAKE, GIVE",
+        "READ, WRITE only",
+        "PING, PONG"
+      ],
+      "correctAnswer": "A",
+      "explanation": "GET retrieves, POST submits, PUT replaces/updates, DELETE removes — the verb set REST APIs build on (plus PATCH for partial updates). Method-to-purpose matching ('which method uploads form data?' → PO 4A — Backend Coding Q131 Solution: PYTHON3 def solve(input1): s = ''.join(c.lower() for c in input1 if c.isalnum()) return s == s[::-1] print(solve('A man, a plan, a canal: Panama')) # -&gt; True print(solve('race a car')) # -&gt; False print(solve('Was it a car or a cat I saw?')) # -&gt; True 4B — SQL Q132 SQL Answer: SQL SELECT dept_id, COUNT(*) AS employee_count FROM Employees GROUP BY dept_id; Result: Result: dept_id | employee_count 1 | 4 2 | 3 3 | 1 4 | 2 5 | 2 4C — Frontend Q133 Solution:  CSS:  JS: function copyText() { document.getElementById(\"dest\").textContent = document.getElementById(\"src\").value; }"
+    }
+  ]
+}

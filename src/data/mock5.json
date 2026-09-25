@@ -1,0 +1,548 @@
+{
+  "id": "mock5",
+  "title": "Mock Test 5",
+  "section": "Technical MCQ — Mixed Topics",
+  "durationMinutes": 45,
+  "questions": [
+    {
+      "id": 1,
+      "question": "A key advantage of microservices over a monolithic architecture is:",
+      "options": [
+        "Simpler initial development",
+        "Independent deployment and scaling of individual services without redeploying the whole application",
+        "Always cheaper to run",
+        "No network communication needed"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Update the payments service without touching or redeploying the entire application — faster iteration and fault isolation (one service crashing doesn't necessarily take down everything). The TRADE-OFF"
+    },
+    {
+      "id": 2,
+      "question": "After the loop ends, the output is:\ncnt = 0\nFOR i = 3 TO 7 STEP 2\ncnt = cnt + i\nEND FOR\nPRINT cnt",
+      "options": [
+        "15",
+        "18",
+        "11",
+        "13"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The loop visits i = 3, 5, 7 — 3 iteration(s). Adding them: 3 + 5 + 7 = <b>15</b>. List actual i-values before summing; guessing the range breeds off-by-ones."
+    },
+    {
+      "id": 3,
+      "question": "Quick Sort's strategy relies on choosing a:",
+      "options": [
+        "Random starting index only",
+        "PIVOT element, partitioning the array so smaller elements go left and larger go right, then recursively sorting each partition",
+        "Fixed middle value that never changes",
+        "Linked list structure"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Pick a pivot, rearrange the array so everything smaller than the pivot ends up to its left and everything larger to its right (the pivot itself lands in its FINAL sorted position after this step), the"
+    },
+    {
+      "id": 4,
+      "question": "What value appears on screen?\nSET z = 32 AND 15   // bitwise AND\nPRINT z",
+      "options": [
+        "47",
+        "2",
+        "-2",
+        "0"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Write both in binary: 32 = 00100000, 15 = 00001111. AND keeps a 1 only where BOTH bits are 1: 00000000 = <b>0</b>. Distractors include the OR (47) and XOR (47) results — computing the wrong operator i"
+    },
+    {
+      "id": 5,
+      "question": "A digital signature primarily provides:",
+      "options": [
+        "Faster downloads",
+        "Authentication and integrity — proof of who sent a message and that it wasn't altered",
+        "File compression",
+        "Free storage"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The sender encrypts a hash of the message with their PRIVATE key; anyone can verify using the sender's PUBLIC key, confirming both identity (only the sender could have created it) and integrity (any t"
+    },
+    {
+      "id": 6,
+      "question": "A Binary Search Tree (BST) maintains the property that for each node:",
+      "options": [
+        "All values are identical",
+        "All values in its LEFT subtree are smaller, and all values in its RIGHT subtree are larger (for a typical ascending-order BST)",
+        "Values are stored in random order with no rule",
+        "Only leaf nodes can hold data"
+      ],
+      "correctAnswer": "B",
+      "explanation": "This ordering property is what makes BST search efficient: at each node, compare the target to decide 'go left' (smaller) or 'go right' (larger) — mirroring binary search's halving logic, but on a tre"
+    },
+    {
+      "id": 7,
+      "question": "The IN operator in SQL (WHERE Department IN ('Sales', 'HR', 'IT')) is a shorthand for:",
+      "options": [
+        "A single equality check only",
+        "Multiple OR conditions checking if a column matches ANY value in the given list",
+        "A JOIN operation",
+        "Deleting those departments"
+      ],
+      "correctAnswer": "B",
+      "explanation": "WHERE Department IN ('Sales', 'HR', 'IT') is equivalent to (but far more readable than) WHERE Department = 'Sales' OR Department = 'HR' OR Department = 'IT' — a clean shorthand for matching against a"
+    },
+    {
+      "id": 8,
+      "question": "The professional response time expectation for routine business email is generally:",
+      "options": [
+        "Within 5 minutes",
+        "Within one business day (24 hours)",
+        "Within a month",
+        "No expectation exists"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Business etiquette treats ONE BUSINESS DAY as the courteous ceiling for routine mail — with a brief holding reply if the full answer needs longer. Instant response isn't expected (that's chat), and we"
+    },
+    {
+      "id": 9,
+      "question": "Which feature creates an automatic Table of Contents?",
+      "options": [
+        "Manually typing entries",
+        "References → Table of Contents (built from Heading styles)",
+        "Insert → Index",
+        "View → Navigation"
+      ],
+      "correctAnswer": "B",
+      "explanation": "An automatic TOC reads paragraphs formatted with Heading 1/2/3 styles and builds page-numbered entries that UPDATE on demand (F9). No heading styles, no TOC — that dependency is the core concept. An I"
+    },
+    {
+      "id": 10,
+      "question": "A power-of-two test runs below. What prints?\ntotal = 16 AND 15\nPRINT total",
+      "options": [
+        "0",
+        "1",
+        "16",
+        "15"
+      ],
+      "correctAnswer": "A",
+      "explanation": "16 in binary is a single 1 followed by zeros (00010000), while 15 is all 1s below it (00001111); they share no set bits, so AND gives <b>0</b>. n AND (n−1) == 0 is THE standard power-of-two check — me"
+    },
+    {
+      "id": 11,
+      "question": "What is printed?\nSET val = 46 AND 29   // bitwise AND\nPRINT val",
+      "options": [
+        "51",
+        "12",
+        "11",
+        "75"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Write both in binary: 46 = 00101110, 29 = 00011101. AND keeps a 1 only where BOTH bits are 1: 00001100 = <b>12</b>. Distractors include the OR (63) and XOR (51) results — computing the wrong operator"
+    },
+    {
+      "id": 12,
+      "question": "A proxy server primarily:",
+      "options": [
+        "Assigns IP addresses",
+        "Acts as an intermediary for client requests — caching, filtering, anonymising",
+        "Hosts websites",
+        "Replaces routers"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Clients talk to the proxy; the proxy talks to the internet — enabling content filtering, response caching, and hiding client identity. Corporate networks use proxies for policy enforcement. It complem"
+    },
+    {
+      "id": 13,
+      "question": "Which best describes a 'sandbox' environment in software development?",
+      "options": [
+        "The live production system used by real customers",
+        "An isolated testing environment where code/experiments can run safely without affecting real users or data",
+        "A physical box of hardware",
+        "A type of malware"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Developers test risky changes, new integrations, or untrusted code in a sandbox — isolated so mistakes or even deliberate attacks can't touch production systems or real customer data — before anything"
+    },
+    {
+      "id": 14,
+      "question": "What is printed for this input?\nFUNCTION D(n)\nIF n < 10 THEN RETURN n\nRETURN (n MOD 10) + D(n DIV 10)\nEND FUNCTION\nPRINT D(811)",
+      "options": [
+        "12",
+        "13",
+        "7",
+        "10"
+      ],
+      "correctAnswer": "D",
+      "explanation": "n MOD 10 peels the last digit and n DIV 10 drops it, so the function sums the digits of 811: 8 + 1 + 1 = <b>10</b>. MOD-10 / DIV-10 as 'last digit / remove last digit' is a pattern worth recognising o"
+    },
+    {
+      "id": 15,
+      "question": "Which is an example of implicit type conversion (coercion)?",
+      "options": [
+        "Manually writing (int)myDouble",
+        "5 + \"5\" automatically becoming \"55\" (or an error) without an explicit cast written by the programmer",
+        "Declaring a variable's type",
+        "Writing a comment"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Implicit conversion happens AUTOMATICALLY, chosen by the language's own rules (as seen in QB-2's Excel =A1+B1 with text/number mixing) — sometimes helpful, sometimes a silent source of unexpected beha"
+    },
+    {
+      "id": 16,
+      "question": "In an IF-ELSE statement, the ELSE block executes when:",
+      "options": [
+        "The condition is always true",
+        "The IF condition evaluates to FALSE",
+        "Both blocks always run",
+        "Never"
+      ],
+      "correctAnswer": "B",
+      "explanation": "IF-ELSE is a binary fork: exactly one branch runs based on the condition's truth value — IF's block on TRUE, ELSE's block on FALSE, never both, never neither. ELSE IF chains extend this to multiple mu"
+    },
+    {
+      "id": 17,
+      "question": "Multi-Factor Authentication (MFA) is best described as:",
+      "options": [
+        "Two-factor authentication renamed",
+        "Any authentication using two OR MORE independent factor categories",
+        "A stronger single password",
+        "Biometrics only"
+      ],
+      "correctAnswer": "B",
+      "explanation": "MFA generalises 2FA to 'two or more' — some high-security systems add a third factor (e.g., password + OTP + fingerprint). Every 2FA setup IS technically MFA, but not every MFA setup is limited to exa"
+    },
+    {
+      "id": 18,
+      "question": "How many is the returned count?\nFUNCTION H(n)\nIF n == 0 THEN RETURN 0\nRETURN 1 + H(n DIV 2)\nEND FUNCTION\nPRINT H(68)",
+      "options": [
+        "7",
+        "6",
+        "9",
+        "8"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Each level halves n (integer division): 68 → 34 → 17 → 8 → 4 → 2 → 1 → 0, contributing 1 per step = <b>7</b>. This count is ■log■ n■ + 1 — the number of binary digits of 68 — the logarithmic pattern b"
+    },
+    {
+      "id": 19,
+      "question": "Full-duplex communication means:",
+      "options": [
+        "One direction only",
+        "Both directions simultaneously",
+        "Both directions but one at a time",
+        "No communication"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Full-duplex = talk and listen at once (phone call, modern switched Ethernet). HALF-duplex alternates directions (walkie-talkie) and SIMPLEX is one-way forever (broadcast radio). The three modes with t"
+    },
+    {
+      "id": 20,
+      "question": "After this runs, the output is: q := 27 XOR 53 WRITE q",
+      "options": [
+        "50",
+        "48",
+        "42",
+        "46"
+      ],
+      "correctAnswer": "D",
+      "explanation": "27 = 00011011 and 53 = 00110101; XOR outputs 1 only where the bits DIFFER: 00101110 = <b>46</b>. Remember the special cases n XOR n = 0 and n XOR 0 = n — the exam builds several questions on them."
+    },
+    {
+      "id": 21,
+      "question": "Predict the output:\nm = 61 AND 1\nPRINT m",
+      "options": [
+        "1",
+        "0",
+        "61",
+        "Error"
+      ],
+      "correctAnswer": "A",
+      "explanation": "AND-ing with 1 isolates the LAST bit. 61 is odd, so its last binary digit is 1, and the result is <b>1</b>. This is the standard odd/even test in bit form: (n AND 1) = 1 means odd, 0 means even — expe"
+    },
+    {
+      "id": 22,
+      "question": "A 'logic error' is dangerous because:",
+      "options": [
+        "It always crashes the program immediately",
+        "The code runs without crashing but produces incorrect results — it can go unnoticed without careful testing",
+        "It's always caught by the compiler",
+        "It only occurs in comments"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Logic errors are the trickiest category: syntax is fine, the program runs, nothing crashes — but a flawed formula or wrong comparison operator (< instead of <=) silently produces wrong answers. Thorou"
+    },
+    {
+      "id": 23,
+      "question": "Which OOP pillar lets a Dog class reuse the code of an Animal class?",
+      "options": [
+        "Abstraction",
+        "Polymorphism",
+        "Inheritance",
+        "Encapsulation"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Inheritance creates an is-a relationship: Dog EXTENDS Animal and automatically owns Animal's non-private members, adding or overriding what it needs. Code reuse plus hierarchical modelling is its purp"
+    },
+    {
+      "id": 24,
+      "question": "Which scenario would generally favour a relational (SQL) database over NoSQL?",
+      "options": [
+        "Storing rapidly changing, loosely structured social media posts",
+        "A banking system requiring strict ACID transaction guarantees and well-defined structured relationships (accounts, transactions, customers)",
+        "A single-user note-taking app with no structure",
+        "Never — NoSQL is always better"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Banking, inventory management, and other systems where DATA INTEGRITY and well-defined RELATIONSHIPS between entities are critical (and where ACID guarantees genuinely matter) traditionally favour rel"
+    },
+    {
+      "id": 25,
+      "question": "What is the output?\nitems = [46, 77, 15, 19, 11]\nPRINT items[3] + items[2]",
+      "options": [
+        "39",
+        "31",
+        "34",
+        "19"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Zero-based indexing: items[3] = 19 and items[2] = 15; their sum is <b>34</b>. Index n is the (n+1)th element — reciting that rule before answering prevents the shifted-by-one errors the options bait."
+    },
+    {
+      "id": 26,
+      "question": "Shift + F5 in PowerPoint:",
+      "options": [
+        "Ends the slideshow",
+        "Starts the show from the current slide",
+        "Opens speaker notes",
+        "Saves the file"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Shift+F5 launches presentation mode from the slide you're on — ideal for testing one slide's animations without replaying the deck. Esc ends a running show. Remember the asymmetry: F5 = beginning, Shi"
+    },
+    {
+      "id": 27,
+      "question": "Which tab contains Margins, Orientation and Size?",
+      "options": [
+        "Home",
+        "Insert",
+        "Layout (Page Layout)",
+        "References"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Layout owns page geometry: Margins, Orientation, Size, Columns and Breaks. Home is character/paragraph formatting, Insert adds objects, References handles TOC/citations/footnotes. Tab-to-feature mappi"
+    },
+    {
+      "id": 28,
+      "question": "Which protocol maps to 'secure file transfer over SSH'?",
+      "options": [
+        "FTPS",
+        "SFTP",
+        "TFTP",
+        "HTTP"
+      ],
+      "correctAnswer": "B",
+      "explanation": "SFTP is a subsystem of SSH (port 22) — one encrypted channel, firewall-friendly. FTPS is different: classic FTP with TLS bolted on (ports 21/990). TFTP is trivial, UDP-69, unauthenticated — for PXE bo"
+    },
+    {
+      "id": 29,
+      "question": "The unit of data at the Transport layer (TCP) is called a:",
+      "options": [
+        "Frame",
+        "Packet",
+        "Segment",
+        "Bit"
+      ],
+      "correctAnswer": "C",
+      "explanation": "TCP data units are SEGMENTS; Layer 3 has packets, Layer 2 frames, Layer 1 raw bits. The encapsulation ladder — segment inside packet inside frame — is asked both as naming and as ordering ('which wrap"
+    },
+    {
+      "id": 30,
+      "question": "An MX record specifies:",
+      "options": [
+        "A website's IP",
+        "The mail server responsible for a domain, with priority values",
+        "Name servers",
+        "Certificate authority"
+      ],
+      "correctAnswer": "B",
+      "explanation": "MX answers 'where do I deliver mail for example.com?' — hostnames with preference numbers (lower = tried first). Sending servers query MX before SMTP delivery, linking the DNS and email question famil"
+    },
+    {
+      "id": 31,
+      "question": "A red wavy underline beneath a word indicates:",
+      "options": [
+        "Grammar error",
+        "Possible spelling error",
+        "Tracked change",
+        "Hyperlink"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Red waves flag possible SPELLING errors; blue (or green in older versions) waves flag GRAMMAR issues. Tracked changes appear as coloured text with strikethroughs/underlines plus margin marks, and hype"
+    },
+    {
+      "id": 32,
+      "question": "A SWITCH/CASE statement is most useful when:",
+      "options": [
+        "Comparing one variable against many discrete possible values",
+        "Only two outcomes are possible",
+        "No comparison is needed",
+        "Looping is required"
+      ],
+      "correctAnswer": "A",
+      "explanation": "SWITCH replaces a long IF-ELSE-IF chain when testing ONE variable against several specific values (day of week, menu choice) — often clearer to read. Without a BREAK, execution 'falls through' to the"
+    },
+    {
+      "id": 33,
+      "question": "In the formula =$B$2*C5, what does the $ sign do when the formula is copied to other cells?",
+      "options": [
+        "Formats the result as currency",
+        "Keeps the reference B2 fixed (absolute)",
+        "Makes the formula read-only",
+        "Multiplies by dollar rate"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Dollar signs create an ABSOLUTE reference: $B$2 stays locked on B2 wherever the formula is copied, while the relative C5 shifts row/column with the copy. Mixed forms exist too — $B2 locks only the col"
+    },
+    {
+      "id": 34,
+      "question": "What is the output of =LEFT(\"PLACEMENT\", 5)?",
+      "options": [
+        "MENT",
+        "PLACE",
+        "PLACEM",
+        "EMENT"
+      ],
+      "correctAnswer": "B",
+      "explanation": "LEFT extracts the given number of characters starting from the beginning of the text: the first 5 letters of PLACEMENT are P-L-A-C-E → \"PLACE\". Its mirror RIGHT(\"PLACEMENT\",4) would give \"MENT\". MID a"
+    },
+    {
+      "id": 35,
+      "question": "An 'entity' in Entity-Relationship (ER) modelling, used during database DESIGN (before creating actual tables), represents:",
+      "options": [
+        "A single data value",
+        "A real-world object or concept about which data is stored (e.g., Student, Course, Order) — which typically becomes a TABLE in the final database",
+        "A type of SQL query",
+        "A network device"
+      ],
+      "correctAnswer": "B",
+      "explanation": "ER diagrams are a DESIGN-phase tool: Entities (Student, Course) become tables, their Attributes (Name, Marks) become columns, and Relationships (enrols-in) become the foreign-key connections between t"
+    },
+    {
+      "id": 36,
+      "question": "Why is choosing an appropriate DATA STRUCTURE just as important as choosing an efficient ALGORITHM?",
+      "options": [
+        "Data structures have no effect on performance",
+        "The wrong data structure can force even a well-designed algorithm into poor performance — e.g., needing frequent middle-insertions on an array instead of a linked list, or frequent lookups on a linked list instead of a hash table",
+        "Only algorithms matter, never structures",
+        "They are the same concept"
+      ],
+      "correctAnswer": "B",
+      "explanation": "This bank's own comparisons illustrate the point directly: identical LOGICAL operations (search, insert, delete) have wildly different actual speeds depending on whether you chose an array, linked lis"
+    },
+    {
+      "id": 37,
+      "question": "In a Singly Linked List, each node contains:",
+      "options": [
+        "Data and a pointer to the PREVIOUS node only",
+        "Data and a pointer to the NEXT node",
+        "Only data, no pointers",
+        "Two pointers, to both neighbours"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A singly linked list node = [data | next] — you can only traverse FORWARD, from head toward the end (marked by a next pointer of NULL). A DOUBLY linked list adds a second pointer to the PREVIOUS node"
+    },
+    {
+      "id": 38,
+      "question": "Bluetooth is designed for:",
+      "options": [
+        "City-wide links",
+        "Short-range personal area networking (PAN), ~10 metres",
+        "Undersea cables",
+        "Satellite uplink"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Bluetooth creates PANs — headphones, keyboards, file beaming — within roughly 10 m at modest bandwidth. It's the standard example whenever 'PAN' appears, just as Wi-Fi exemplifies WLAN. Scope-technolo"
+    },
+    {
+      "id": 39,
+      "question": "CI/CD in a DevOps context stands for:",
+      "options": [
+        "Computer Interface / Computer Design",
+        "Continuous Integration / Continuous Deployment (or Delivery)",
+        "Cloud Infrastructure / Cloud Database",
+        "Central Identity / Central Directory"
+      ],
+      "correctAnswer": "B",
+      "explanation": "CI automatically builds and tests code every time developers merge changes, catching integration bugs early; CD automatically (or with one click) deploys tested code to production, shrinking the time"
+    },
+    {
+      "id": 40,
+      "question": "Load balancing in a cloud/web architecture serves to:",
+      "options": [
+        "Slow down traffic intentionally",
+        "Distribute incoming requests across multiple servers to prevent any one server from being overwhelmed",
+        "Encrypt all traffic",
+        "Assign static IP addresses"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A load balancer sits in front of a server pool, routing each incoming request to a healthy, less-busy server — improving both performance (parallel handling) and reliability (if one server fails, traf"
+    },
+    {
+      "id": 41,
+      "question": "The 'increment' operator (++) does what to a variable?",
+      "options": [
+        "Decreases it by 1",
+        "Increases its value by 1",
+        "Doubles it",
+        "Sets it to zero"
+      ],
+      "correctAnswer": "B",
+      "explanation": "x++ (or x = x + 1) adds exactly one to x — the ubiquitous loop-counter operation (FOR i = 0; i < n; i++). Its mirror is the DECREMENT operator (--), subtracting one. Pre-increment (++x) vs post-increm"
+    },
+    {
+      "id": 42,
+      "question": "The term 'CRUD' in application/database development stands for:",
+      "options": [
+        "A programming error",
+        "Create, Read, Update, Delete — the four basic operations performed on persistent data",
+        "A type of database server",
+        "A network protocol"
+      ],
+      "correctAnswer": "B",
+      "explanation": "CRUD maps directly onto the SQL commands covered earlier: Create=INSERT, Read=SELECT, Update=UPDATE, Delete=DELETE — virtually every data-driven application (a to-do list, an e-commerce site, a social"
+    },
+    {
+      "id": 43,
+      "question": "SMTP is the protocol for:",
+      "options": [
+        "Receiving mail into a client",
+        "SENDING/relaying email between servers and from clients",
+        "Streaming video",
+        "Sharing printers"
+      ],
+      "correctAnswer": "B",
+      "explanation": "SMTP (port 25; 587 for client submission) pushes mail toward its destination. RECEIVING is POP3 or IMAP — the send/receive split is the entire trick in mail-protocol questions. A complete mail journey"
+    },
+    {
+      "id": 44,
+      "question": "Which device operates purely at the Physical layer?",
+      "options": [
+        "Router",
+        "Repeater/Hub",
+        "Switch",
+        "Firewall"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Repeaters and hubs regenerate electrical signals with zero understanding of addresses — Layer 1. Switches read MACs (L2), routers read IPs (L3), firewalls inspect up to application data. Device-to-lay"
+    },
+    {
+      "id": 45,
+      "question": "Which of these best describes 'algorithmic efficiency' as a general concept?",
+      "options": [
+        "How aesthetically the code is written",
+        "How well an algorithm's resource usage (time and/or space) scales as the problem size grows",
+        "The number of comments in the code",
+        "Whether the code compiles without errors"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Two algorithms can both produce CORRECT results, but one might be dramatically more efficient — the entire point of studying time/space complexity is choosing between correct-but-slow and correct-and- 4A — Backend Coding Q131 Solution: PYTHON3 def solve(input1): if not input1: return 0 num_set = set(input1) best = 0 for n in num_set: if n - 1 not in num_set: # start of a sequence length = 1 while n + length in num_set: length += 1 best = max(best, length) return best print(solve([100,4,200,1,3,2])) # -&gt; 4 print(solve([0,3,7,2,5,8,4,6,0,1])) # -&gt; 9 4B — SQL Q132 SQL Answer: SQL SELECT strftime('%m', order_date) AS month, MIN(order_date) AS earliest FROM Orders GROUP BY month ORDER BY month; Result: Result: month | earliest 01 | 2024-01-15 02 | 2024-02-05 03 | 2024-03-01 04 | 2024-04-02 4C — Frontend Q133 Solution:  CSS:  JS: function disableMe() { document.getElementById(\"btn\").disabled = true; }"
+    }
+  ]
+}

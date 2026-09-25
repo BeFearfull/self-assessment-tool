@@ -1,0 +1,548 @@
+{
+  "id": "mock6",
+  "title": "Mock Test 6",
+  "section": "Technical MCQ — Mixed Topics",
+  "durationMinutes": 45,
+  "questions": [
+    {
+      "id": 1,
+      "question": "DNS translates:",
+      "options": [
+        "IP addresses to MAC addresses",
+        "Domain names to IP addresses",
+        "Private IPs to public IPs",
+        "Files to packets"
+      ],
+      "correctAnswer": "B",
+      "explanation": "DNS is the internet's phonebook: www.example.com → 93.184.216.34. IP-to-MAC is ARP's job and private-to-public translation is NAT — both offered here as distractors because the three 'translation' pro"
+    },
+    {
+      "id": 2,
+      "question": "MAC addresses operate at which OSI layer?",
+      "options": [
+        "Layer 1 — Physical",
+        "Layer 2 — Data Link",
+        "Layer 3 — Network",
+        "Layer 7 — Application"
+      ],
+      "correctAnswer": "B",
+      "explanation": "MAC (hardware) addresses are Layer 2 identifiers burned into the NIC, used by switches to forward frames inside a LAN. IP addresses live one layer up. Pairing 'switch + MAC + frame → L2' against 'rout"
+    },
+    {
+      "id": 3,
+      "question": "The difference between = and == in most programming languages is:",
+      "options": [
+        "No difference",
+        "= is ASSIGNMENT (stores a value); == is COMPARISON (checks equality)",
+        "== is assignment; = is comparison",
+        "Both are used only in loops"
+      ],
+      "correctAnswer": "B",
+      "explanation": "x = 5 STORES 5 into x. x == 5 CHECKS whether x currently equals 5, returning true/false. Accidentally writing if (x = 5) instead of if (x == 5) is a legendarily common bug (in languages that allow it)"
+    },
+    {
+      "id": 4,
+      "question": "Load balancing in a cloud/web architecture serves to:",
+      "options": [
+        "Slow down traffic intentionally",
+        "Distribute incoming requests across multiple servers to prevent any one server from being overwhelmed",
+        "Encrypt all traffic",
+        "Assign static IP addresses"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A load balancer sits in front of a server pool, routing each incoming request to a healthy, less-busy server — improving both performance (parallel handling) and reliability (if one server fails, traf"
+    },
+    {
+      "id": 5,
+      "question": "The 'Delay Delivery' option in Outlook lets you:",
+      "options": [
+        "Slow the recipient's download",
+        "Compose now but have the mail sent automatically at a chosen later time",
+        "Add read receipts",
+        "Encrypt with a timer"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Delay Delivery (Options tab of a message) holds the mail until the scheduled moment — draft at midnight, deliver at 9 AM. With classic Outlook the machine must be online at send time; the newer 'Sched"
+    },
+    {
+      "id": 6,
+      "question": "Which best distinguishes a 'compiler' from an 'interpreter'?",
+      "options": [
+        "They are identical tools",
+        "A compiler translates the ENTIRE program into machine code before execution; an interpreter translates and executes line-by-line at runtime",
+        "Interpreters are always faster",
+        "Compilers only work with pseudocode"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Compiled languages (C, C++) produce a standalone executable ahead of time — errors are caught upfront, and execution is typically fast. Interpreted languages (Python, JavaScript, traditionally) execut"
+    },
+    {
+      "id": 7,
+      "question": "Cross-Site Scripting (XSS) allows an attacker to:",
+      "options": [
+        "Crash a database server physically",
+        "Inject malicious scripts into web pages viewed by other users",
+        "Intercept phone calls",
+        "Format a hard disk remotely"
+      ],
+      "correctAnswer": "B",
+      "explanation": "XSS smuggles JavaScript into a page (via an unsanitised comment field, for instance) that then runs in OTHER visitors' browsers — stealing cookies/sessions or defacing content. It exploits trust a use"
+    },
+    {
+      "id": 8,
+      "question": "A 'stored procedure' in a database is:",
+      "options": [
+        "A type of hardware component",
+        "A precompiled, reusable block of SQL code (potentially with logic like loops/conditions) stored in the database and executed by name",
+        "A backup file format",
+        "A type of primary key"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Rather than an application repeatedly sending the same complex multi-step SQL from scratch, a stored procedure lets that logic live INSIDE the database itself, callable by a simple name (CALL ProcessM"
+    },
+    {
+      "id": 9,
+      "question": "The purpose of encryption is to:",
+      "options": [
+        "Compress files for storage",
+        "Convert readable data into an unreadable form, reversible only with the correct key",
+        "Speed up transmission",
+        "Detect viruses"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Encryption scrambles plaintext into ciphertext using an algorithm and key; only someone with the correct key can decrypt it back. It protects CONFIDENTIALITY specifically — data at rest (disk encrypti"
+    },
+    {
+      "id": 10,
+      "question": "A static member of a class:",
+      "options": [
+        "Belongs to each object separately",
+        "Belongs to the class itself, shared by all instances",
+        "Cannot be accessed",
+        "Is always constant"
+      ],
+      "correctAnswer": "B",
+      "explanation": "static means ONE copy at class level: a static counter incremented in the constructor counts all objects ever made, and Math.max() runs without any object. static ≠ constant (that's final/const). 'Sha"
+    },
+    {
+      "id": 11,
+      "question": "An integer variable can typically store:",
+      "options": [
+        "Decimal fractions",
+        "Whole numbers, positive or negative, without a fractional part",
+        "Only positive numbers",
+        "Text characters"
+      ],
+      "correctAnswer": "B",
+      "explanation": "int holds whole numbers (..., -2, -1, 0, 1, 2, ...) — no decimal point. Fractions need float/double; text needs char/string. 'Unsigned' integer types restrict to non-negative only, a variant worth kno"
+    },
+    {
+      "id": 12,
+      "question": "Implementing a Stack using an Array, the 'top' variable typically represents:",
+      "options": [
+        "The total capacity of the array",
+        "The index of the most recently pushed element (the current top of the stack)",
+        "Always zero",
+        "The number of pop operations performed"
+      ],
+      "correctAnswer": "B",
+      "explanation": "An array-based stack tracks a top index: PUSH increments it then writes the new value; POP reads the value then decrements it. top = -1 (or 0, by convention) conventionally signals an EMPTY stack — ch"
+    },
+    {
+      "id": 13,
+      "question": "First Normal Form (1NF) requires that:",
+      "options": [
+        "Tables must have exactly one column",
+        "Each column holds ATOMIC (indivisible) values — no multiple values crammed into a single cell (like a comma-separated list)",
+        "No primary key is needed",
+        "All data must be numeric"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A cell containing 'Math, Science, English' violates 1NF — that should be split into separate ROWS (or a separate related table) rather than one messy multi-value cell, ensuring each field holds exactl"
+    },
+    {
+      "id": 14,
+      "question": "What does this display?\ns = \"BINARY\"\nPRINT LENGTH(s)",
+      "options": [
+        "6",
+        "5",
+        "4",
+        "8"
+      ],
+      "correctAnswer": "A",
+      "explanation": "LENGTH counts every character: BINARY has <b>6</b> letters. Pair this with loops — 'FOR i = 0 TO LENGTH−1' visits all characters, and forgetting the −1 walks past the end, a bug the exam frequently en"
+    },
+    {
+      "id": 15,
+      "question": "The Subject line of a professional email should be:",
+      "options": [
+        "Left empty for mystery",
+        "Short, specific and reflective of the content",
+        "Written entirely in capitals",
+        "A full paragraph"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A good subject summarises the message in a few precise words ('Leave request: 14–16 Aug') so it's findable and triage-able. ALL CAPS reads as shouting and trips spam filters; empty subjects look carel"
+    },
+    {
+      "id": 16,
+      "question": "'Spear phishing' differs from generic phishing because it is:",
+      "options": [
+        "Sent to random millions of people",
+        "Highly targeted and personalised toward a specific individual or organisation",
+        "Always via SMS",
+        "Automatically blocked by antivirus"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Spear phishing researches the target — using real names, roles, or recent events — making the bait far more convincing than a mass-blast scam email. Its precision makes it more dangerous and harder fo"
+    },
+    {
+      "id": 17,
+      "question": "The maximum practical length of a standard UTP Ethernet segment is about:",
+      "options": [
+        "10 m",
+        "100 m",
+        "1 km",
+        "Unlimited"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Cat5e/Cat6 copper runs are specified to 100 metres end-to-end; beyond that, signal degrades and you need a switch/repeater or fibre. The 100 m figure is a bare-fact question that appears with surprisi"
+    },
+    {
+      "id": 18,
+      "question": "CPU task scheduling using a 'ready queue' is an application of:",
+      "options": [
+        "A Stack",
+        "A Queue (often specifically a Priority Queue for scheduling algorithms)",
+        "A single variable",
+        "A boolean flag"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Processes waiting for CPU time typically sit in a queue — served roughly in arrival order for simple round-robin scheduling, or by PRIORITY for more sophisticated schedulers (urgent system processes a"
+    },
+    {
+      "id": 19,
+      "question": "The PRINT shows:\nans = 0\nFOR i = 1 TO 10\nIF i == 4 THEN BREAK\nans = ans + i\nEND FOR\nPRINT ans",
+      "options": [
+        "10",
+        "5",
+        "6",
+        "7"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The BREAK fires when i reaches 4, BEFORE that iteration's addition — so only 1..3 are summed: 1 + 2 + 3 = <b>6</b>. BREAK exits the whole loop instantly; CONTINUE would merely skip one turn — don't co"
+    },
+    {
+      "id": 20,
+      "question": "The function =TRIM(\" Data Entry \") returns:",
+      "options": [
+        "DataEntry",
+        "Data Entry",
+        "Data Entry",
+        "Data Entry"
+      ],
+      "correctAnswer": "B",
+      "explanation": "TRIM removes ALL leading and trailing spaces and collapses internal runs of spaces to a single space: \"Data Entry\". It does not delete the single space between words — that's the distractor in option"
+    },
+    {
+      "id": 21,
+      "question": "What is printed?\nPRINT 39 MOD 4",
+      "options": [
+        "1",
+        "3",
+        "2",
+        "4"
+      ],
+      "correctAnswer": "B",
+      "explanation": "4 × 9 = 36, and 39 − 36 = <b>3</b> is the remainder. MOD results always sit in 0..3 — any option outside that range is instantly wrong."
+    },
+    {
+      "id": 22,
+      "question": "A multi-way IF-ELSE IF chain evaluates conditions:",
+      "options": [
+        "All simultaneously",
+        "In ORDER, top to bottom, stopping at the FIRST condition that evaluates to TRUE (subsequent conditions are skipped)",
+        "In random order",
+        "Only the last condition matters"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Once one branch's condition is TRUE and its block executes, the ENTIRE chain is exited — even if a LATER condition would also have been true. This ordering matters: placing a broader/more general cond"
+    },
+    {
+      "id": 23,
+      "question": "SaaS (Software as a Service) means:",
+      "options": [
+        "You install software from a physical disk",
+        "A complete, ready-to-use application delivered over the internet, typically via subscription",
+        "You manage the servers yourself",
+        "A programming language"
+      ],
+      "correctAnswer": "B",
+      "explanation": "SaaS is the top layer — Gmail, Microsoft 365, Salesforce — where the provider manages EVERYTHING (infrastructure, platform, application) and the customer just uses it through a browser, usually paying"
+    },
+    {
+      "id": 24,
+      "question": "An embedded Excel chart in PowerPoint differs from a linked one because embedded charts:",
+      "options": [
+        "Update automatically when the Excel file changes",
+        "Store their own copy of the data inside the presentation",
+        "Cannot be edited",
+        "Are always black and white"
+      ],
+      "correctAnswer": "B",
+      "explanation": "EMBEDDING copies the workbook data INTO the .pptx — self-contained, but blind to later changes in the source file. LINKING references the external file and refreshes with it, breaking if the file move"
+    },
+    {
+      "id": 25,
+      "question": "An 'in-place' sorting algorithm is one that:",
+      "options": [
+        "Requires a completely separate copy of the array to work",
+        "Sorts the data using only a small, constant amount of EXTRA memory (rearranging elements within the original array itself)",
+        "Cannot sort numbers",
+        "Always runs in O(1) time"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Quick Sort and (typically) Selection/Bubble/Insertion Sort rearrange elements WITHIN the original array using minimal extra space — contrast with Merge Sort's standard implementation, which allocates"
+    },
+    {
+      "id": 26,
+      "question": "NTP synchronises:",
+      "options": [
+        "File versions",
+        "System clocks across devices (UDP port 123)",
+        "Passwords",
+        "IP leases"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Accurate shared time underpins log correlation, certificates and authentication (Kerberos breaks with clock skew) — NTP keeps clocks aligned over UDP 123. 'Why do logs from two servers disagree by min"
+    },
+    {
+      "id": 27,
+      "question": "The 'best case', 'average case', and 'worst case' complexities of an algorithm describe:",
+      "options": [
+        "Three different unrelated algorithms",
+        "How an algorithm performs under the MOST FAVOURABLE, TYPICAL, and LEAST FAVOURABLE input arrangements respectively",
+        "Three different programming languages",
+        "The algorithm's file size in three formats"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The SAME algorithm can behave differently depending on input: Insertion Sort is fast (O(n)) on already-sorted data (best case) but slow (O(n²)) on reverse-sorted data (worst case) — exam questions spe"
+    },
+    {
+      "id": 28,
+      "question": "Which shortcut zooms in within a browser?",
+      "options": [
+        "Ctrl + Plus (+)",
+        "Alt + Plus",
+        "Shift + Z",
+        "Ctrl + Shift + X"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Ctrl and + enlarges page zoom; Ctrl and − shrinks; Ctrl+0 resets to 100%. The same trio works across Chrome, Edge and Firefox and in many desktop apps. Zoom control questions are quick wins — the rese"
+    },
+    {
+      "id": 29,
+      "question": "A company's website uses HTTPS, and its data is stored in an encrypted cloud database. Which CIA triad principle do BOTH measures primarily support?",
+      "options": [
+        "Availability",
+        "Confidentiality",
+        "Integrity only",
+        "None of the above"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Both HTTPS (encrypting data in transit) and database encryption (data at rest) exist to keep information readable only by authorised parties — CONFIDENTIALITY. They can incidentally support integrity"
+    },
+    {
+      "id": 30,
+      "question": "Find the result:\nDECLARE p\np = 14 OR 55   // bitwise OR\nOUTPUT p",
+      "options": [
+        "60",
+        "61",
+        "57",
+        "63"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Binary forms: 14 = 00001110, 55 = 00110111. OR sets a 1 where EITHER bit is 1, giving 00111111 = <b>63</b>. OR can never be smaller than the larger operand — a sanity check that instantly kills any op"
+    },
+    {
+      "id": 31,
+      "question": "What does it mean for a Stack/Queue to 'underflow'?",
+      "options": [
+        "Too many elements were added",
+        "An attempt is made to POP/DEQUEUE from a structure that is already EMPTY",
+        "The structure is too large",
+        "A compile-time error"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Trying to pop a stack (or dequeue a queue) with zero elements is meaningless — there's nothing to remove — and well-written code should check isEmpty() BEFORE attempting the operation, rather than let"
+    },
+    {
+      "id": 32,
+      "question": "An 'array' is best described as:",
+      "options": [
+        "A single variable holding one value",
+        "A collection of elements of the SAME data type, stored in contiguous memory, accessed by index",
+        "A type of loop",
+        "A function"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Arrays group multiple same-typed values under one name, each reachable by a numeric index (usually starting at 0) — contiguous storage means the computer can jump directly to any element's memory addr"
+    },
+    {
+      "id": 33,
+      "question": "To insert a new slide with the keyboard, press:",
+      "options": [
+        "Ctrl + N",
+        "Ctrl + M",
+        "Ctrl + Shift + N",
+        "Alt + N"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Ctrl+M adds a NEW SLIDE after the current one (M ≈ 'more slides'). Ctrl+N opens a whole new PRESENTATION — the deliberately confusable neighbour. In the outline pane, Enter at the right level also cre"
+    },
+    {
+      "id": 34,
+      "question": "Runtime polymorphism in Java is achieved by:",
+      "options": [
+        "Method overloading",
+        "Method overriding with upcasting (parent reference, child object)",
+        "Constructors",
+        "Static blocks"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The recipe: override a method in the child, hold the child object in a PARENT-type reference, call the method — dispatch resolves at runtime to the child. Overloading resolves at compile time, making"
+    },
+    {
+      "id": 35,
+      "question": "Predict the printed element:\nvals = [87, 28, 86, 82, 33]\nROTATE LEFT by 1 position(s)\nPRINT vals[2]",
+      "options": [
+        "82",
+        "78",
+        "86",
+        "84"
+      ],
+      "correctAnswer": "A",
+      "explanation": "A left rotation by 1 moves the first 1 element(s) to the back: [28, 86, 82, 33, 87]. Index 2 then holds <b>82</b>. Mapping rule: new index k takes the old element at (k + 1) mod 5 — modular thinking b"
+    },
+    {
+      "id": 36,
+      "question": "What does this print?\nSET c = 5 >> 2   // RIGHT shift by 2\nPRINT c",
+      "options": [
+        "1",
+        "3",
+        "2",
+        "5"
+      ],
+      "correctAnswer": "A",
+      "explanation": "A right shift by 2 integer-divides by 2^2 = 4: 5 ÷ 4 = <b>1</b> (binary 00000101 → 00000001). Shifts-as-fast-multiplication/division is the single most tested bitwise idea in this exam."
+    },
+    {
+      "id": 37,
+      "question": "Alt + Tab in Windows is used to:",
+      "options": [
+        "Close windows",
+        "Switch between open applications",
+        "Open Task Manager",
+        "Take a screenshot"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Alt+Tab pops the app switcher; holding Alt and tapping Tab cycles through open windows, releasing lands on the chosen one. Win+Tab opens the fancier Task View with virtual desktops. Task Manager is Ct"
+    },
+    {
+      "id": 38,
+      "question": "Given the array below (index starts at 0), what is printed?\ndata = [8, 55, 36, 22, 4]\nsmall = data[0]\nFOR i = 0 TO 4\nIF data[i] < small THEN small = data[i]\nEND FOR\nPRINT small",
+      "options": [
+        "7",
+        "4",
+        "6",
+        "3"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The loop keeps the smallest element seen so far: comparisons leave the minimum, 4 → <b>4</b>. Confirm the loop covers indices 0..4 (all 5 elements) — off-by-one bounds are the favourite trap in traver"
+    },
+    {
+      "id": 39,
+      "question": "A string is fundamentally:",
+      "options": [
+        "A single number",
+        "A sequence/array of characters treated as text",
+        "A boolean value",
+        "A type of loop"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Strings ARE, under the hood, arrays of char values — which is why string operations (indexing, length, iteration) mirror array operations so closely (as seen throughout QB-3's string section). Some la"
+    },
+    {
+      "id": 40,
+      "question": "Peer-to-peer networking differs from client-server because in P2P:",
+      "options": [
+        "A central server controls everything",
+        "Every node can act as both client and server",
+        "Only two devices exist",
+        "No addressing is used"
+      ],
+      "correctAnswer": "B",
+      "explanation": "P2P distributes roles — each peer requests AND serves (torrents are the canonical example) — trading central control for resilience and scale. Client-server centralises resources and administration. A"
+    },
+    {
+      "id": 41,
+      "question": "Which statement about HTTP is TRUE?",
+      "options": [
+        "It is stateful by design",
+        "It is stateless — each request is independent; cookies/sessions add continuity on top",
+        "It encrypts by default",
+        "It runs on UDP"
+      ],
+      "correctAnswer": "B",
+      "explanation": "HTTP forgets each request immediately; shopping carts survive only because cookies, sessions or tokens re-identify you — mechanisms layered ABOVE the protocol. Statelessness and its cookie workaround"
+    },
+    {
+      "id": 42,
+      "question": "A bank's mobile app must ensure a customer's session token isn't stolen if their phone connects to an open Wi-Fi hotspot. Which protocol is the FIRST line of defence?",
+      "options": [
+        "HTTP",
+        "HTTPS/TLS, encrypting the app's API traffic end-to-end",
+        "FTP",
+        "Telnet"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Without HTTPS, a token sent in a plain HTTP request could be sniffed instantly on shared open Wi-Fi (a MITM scenario) — TLS encryption on every API call is the non-negotiable baseline, before even con"
+    },
+    {
+      "id": 43,
+      "question": "SMTP submission from mail clients (with authentication) commonly uses port:",
+      "options": [
+        "25",
+        "587",
+        "80",
+        "22"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Port 587 is the authenticated submission port for user clients; 25 remains server-to-server relay (and is widely blocked for home users to curb spam). The 25-vs-587 split — relay vs submission — is th"
+    },
+    {
+      "id": 44,
+      "question": "Evaluate the recursive call:\nFUNCTION G(n)\nIF n == 0 THEN RETURN 1\nRETURN n * G(n - 1)\nEND FUNCTION\nPRINT G(6)",
+      "options": [
+        "720",
+        "726",
+        "714",
+        "1080"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Unwind the calls: G(6) = 6×G(5) = ... down to G(0) = 1, then multiply back up: 6×5×4×3×2×1×1 = <b>720</b>. This is exactly n! (factorial). Always find the base case first; it anchors the whole unwindi"
+    },
+    {
+      "id": 45,
+      "question": "Which is TRUE about global variables?",
+      "options": [
+        "They are only visible inside one function",
+        "They are accessible from anywhere in the program, which can make debugging harder due to unexpected modifications",
+        "They cannot store numbers",
+        "They are always constants"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Global scope means ANY function can read or modify the variable — convenient for shared state, but risky: a bug in one distant function can silently corrupt data another function relies on, making lar 4A — Backend Coding Q131 Solution: PYTHON3 def solve(input1): if not input1: return 0 starts = sorted(s for s,e in input1) ends = sorted(e for s,e in input1) rooms = 0; max_rooms = 0; j = 0 for i in range(len(starts)): if starts[i] &lt; ends[j]: rooms += 1 max_rooms = max(max_rooms, rooms) else: rooms -= 1 j += 1 return max_rooms print(solve([[0,30],[5,10],[15,20]])) # -&gt; 2 print(solve([[7,10],[2,4]])) # -&gt; 1 print(solve([[1,5],[2,6],[3,7]])) # -&gt; 3 4B — SQL Q132 SQL Answer: SQL SELECT DISTINCT p.category FROM Customers c JOIN Orders o ON c.cust_id = o.cust_id JOIN OrderDetails od O N o.order_id = od.order_id JOIN Products p ON od.product_id = p.product_id WHERE c.name = 'Global Traders '; Result: Result: category Electronics 4C — Frontend Q133 Solution:  CSS:  JS: function filterList(term) { document.querySelectorAll(\".item\").forEach(function(li) { li.style.display = li.textContent.toLowerCase().includes(term.toLowerCase()) ? \"\" : \"none\"; }); }"
+    }
+  ]
+}

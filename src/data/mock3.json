@@ -1,0 +1,548 @@
+{
+  "id": "mock3",
+  "title": "Mock Test 3",
+  "section": "Technical MCQ — Mixed Topics",
+  "durationMinutes": 45,
+  "questions": [
+    {
+      "id": 1,
+      "question": "The time complexity of Merge Sort is:",
+      "options": [
+        "O(n²)",
+        "O(n log n)",
+        "O(n)",
+        "O(1)"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The array is halved log(n) times (the 'divide' depth), and merging all pieces back together at each level costs O(n) total work — multiplying gives O(n log n), significantly faster than the O(n²) sort"
+    },
+    {
+      "id": 2,
+      "question": "What is the purpose of the OSI Presentation layer?",
+      "options": [
+        "Routing",
+        "Data format translation, encryption and compression",
+        "Physical signalling",
+        "Session checkpoints"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Layer 6 makes data mutually intelligible: character encoding, serialisation, encryption/decryption, compression. Session (L5) manages dialogues; the separation of 5/6/7 duties is fine-grained and thus"
+    },
+    {
+      "id": 3,
+      "question": "After this runs, the output is: q := 27 XOR 53 WRITE q",
+      "options": [
+        "50",
+        "48",
+        "42",
+        "46"
+      ],
+      "correctAnswer": "D",
+      "explanation": "27 = 00011011 and 53 = 00110101; XOR outputs 1 only where the bits DIFFER: 00101110 = <b>46</b>. Remember the special cases n XOR n = 0 and n XOR 0 = n — the exam builds several questions on them."
+    },
+    {
+      "id": 4,
+      "question": "The classic two-branch recursion below returns what?\nFUNCTION FIB(n)\nIF n < 2 THEN RETURN n\nRETURN FIB(n-1) + FIB(n-2)\nEND FUNCTION\nPRINT FIB(6)",
+      "options": [
+        "6",
+        "9",
+        "8",
+        "7"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Build the Fibonacci ladder from the base: 0, 1, 1, 2, 3, 5, 8 — position 6 holds <b>8</b>. Never expand the recursion tree in an exam; grow the sequence upward from 0, 1 and read off the answer."
+    },
+    {
+      "id": 5,
+      "question": "What does the code output?\nval = 0\nFOR i = 1 TO 10\nIF i MOD 2 == 0 THEN CONTINUE\nval = val + i\nEND FOR\nPRINT val",
+      "options": [
+        "28",
+        "23",
+        "55",
+        "25"
+      ],
+      "correctAnswer": "D",
+      "explanation": "CONTINUE skips every multiple of 2, so the added values are 1, 3, 5, 7, 9, totalling <b>25</b>. CONTINUE abandons just the current pass; the loop itself marches on to the next i."
+    },
+    {
+      "id": 6,
+      "question": "SQL stands for:",
+      "options": [
+        "Simple Query Logic",
+        "Structured Query Language",
+        "System Query List",
+        "Sequential Query Loop"
+      ],
+      "correctAnswer": "B",
+      "explanation": "SQL (Structured Query Language) is the standardised language for interacting with relational databases across virtually every major vendor (MySQL, PostgreSQL, Oracle, SQL Server) — while each has mino"
+    },
+    {
+      "id": 7,
+      "question": "=SUMPRODUCT({1,2,3}, {4,5,6}) evaluates to:",
+      "options": [
+        "21",
+        "32",
+        "90",
+        "720"
+      ],
+      "correctAnswer": "B",
+      "explanation": "SUMPRODUCT multiplies the arrays position-by-position and sums the results: (1×4)+(2×5)+(3×6) = 4+10+18 = 32. Option A (21) is the sum of all six numbers and 720 is the product of all — both engineere"
+    },
+    {
+      "id": 8,
+      "question": "Which option makes a company logo appear identically on every slide?",
+      "options": [
+        "Paste it on each slide",
+        "Place it once on the Slide Master",
+        "Use a transition",
+        "Add it to speaker notes"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Placing the logo on the SLIDE MASTER propagates it to all layouts and slides automatically — and repositioning it later remains a one-place edit. Manual pasting invites misalignment across slides. Any"
+    },
+    {
+      "id": 9,
+      "question": "During a slide show, which key jumps directly to slide 7?",
+      "options": [
+        "7 then Enter",
+        "Ctrl + 7",
+        "F7",
+        "Alt + 7"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Type the slide NUMBER and press Enter to jump straight there — no menu needed, invisible to the audience. Ctrl+7 and F7 do nothing special in show mode. Combined with B/W blanking, number-Enter naviga"
+    },
+    {
+      "id": 10,
+      "question": "A 'Dequeue' (Double-Ended Queue, distinct from the dequeue OPERATION) allows:",
+      "options": [
+        "Insertion and deletion only at the rear",
+        "Insertion AND deletion at BOTH the front and rear ends",
+        "No insertion at all",
+        "Only random access"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A double-ended queue (often abbreviated 'deque', pronounced 'deck') generalises the queue by permitting add/remove operations at EITHER end — making it flexible enough to simulate a stack, a queue, or"
+    },
+    {
+      "id": 11,
+      "question": "Ctrl + D on a selected object in PowerPoint:",
+      "options": [
+        "Deletes it",
+        "Duplicates it",
+        "Docks it",
+        "Distributes it"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Ctrl+D DUPLICATES the selected object (or slide, in the thumbnail pane) with a slight offset — repeating Ctrl+D continues the pattern spacing, a designer trick. Delete removes; alignment/distribution"
+    },
+    {
+      "id": 12,
+      "question": "The no-temp arithmetic swap runs below. What does y print?\nx = 12 ; y = 8\nx = x + y\ny = x - y\nx = x - y\nPRINT y",
+      "options": [
+        "12",
+        "17",
+        "8",
+        "10"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Trace: x becomes 20; then y = 20−8 = 12; then x = 20−12 = 8. The values SWAP, so y prints <b>12</b>. Like the XOR version, learn this as a named pattern — 'add-subtract swap' — and skip the per-line g"
+    },
+    {
+      "id": 13,
+      "question": "A 2D array (matrix) can be thought of as:",
+      "options": [
+        "A single row of values",
+        "An array of arrays — rows and columns, accessed with TWO indices like arr[row][col]",
+        "A type of loop",
+        "A boolean value"
+      ],
+      "correctAnswer": "B",
+      "explanation": "matrix[2][3] accesses row 2, column 3 — a grid structure built by nesting one array inside another. It maps directly onto nested-loop traversal (outer loop = rows, inner loop = columns), the pattern e"
+    },
+    {
+      "id": 14,
+      "question": "O(1) time complexity means:",
+      "options": [
+        "The algorithm takes exactly 1 second",
+        "The operation takes CONSTANT time, regardless of how large the input is",
+        "It only works on 1 element",
+        "It's the slowest possible complexity"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Accessing arr[5] directly is O(1) — whether the array has 10 elements or 10 million, that single lookup takes the SAME (constant) time, because it's just one arithmetic address calculation. Constant t"
+    },
+    {
+      "id": 15,
+      "question": "Elasticity in cloud computing refers to:",
+      "options": [
+        "A stretchy cable",
+        "The ability to automatically scale resources up or down based on real-time demand",
+        "Data encryption strength",
+        "Network cable flexibility"
+      ],
+      "correctAnswer": "B",
+      "explanation": "An e-commerce site can automatically add servers during a flash sale and shrink back afterward — paying only for what's actually needed at each moment, rather than provisioning for peak load year-roun"
+    },
+    {
+      "id": 16,
+      "question": "A private cloud is best suited for organisations that need:",
+      "options": [
+        "The cheapest possible option",
+        "Maximum control, customisation, and compliance for sensitive data, accepting higher cost",
+        "No IT staff at all",
+        "Public internet access only"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Private cloud dedicates infrastructure to ONE organisation — often on-premises or in a dedicated hosted environment — trading the public cloud's economies of scale for tighter control, useful for regu"
+    },
+    {
+      "id": 17,
+      "question": "Comments added via Review → New Comment:",
+      "options": [
+        "Change the document text",
+        "Appear in the margin and can be resolved or deleted",
+        "Print always",
+        "Are visible only to the author"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Comments sit in the margin balloons, threaded with replies, and can be Resolved (greyed) or Deleted — the text itself is untouched. Whether they PRINT is a print-settings choice (default markup printi"
+    },
+    {
+      "id": 18,
+      "question": "SMB (port 445) is associated with:",
+      "options": [
+        "Windows file and printer sharing",
+        "Video calls",
+        "Time sync",
+        "Web hosting"
+      ],
+      "correctAnswer": "A",
+      "explanation": "SMB carries Windows network shares and printers; port 445 became infamous via the WannaCry ransomware's exploitation of SMBv1 — a fact bridging this section to security questions. 'File sharing on Win"
+    },
+    {
+      "id": 19,
+      "question": "Well-known ports occupy the range:",
+      "options": [
+        "0–1023",
+        "1024–49151",
+        "49152–65535",
+        "1–100"
+      ],
+      "correctAnswer": "A",
+      "explanation": "0–1023 are well-known (HTTP 80, SSH 22...), 1024–49151 registered, 49152–65535 dynamic/ephemeral — clients borrow ephemeral ports for their side of connections. Range-classification plus 'why does my"
+    },
+    {
+      "id": 20,
+      "question": "Bubble Sort works by:",
+      "options": [
+        "Selecting the minimum element repeatedly",
+        "Repeatedly comparing ADJACENT elements and swapping them if they're in the wrong order, 'bubbling' larger values toward the end",
+        "Dividing the array in half recursively",
+        "Using a hash table"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Each pass walks through the array comparing neighbours — if arr[i] > arr[i+1], swap them — so after one full pass, the LARGEST element has 'bubbled up' to the very end. Repeated passes gradually sort"
+    },
+    {
+      "id": 21,
+      "question": "A hypervisor is software that:",
+      "options": [
+        "Only runs on mobile phones",
+        "Creates and manages virtual machines by allocating physical hardware resources among them",
+        "Encrypts network traffic",
+        "Assigns domain names"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Type 1 hypervisors (VMware ESXi, Hyper-V) run directly on hardware ('bare metal') for maximum efficiency — the standard in data centres and cloud platforms. Type 2 (VirtualBox, VMware Workstation) run"
+    },
+    {
+      "id": 22,
+      "question": "What is a socket in networking?",
+      "options": [
+        "A wall power outlet",
+        "The combination of an IP address and a port identifying one endpoint of a connection",
+        "A cable connector",
+        "A DNS zone"
+      ],
+      "correctAnswer": "B",
+      "explanation": "192.168.1.5:443 is a socket — address + port; a TCP connection is uniquely defined by its two sockets. This is how one server IP serves many services (different ports) and many clients simultaneously"
+    },
+    {
+      "id": 23,
+      "question": "In Excel, the intersection of a row and a column is called a:",
+      "options": [
+        "Range",
+        "Cell",
+        "Field",
+        "Record"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A single row-column intersection is a CELL, addressed like B7 (column letter + row number). A block of cells is a range, while 'field' and 'record' are database terms that map loosely to column and ro"
+    },
+    {
+      "id": 24,
+      "question": "A string is fundamentally:",
+      "options": [
+        "A single number",
+        "A sequence/array of characters treated as text",
+        "A boolean value",
+        "A type of loop"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Strings ARE, under the hood, arrays of char values — which is why string operations (indexing, length, iteration) mirror array operations so closely (as seen throughout QB-3's string section). Some la"
+    },
+    {
+      "id": 25,
+      "question": "An 'array of structures/objects' (e.g., an array of Student records, each with name and marks) allows:",
+      "options": [
+        "Only storing numbers",
+        "Grouping RELATED fields together per element, so each array slot holds a complete, structured record rather than just one plain value",
+        "Nothing — arrays can't hold complex data",
+        "Automatic sorting"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Instead of separate parallel arrays (names[], marks[]) that must be kept manually in sync by INDEX, a single array of Student objects keeps each student's name and marks bundled TOGETHER in one place"
+    },
+    {
+      "id": 26,
+      "question": "A certificate authority (CA) in HTTPS serves to:",
+      "options": [
+        "Host websites",
+        "Vouch for a server's identity by signing its certificate, which browsers trust",
+        "Assign IP addresses",
+        "Compress traffic"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Browsers ship with trusted CA roots; a certificate signed by a trusted CA proves you're talking to the real site, not an impostor — the authentication half of HTTPS. Self-signed certificates trigger w"
+    },
+    {
+      "id": 27,
+      "question": "In PowerPoint, pressing Esc during a slideshow:",
+      "options": [
+        "Pauses animations",
+        "Exits the presentation and returns to the editing view",
+        "Blacks the screen",
+        "Jumps to the last slide"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Esc terminates show mode immediately, dropping you back into Normal view at the current slide. Blanking is B/W, and End jumps to the final slide while STAYING in the show. Exit-vs-navigate keys are gr"
+    },
+    {
+      "id": 28,
+      "question": "What is the output?\nscores = [22, 20, 62, 53, 21]\nscores[1] = scores[3] + 5\nPRINT scores[1]",
+      "options": [
+        "53",
+        "58",
+        "63",
+        "61"
+      ],
+      "correctAnswer": "B",
+      "explanation": "scores[3] is 53, so the assignment stores 53 + 5 = <b>58</b> into position 1, overwriting 20. Assignments replace; they never add to the old cell value unless the cell itself appears on the right side"
+    },
+    {
+      "id": 29,
+      "question": "Method OVERLOADING is:",
+      "options": [
+        "Same method name, different parameter lists, in the same class",
+        "Same signature in parent and child",
+        "Renaming a method",
+        "Calling a method twice"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Overloading = one name, multiple parameter patterns (count, types, order) resolved at COMPILE time — print(int), print(String), print(double). Return type alone cannot distinguish overloads. It's comp"
+    },
+    {
+      "id": 30,
+      "question": "What is the final value printed?\nq = 0\nFOR i = 5 TO 14 STEP 2\nq = q + i\nEND FOR\nPRINT q",
+      "options": [
+        "38",
+        "45",
+        "59",
+        "43"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The loop visits i = 5, 7, 9, 11, 13 — 5 iteration(s). Adding them: 5 + 7 + 9 + 11 + 13 = <b>45</b>. With step 2, the count of terms is (last−first)/step + 1 = 5 — verify counts that way."
+    },
+    {
+      "id": 31,
+      "question": "A key trade-off of adding a database INDEX is:",
+      "options": [
+        "Indexes have no downsides whatsoever",
+        "Faster READS (SELECT queries) but slightly SLOWER WRITES (INSERT/UPDATE/DELETE), since the index itself must also be updated, plus extra storage space used",
+        "Indexes make all queries slower",
+        "Indexes delete data automatically"
+      ],
+      "correctAnswer": "B",
+      "explanation": "(INSERT/UPDAT E/DELETE), since the index itself must also be updated, plus extra storage space used Every INSERT or UPDATE must also update the index structure to keep it accurate — a cost invisible during reads but real during writes. Tables with heavy write traffic and few read queries may deliber"
+    },
+    {
+      "id": 32,
+      "question": "Predict what gets printed: t := 19 XOR 40 WRITE t",
+      "options": [
+        "55",
+        "62",
+        "61",
+        "59"
+      ],
+      "correctAnswer": "D",
+      "explanation": "19 = 00010011 and 40 = 00101000; XOR outputs 1 only where the bits DIFFER: 00111011 = <b>59</b>. Remember the special cases n XOR n = 0 and n XOR 0 = n — the exam builds several questions on them."
+    },
+    {
+      "id": 33,
+      "question": "WPA2/WPA3 refer to:",
+      "options": [
+        "Video codecs",
+        "Wi-Fi security/encryption protocols protecting wireless network access",
+        "Database versions",
+        "Browser extensions"
+      ],
+      "correctAnswer": "B",
+      "explanation": "WPA2 (and its successor WPA3) encrypt Wi-Fi traffic and require a password to join — vastly stronger than the long-broken WEP. Using WEP or an open network today is a red-flag security question; recog"
+    },
+    {
+      "id": 34,
+      "question": "A 'divide and conquer' algorithmic strategy (used by Merge Sort and Binary Search alike) involves:",
+      "options": [
+        "Solving the entire problem in one single step",
+        "Breaking a problem into smaller SUBPROBLEMS, solving each (often recursively), and combining their results",
+        "Ignoring half the input data permanently",
+        "Only working on already-solved problems"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Divide (split the problem), Conquer (solve the smaller pieces, often via the SAME strategy recursively), Combine (merge results back into the final answer) — this three-step pattern recurs across many"
+    },
+    {
+      "id": 35,
+      "question": "What is the output?\ndata = [67, 87, 61, 66, 68]\ntemp = data[0]\ndata[0] = data[2]\ndata[2] = temp\nPRINT data[0]",
+      "options": [
+        "64",
+        "56",
+        "61",
+        "67"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The three temp lines SWAP positions 0 and 2. After swapping, index 0 holds <b>61</b> (originally at index 2). The temp-variable swap is the standard idiom — recognise it as a unit rather than tracing"
+    },
+    {
+      "id": 36,
+      "question": "Kubernetes is best described as:",
+      "options": [
+        "A programming language",
+        "A container orchestration platform that automates deployment, scaling and management of containerised applications",
+        "A type of database",
+        "A web browser"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Where Docker packages and runs individual containers, Kubernetes manages FLEETS of them across many machines — automatically restarting failed containers, load-balancing traffic, and scaling replicas"
+    },
+    {
+      "id": 37,
+      "question": "A broadcast domain is bounded by:",
+      "options": [
+        "A hub",
+        "A switch",
+        "A router",
+        "A repeater"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Broadcasts flood through hubs AND switches, but routers refuse to forward them — so a router marks the broadcast domain's edge (VLANs achieve the same split inside a switch). Contrast with collision d"
+    },
+    {
+      "id": 38,
+      "question": "A local variable's lifetime is:",
+      "options": [
+        "Forever, for the whole program",
+        "Limited to the execution of the function/block where it's declared",
+        "Exactly one second",
+        "Determined by the user"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Local variables are created on the call stack when their function starts and destroyed when it returns — their VALUES don't persist between calls (unless explicitly returned or stored elsewhere). This"
+    },
+    {
+      "id": 39,
+      "question": "PaaS (Platform as a Service) is best suited for:",
+      "options": [
+        "Physically racking servers",
+        "Developers who want to deploy applications without managing underlying servers or OS patching",
+        "End users who just browse a finished app",
+        "Cabling a data centre"
+      ],
+      "correctAnswer": "B",
+      "explanation": "PaaS (Azure App Service, Google App Engine, Heroku) hands you a ready runtime environment — push your code, the platform handles servers, OS updates and scaling. It trades some control for far less op"
+    },
+    {
+      "id": 40,
+      "question": "'Multi-cloud' strategy refers to an organisation:",
+      "options": [
+        "Using multiple cloud providers (e.g., AWS AND Azure) simultaneously, often to avoid vendor lock-in",
+        "Using only one cloud region",
+        "Having multiple email accounts",
+        "Running Windows and Linux on one machine"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Enterprises sometimes deliberately spread workloads across two or more providers — for negotiating leverage, avoiding a single point of failure, or leveraging each provider's specific strengths — acce"
+    },
+    {
+      "id": 41,
+      "question": "A Primary Key in a database table:",
+      "options": [
+        "Can have duplicate values",
+        "Uniquely identifies each row/record in a table and cannot be NULL",
+        "Is optional and rarely used",
+        "Must always be text"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Every table typically designates one column (or combination) as the primary key — like a Student ID — guaranteeing NO two rows share the same value and that value is NEVER left empty, since it's the r"
+    },
+    {
+      "id": 42,
+      "question": "The two primary operations on a Stack are:",
+      "options": [
+        "Enqueue and Dequeue",
+        "Push and Pop",
+        "Insert and Delete",
+        "Read and Write"
+      ],
+      "correctAnswer": "B",
+      "explanation": "PUSH adds an element to the TOP of the stack; POP removes and returns the TOP element. Both operations happen at the SAME end (the top) — unlike a queue, which adds and removes from OPPOSITE ends. Thi"
+    },
+    {
+      "id": 43,
+      "question": "What does this print?\nSET val = 21 << 2   // LEFT shift by 2\nPRINT val",
+      "options": [
+        "21",
+        "84",
+        "168",
+        "86"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A left shift by 2 multiplies by 2^2 = 4: 21 × 4 = <b>84</b> (binary 00010101 → 01010100). Shifts-as-fast-multiplication/division is the single most tested bitwise idea in this exam."
+    },
+    {
+      "id": 44,
+      "question": "'Security through obscurity' as a strategy is considered weak because:",
+      "options": [
+        "It's illegal",
+        "Hiding HOW a system works is not a substitute for actual robust security controls — once discovered, protection collapses",
+        "It's too expensive",
+        "It requires no software"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Relying solely on secrecy of design (an unlisted admin URL, a non-standard port) offers minimal real protection — a determined attacker eventually finds it, and then there's nothing else standing guar"
+    },
+    {
+      "id": 45,
+      "question": "A one-to-many relationship in database design (e.g., one Customer can have MANY Orders) is typically implemented by:",
+      "options": [
+        "Storing all orders in the Customer table directly",
+        "Placing a FOREIGN KEY (CustomerID) in the 'many' side table (Orders), referencing the PRIMARY KEY of the 'one' side table (Customers)",
+        "Creating one table per customer",
+        "Using two completely unrelated databases"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Each Order row stores which Customer it belongs to via a foreign key — one Customer row can be referenced by MANY Order rows, naturally modelling the one-to-many relationship without duplicating custo 4A — Backend Coding Q131 Solution: PYTHON3 def solve(input1, input2): arr = input1[:] k = input2 % len(arr) if arr else 0 return arr[k:] + arr[:k] print(solve([1,2,3,4,5], 2)) # -&gt; [3,4,5,1,2] print(solve([7,8,9], 4)) # -&gt; [8,9,7] 4B — SQL Q132 SQL Answer: SQL SELECT name, hire_date FROM Employees ORDER BY hire_date DESC LIMIT 1; Result: Result: name | hire_date Nikhil Rao | 2023-05-18 4C — Frontend Q133 Solution:  CSS:  JS: function addItem() { var v = document.getElementById(\"txt\").value; var li = document.createElement(\"li\"); li.textContent = v; document.getElementById(\"list\").appendChild(li); }"
+    }
+  ]
+}
