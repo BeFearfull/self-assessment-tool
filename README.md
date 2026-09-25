@@ -3,7 +3,8 @@
 Interactive practice app for **Section 3 — Technical MCQ — Mixed Topics** from Mock Tests 1–10.
 
 Psychometric, cognitive games, SQL, frontend, and backend coding sections are not included.
-github pages - https://befearfull.github.io/
+
+github pages - [https://befearfull.github.io/](https://befearfull.github.io/self-assessment-tool/)
 ## Run locally
 
 ```bash
