@@ -3,11 +3,11 @@
 Interactive practice app for **Section 3 — Technical MCQ — Mixed Topics** from Mock Tests 1–10.
 
 Psychometric, cognitive games, SQL, frontend, and backend coding sections are not included.
-
+github pages - https://befearfull.github.io/
 ## Run locally
 
 ```bash
-cd C:\Users\singh\Documents\Accenture\mcq-tests
+
 npm install
 npm run dev
 ```
